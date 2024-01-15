@@ -229,6 +229,7 @@
             this.textBox1_valor.Name = "textBox1_valor";
             this.textBox1_valor.Size = new System.Drawing.Size(160, 22);
             this.textBox1_valor.TabIndex = 20;
+            this.textBox1_valor.TextChanged += new System.EventHandler(this.textBox1_valor_TextChanged);
             // 
             // label11
             // 

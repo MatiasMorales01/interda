@@ -46,5 +46,10 @@ namespace interda.vistas
         {
 
         }
+
+        private void textBox1_valor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
