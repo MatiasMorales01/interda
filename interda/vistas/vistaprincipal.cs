@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace interda
+namespace interda.vistas
 {
-    public partial class Form1 : Form
+    public partial class vistaprincipal : Form
     {
-        public Form1()
+        public vistaprincipal()
         {
             InitializeComponent();
         }
