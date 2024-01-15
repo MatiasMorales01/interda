@@ -15,7 +15,7 @@ namespace interda.controlador
         static string servidor = "localhost";
         static string db = "cgato";
         static string user = "root";
-        static string pass = "wRm$2lP#8x!vFy";
+        static string pass = "root";
         static string cadenaConexion = $"Server={servidor};Database={db};User ID={user};Password={pass};";
 
         public MySqlConnection crear_conexion()
