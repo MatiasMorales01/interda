@@ -52,6 +52,13 @@ namespace interda.vistas
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            vistaprincipal atras = new vistaprincipal();
+            atras.Show();
+            this.Hide();
+        }
+
         private void nuevo_informe_Load(object sender, EventArgs e)
         {
 
