@@ -20,7 +20,6 @@ namespace interda.vistas
 
         private void vistaprincipal_close(object sender, FormClosingEventArgs e)
         {
-            // Cierra la aplicación cuando se cierra cualquier formulario
             Application.Exit();
         }
 

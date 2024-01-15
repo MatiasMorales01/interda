@@ -15,8 +15,13 @@ namespace interda.vistas
         public nuevo_informe()
         {
             InitializeComponent();
+            this.FormClosing += nuevo_informe_close;
         }
 
+        private void nuevo_informe_close(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -57,11 +62,6 @@ namespace interda.vistas
             vistaprincipal atras = new vistaprincipal();
             atras.Show();
             this.Hide();
-        }
-
-        private void nuevo_informe_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
