@@ -161,6 +161,7 @@
             this.btnnuevoinf.TabIndex = 12;
             this.btnnuevoinf.Text = "Nuevo informe";
             this.btnnuevoinf.UseVisualStyleBackColor = true;
+            this.btnnuevoinf.Click += new System.EventHandler(this.btnnuevoinf_Click);
             // 
             // vistaprincipal
             // 

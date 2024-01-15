@@ -21,5 +21,12 @@ namespace interda.vistas
         {
 
         }
+
+        private void btnnuevoinf_Click(object sender, EventArgs e)
+        {
+            nuevo_informe ventana = new nuevo_informe();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }
