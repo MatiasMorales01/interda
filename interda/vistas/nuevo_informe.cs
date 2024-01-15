@@ -51,5 +51,10 @@ namespace interda.vistas
         {
 
         }
+
+        private void nuevo_informe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
