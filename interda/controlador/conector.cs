@@ -35,7 +35,7 @@ namespace interda.controlador
 
             return conexion;
         }
-        public DataTable obtenerDatos(string tabla)
+        public DataTable leer(string query)
         {
             DataTable dataTable = new DataTable();
 
@@ -43,7 +43,6 @@ namespace interda.controlador
             {
                 try
                 {
-                    string query = "SELECT * FROM " + tabla;
                     using (MySqlCommand cmd = new MySqlCommand(query, conexion))
                     {
                         using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
@@ -60,7 +59,7 @@ namespace interda.controlador
 
             return dataTable;
         }
-        public bool ejecutarConsulta(string query)
+        public bool insertar(string query)
         {
             try
             {
