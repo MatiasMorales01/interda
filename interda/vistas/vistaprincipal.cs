@@ -16,5 +16,10 @@ namespace interda.vistas
         {
             InitializeComponent();
         }
+
+        private void vistaprincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
