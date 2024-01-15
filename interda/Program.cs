@@ -6,6 +6,8 @@ using System.Windows.Forms;
 
 
 //hola chao2
+//aja
+//cambios
 namespace interda
 {
     internal static class Program
