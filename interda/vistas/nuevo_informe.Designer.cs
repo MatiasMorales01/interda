@@ -50,6 +50,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1_valor = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.button1_atras = new System.Windows.Forms.Button();
+            this.comboBox1_ecografista = new System.Windows.Forms.ComboBox();
+            this.comboBox1_ecografo = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -240,11 +245,60 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "Valor $";
             // 
+            // button1_atras
+            // 
+            this.button1_atras.Location = new System.Drawing.Point(634, 29);
+            this.button1_atras.Name = "button1_atras";
+            this.button1_atras.Size = new System.Drawing.Size(75, 23);
+            this.button1_atras.TabIndex = 22;
+            this.button1_atras.Text = "Atrás";
+            this.button1_atras.UseVisualStyleBackColor = true;
+            this.button1_atras.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox1_ecografista
+            // 
+            this.comboBox1_ecografista.FormattingEnabled = true;
+            this.comboBox1_ecografista.Location = new System.Drawing.Point(51, 188);
+            this.comboBox1_ecografista.Name = "comboBox1_ecografista";
+            this.comboBox1_ecografista.Size = new System.Drawing.Size(160, 24);
+            this.comboBox1_ecografista.TabIndex = 23;
+            // 
+            // comboBox1_ecografo
+            // 
+            this.comboBox1_ecografo.FormattingEnabled = true;
+            this.comboBox1_ecografo.Location = new System.Drawing.Point(217, 188);
+            this.comboBox1_ecografo.Name = "comboBox1_ecografo";
+            this.comboBox1_ecografo.Size = new System.Drawing.Size(160, 24);
+            this.comboBox1_ecografo.TabIndex = 24;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(91, 215);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(75, 16);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Ecografista";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(264, 215);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(62, 16);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Ecógrafo";
+            // 
             // nuevo_informe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.comboBox1_ecografo);
+            this.Controls.Add(this.comboBox1_ecografista);
+            this.Controls.Add(this.button1_atras);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox1_valor);
             this.Controls.Add(this.label10);
@@ -298,5 +352,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox1_valor;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button1_atras;
+        private System.Windows.Forms.ComboBox comboBox1_ecografista;
+        private System.Windows.Forms.ComboBox comboBox1_ecografo;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
