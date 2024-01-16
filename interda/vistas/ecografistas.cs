@@ -23,6 +23,16 @@ namespace interda.vistas
         {
             DataTable datos = miConector.leer("Select * from ecografista");
             eco.DataSource = datos;
+
+            eco.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            eco.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            eco.AutoResizeColumns();
+            eco.AutoResizeRows();
+        }
+
+        private void eco_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

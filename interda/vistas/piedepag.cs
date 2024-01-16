@@ -23,6 +23,16 @@ namespace interda.vistas
         {
             DataTable datos = miConector.leer("select * from `pie de pagina`");
             pie.DataSource = datos;
+
+            pie.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            pie.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            pie.AutoResizeColumns();
+            pie.AutoResizeRows();
+        }
+
+        private void pie_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
