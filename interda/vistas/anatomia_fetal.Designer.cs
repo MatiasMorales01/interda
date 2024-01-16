@@ -66,6 +66,7 @@
             this.button_cerebro.TabIndex = 1;
             this.button_cerebro.Text = "Cerebro";
             this.button_cerebro.UseVisualStyleBackColor = true;
+            this.button_cerebro.Click += new System.EventHandler(this.button_cerebro_Click);
             // 
             // button_cabeza
             // 

@@ -23,5 +23,12 @@ namespace interda.vistas
             atras.Show();
             this.Hide();
         }
+
+        private void button_cerebro_Click(object sender, EventArgs e)
+        {
+            cerebro_anatomiaFetal ventana = new cerebro_anatomiaFetal();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }
