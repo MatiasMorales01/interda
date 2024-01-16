@@ -13,7 +13,7 @@ namespace interda.controlador
     public class conector
     {
         static string servidor = "localhost";
-        static string db = "cgato";
+        static string db = "interda";
         static string user = "root";
         static string pass = "root";
         static string cadenaConexion = $"Server={servidor};Database={db};User ID={user};Password={pass};";

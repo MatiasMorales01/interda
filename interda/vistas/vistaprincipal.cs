@@ -1,4 +1,5 @@
-﻿using System;
+﻿using interda.controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,16 +8,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace interda.vistas
 {
     public partial class vistaprincipal : Form
     {
+        conector miConector = new conector();
         public vistaprincipal()
         {
             InitializeComponent();
+            cargarDatoscomboboxdoctor();
+            comboBoxdoctor.DropDownStyle = ComboBoxStyle.DropDownList;
             this.FormClosing += vistaprincipal_close;
         }
+
+        private void cargarDatoscomboboxdoctor()
+        {
+            DataTable datos = miConector.leer("select * from ecografista");
+            comboBoxdoctor.DataSource = datos;
+            comboBoxdoctor.DisplayMember = "ecografista";
+            comboBoxdoctor.ValueMember = "ecografista";
+        }
+
+     
+
+
 
         private void vistaprincipal_close(object sender, FormClosingEventArgs e)
         {
