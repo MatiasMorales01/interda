@@ -1,6 +1,7 @@
 ﻿using interda.vistas;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,7 +24,13 @@ namespace interda
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new vistaprincipal());
+            vistaprincipal vistaprincipal = new vistaprincipal();
+            vistaprincipal.StartPosition = FormStartPosition.Manual;
+            vistaprincipal.Location = new Point(10, 10);
+            Application.Run(vistaprincipal);
         }
     }
 }
+
+
+

@@ -62,13 +62,15 @@ namespace interda.vistas
         private void btnnuevoinf_Click(object sender, EventArgs e)
         {
             nuevo_informe ventana = new nuevo_informe();
+            ventana.StartPosition = FormStartPosition.CenterScreen;
             ventana.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnidreferencias_Click(object sender, EventArgs e)
         {
-            idreferencias idreferencias = new idreferencias(); 
+            idreferencias idreferencias = new idreferencias();
+            idreferencias.StartPosition = FormStartPosition.CenterScreen;
             idreferencias.Show();
            // this.Hide();
         }
@@ -102,7 +104,11 @@ namespace interda.vistas
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("presionaste el cocodrilo :)");
+            for(int i = 0; i < 10; i++)
+            {
+                MessageBox.Show("Usted ha sido Hackeado por cocodrilo :(");
+            }
+            
         }
     }
 }
