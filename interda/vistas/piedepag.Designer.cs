@@ -62,8 +62,9 @@
             this.pie.Name = "pie";
             this.pie.RowHeadersWidth = 51;
             this.pie.RowTemplate.Height = 24;
-            this.pie.Size = new System.Drawing.Size(957, 416);
+            this.pie.Size = new System.Drawing.Size(957, 406);
             this.pie.TabIndex = 2;
+            this.pie.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pie_CellContentClick);
             // 
             // piedepag
             // 

@@ -43,6 +43,7 @@
             this.eco.RowTemplate.Height = 24;
             this.eco.Size = new System.Drawing.Size(943, 417);
             this.eco.TabIndex = 0;
+            this.eco.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.eco_CellContentClick);
             // 
             // label1
             // 
