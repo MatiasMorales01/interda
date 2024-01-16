@@ -226,6 +226,7 @@
             this.btnanatomiafetal.TabIndex = 17;
             this.btnanatomiafetal.Text = "Anatomia fetal";
             this.btnanatomiafetal.UseVisualStyleBackColor = true;
+            this.btnanatomiafetal.Click += new System.EventHandler(this.btnanatomiafetal_Click);
             // 
             // btnpiedepagina
             // 

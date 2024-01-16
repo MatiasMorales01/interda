@@ -49,6 +49,12 @@ namespace interda.vistas
 
         }
 
+        private void btnanatomiafetal_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
         private void btntablaobstetrica_Click(object sender, EventArgs e)
         {
             tablaobstetrica tablaobstetrica = new tablaobstetrica();
