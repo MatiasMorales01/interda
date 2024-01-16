@@ -27,5 +27,11 @@ namespace interda.vistas
             ecografistas ecografistas = new ecografistas(); 
             ecografistas.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            mhz mhz = new mhz();    
+            mhz.Show();
+        }
     }
 }
