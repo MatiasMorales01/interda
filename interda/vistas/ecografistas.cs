@@ -17,10 +17,6 @@ namespace interda.vistas
         public ecografistas()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             DataTable datos = miConector.leer("Select * from ecografista");
             eco.DataSource = datos;
 
@@ -29,6 +25,11 @@ namespace interda.vistas
             eco.AutoResizeColumns();
             eco.AutoResizeRows();
         }
+
+       /* private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }*/
 
         private void eco_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

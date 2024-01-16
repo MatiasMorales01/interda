@@ -28,7 +28,7 @@ namespace interda.vistas
         {
             cerebro_anatomiaFetal ventana = new cerebro_anatomiaFetal();
             ventana.Show();
-            this.Hide();
+            //this.Hide();
         }
     }
 }

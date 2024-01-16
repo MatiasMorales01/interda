@@ -17,10 +17,6 @@ namespace interda.vistas
         public mhz()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             DataTable datos = miConector.leer("Select * from mhz");
             mh.DataSource = datos;
 
@@ -28,6 +24,11 @@ namespace interda.vistas
             mh.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             mh.AutoResizeColumns();
             mh.AutoResizeRows();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

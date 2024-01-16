@@ -84,7 +84,7 @@ namespace interda.vistas
         {
             anatomia_fetal ventana = new anatomia_fetal();
             ventana.Show();
-            this.Hide();
+           // this.Hide();
 
         }
 

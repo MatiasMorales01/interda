@@ -17,10 +17,6 @@ namespace interda.vistas
         public piedepag()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             DataTable datos = miConector.leer("select * from `pie de pagina`");
             pie.DataSource = datos;
 
@@ -28,6 +24,11 @@ namespace interda.vistas
             pie.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             pie.AutoResizeColumns();
             pie.AutoResizeRows();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void pie_CellContentClick(object sender, DataGridViewCellEventArgs e)

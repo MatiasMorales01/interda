@@ -17,6 +17,13 @@ namespace interda.vistas
         public cerebro_anatomiaFetal()
         {
             InitializeComponent();
+            DataTable datos = miConector.leer("select * from `Formato cerebro`");
+            cerebro.DataSource = datos;
+
+            cerebro.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            cerebro.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            cerebro.AutoResizeColumns();
+            cerebro.AutoResizeRows();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -31,13 +38,7 @@ namespace interda.vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DataTable datos = miConector.leer("select * from `Formato cerebro`");
-            cerebro.DataSource = datos;
-
-            cerebro.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            cerebro.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            cerebro.AutoResizeColumns();
-            cerebro.AutoResizeRows();
+           
         }
     }
 }
