@@ -101,6 +101,12 @@
     <Compile Include="controlador\conector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\idreferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\idreferencias.Designer.cs">
+      <DependentUpon>idreferencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\nuevo_informe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vistas\idreferencias.resx">
+      <DependentUpon>idreferencias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\nuevo_informe.resx">
       <DependentUpon>nuevo_informe.cs</DependentUpon>
     </EmbeddedResource>

@@ -41,6 +41,15 @@
             this.comboBoxpiepag = new System.Windows.Forms.ComboBox();
             this.btnactualizar = new System.Windows.Forms.Button();
             this.btnnuevoinf = new System.Windows.Forms.Button();
+            this.btnbuscarinf = new System.Windows.Forms.Button();
+            this.btninstitucionencabezado = new System.Windows.Forms.Button();
+            this.btninfobstetrico = new System.Windows.Forms.Button();
+            this.btntablaobstetrica = new System.Windows.Forms.Button();
+            this.btnanatomiafetal = new System.Windows.Forms.Button();
+            this.btnpiedepagina = new System.Windows.Forms.Button();
+            this.btnplanillautero = new System.Windows.Forms.Button();
+            this.btnconclusionanatomia = new System.Windows.Forms.Button();
+            this.btnidreferencias = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -155,7 +164,7 @@
             // btnnuevoinf
             // 
             this.btnnuevoinf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnnuevoinf.Location = new System.Drawing.Point(616, 78);
+            this.btnnuevoinf.Location = new System.Drawing.Point(616, 23);
             this.btnnuevoinf.Name = "btnnuevoinf";
             this.btnnuevoinf.Size = new System.Drawing.Size(164, 32);
             this.btnnuevoinf.TabIndex = 12;
@@ -163,11 +172,111 @@
             this.btnnuevoinf.UseVisualStyleBackColor = true;
             this.btnnuevoinf.Click += new System.EventHandler(this.btnnuevoinf_Click);
             // 
+            // btnbuscarinf
+            // 
+            this.btnbuscarinf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnbuscarinf.Location = new System.Drawing.Point(810, 23);
+            this.btnbuscarinf.Name = "btnbuscarinf";
+            this.btnbuscarinf.Size = new System.Drawing.Size(164, 32);
+            this.btnbuscarinf.TabIndex = 13;
+            this.btnbuscarinf.Text = "Buscar informe";
+            this.btnbuscarinf.UseVisualStyleBackColor = true;
+            // 
+            // btninstitucionencabezado
+            // 
+            this.btninstitucionencabezado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btninstitucionencabezado.Location = new System.Drawing.Point(616, 78);
+            this.btninstitucionencabezado.Name = "btninstitucionencabezado";
+            this.btninstitucionencabezado.Size = new System.Drawing.Size(164, 73);
+            this.btninstitucionencabezado.TabIndex = 14;
+            this.btninstitucionencabezado.Text = "Institucion/Encabezado de pagina";
+            this.btninstitucionencabezado.UseVisualStyleBackColor = true;
+            // 
+            // btninfobstetrico
+            // 
+            this.btninfobstetrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btninfobstetrico.Location = new System.Drawing.Point(616, 171);
+            this.btninfobstetrico.Name = "btninfobstetrico";
+            this.btninfobstetrico.Size = new System.Drawing.Size(164, 32);
+            this.btninfobstetrico.TabIndex = 15;
+            this.btninfobstetrico.Text = "Informe Obstetrico";
+            this.btninfobstetrico.UseVisualStyleBackColor = true;
+            // 
+            // btntablaobstetrica
+            // 
+            this.btntablaobstetrica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btntablaobstetrica.Location = new System.Drawing.Point(810, 171);
+            this.btntablaobstetrica.Name = "btntablaobstetrica";
+            this.btntablaobstetrica.Size = new System.Drawing.Size(164, 32);
+            this.btntablaobstetrica.TabIndex = 16;
+            this.btntablaobstetrica.Text = "Tablas Obstetricas";
+            this.btntablaobstetrica.UseVisualStyleBackColor = true;
+            // 
+            // btnanatomiafetal
+            // 
+            this.btnanatomiafetal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnanatomiafetal.Location = new System.Drawing.Point(616, 225);
+            this.btnanatomiafetal.Name = "btnanatomiafetal";
+            this.btnanatomiafetal.Size = new System.Drawing.Size(164, 32);
+            this.btnanatomiafetal.TabIndex = 17;
+            this.btnanatomiafetal.Text = "Anatomia fetal";
+            this.btnanatomiafetal.UseVisualStyleBackColor = true;
+            // 
+            // btnpiedepagina
+            // 
+            this.btnpiedepagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnpiedepagina.Location = new System.Drawing.Point(810, 225);
+            this.btnpiedepagina.Name = "btnpiedepagina";
+            this.btnpiedepagina.Size = new System.Drawing.Size(164, 32);
+            this.btnpiedepagina.TabIndex = 18;
+            this.btnpiedepagina.Text = "Pie de pagina";
+            this.btnpiedepagina.UseVisualStyleBackColor = true;
+            // 
+            // btnplanillautero
+            // 
+            this.btnplanillautero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnplanillautero.Location = new System.Drawing.Point(616, 284);
+            this.btnplanillautero.Name = "btnplanillautero";
+            this.btnplanillautero.Size = new System.Drawing.Size(164, 56);
+            this.btnplanillautero.TabIndex = 19;
+            this.btnplanillautero.Text = "Planilla utero";
+            this.btnplanillautero.UseVisualStyleBackColor = true;
+            // 
+            // btnconclusionanatomia
+            // 
+            this.btnconclusionanatomia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnconclusionanatomia.Location = new System.Drawing.Point(810, 284);
+            this.btnconclusionanatomia.Name = "btnconclusionanatomia";
+            this.btnconclusionanatomia.Size = new System.Drawing.Size(164, 56);
+            this.btnconclusionanatomia.TabIndex = 20;
+            this.btnconclusionanatomia.Text = "Conclusion anatomia";
+            this.btnconclusionanatomia.UseVisualStyleBackColor = true;
+            // 
+            // btnidreferencias
+            // 
+            this.btnidreferencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnidreferencias.Location = new System.Drawing.Point(810, 78);
+            this.btnidreferencias.Name = "btnidreferencias";
+            this.btnidreferencias.Size = new System.Drawing.Size(164, 73);
+            this.btnidreferencias.TabIndex = 21;
+            this.btnidreferencias.Text = "ID referencias";
+            this.btnidreferencias.UseVisualStyleBackColor = true;
+            this.btnidreferencias.Click += new System.EventHandler(this.btnidreferencias_Click);
+            // 
             // vistaprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 506);
+            this.Controls.Add(this.btnidreferencias);
+            this.Controls.Add(this.btnconclusionanatomia);
+            this.Controls.Add(this.btnplanillautero);
+            this.Controls.Add(this.btnpiedepagina);
+            this.Controls.Add(this.btnanatomiafetal);
+            this.Controls.Add(this.btntablaobstetrica);
+            this.Controls.Add(this.btninfobstetrico);
+            this.Controls.Add(this.btninstitucionencabezado);
+            this.Controls.Add(this.btnbuscarinf);
             this.Controls.Add(this.btnnuevoinf);
             this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.comboBoxpiepag);
@@ -204,5 +313,14 @@
         private System.Windows.Forms.ComboBox comboBoxpiepag;
         private System.Windows.Forms.Button btnactualizar;
         private System.Windows.Forms.Button btnnuevoinf;
+        private System.Windows.Forms.Button btnbuscarinf;
+        private System.Windows.Forms.Button btninstitucionencabezado;
+        private System.Windows.Forms.Button btninfobstetrico;
+        private System.Windows.Forms.Button btntablaobstetrica;
+        private System.Windows.Forms.Button btnanatomiafetal;
+        private System.Windows.Forms.Button btnpiedepagina;
+        private System.Windows.Forms.Button btnplanillautero;
+        private System.Windows.Forms.Button btnconclusionanatomia;
+        private System.Windows.Forms.Button btnidreferencias;
     }
 }

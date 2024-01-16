@@ -34,5 +34,12 @@ namespace interda.vistas
             ventana.Show();
             this.Hide();
         }
+
+        private void btnidreferencias_Click(object sender, EventArgs e)
+        {
+            idreferencias idreferencias = new idreferencias(); 
+            idreferencias.Show();
+           // this.Hide();
+        }
     }
 }
