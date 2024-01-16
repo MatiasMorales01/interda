@@ -99,5 +99,10 @@ namespace interda.vistas
             piedepag piedepag = new piedepag();
             piedepag.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("presionaste el cocodrilo :)");
+        }
     }
 }
