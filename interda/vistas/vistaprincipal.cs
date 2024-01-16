@@ -48,5 +48,12 @@ namespace interda.vistas
             informeobstetrico.Show();
 
         }
+
+        private void btnanatomiafetal_Click(object sender, EventArgs e)
+        {
+            anatomia_fetal ventana = new anatomia_fetal();
+            ventana.Show();
+            this.Hide();
+        }
     }
 }
