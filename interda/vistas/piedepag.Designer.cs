@@ -58,7 +58,7 @@
             // pie
             // 
             this.pie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.pie.Location = new System.Drawing.Point(39, 94);
+            this.pie.Location = new System.Drawing.Point(39, 93);
             this.pie.Name = "pie";
             this.pie.RowHeadersWidth = 51;
             this.pie.RowTemplate.Height = 24;
