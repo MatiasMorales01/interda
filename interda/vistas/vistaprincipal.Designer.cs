@@ -237,6 +237,7 @@
             this.btnpiedepagina.TabIndex = 18;
             this.btnpiedepagina.Text = "Pie de pagina";
             this.btnpiedepagina.UseVisualStyleBackColor = true;
+            this.btnpiedepagina.Click += new System.EventHandler(this.btnpiedepagina_Click);
             // 
             // btnplanillautero
             // 

@@ -93,5 +93,11 @@ namespace interda.vistas
             tablaobstetrica tablaobstetrica = new tablaobstetrica();
             tablaobstetrica.Show();
         }
+
+        private void btnpiedepagina_Click(object sender, EventArgs e)
+        {
+            piedepag piedepag = new piedepag();
+            piedepag.Show();
+        }
     }
 }

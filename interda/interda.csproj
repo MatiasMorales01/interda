@@ -131,6 +131,12 @@
     <Compile Include="vistas\nuevo_informe.Designer.cs">
       <DependentUpon>nuevo_informe.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\piedepag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\piedepag.Designer.cs">
+      <DependentUpon>piedepag.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\tablaobstetrica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\nuevo_informe.resx">
       <DependentUpon>nuevo_informe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\piedepag.resx">
+      <DependentUpon>piedepag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablaobstetrica.resx">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
