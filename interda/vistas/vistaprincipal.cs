@@ -48,5 +48,11 @@ namespace interda.vistas
             informeobstetrico.Show();
 
         }
+
+        private void btntablaobstetrica_Click(object sender, EventArgs e)
+        {
+            tablaobstetrica tablaobstetrica = new tablaobstetrica();
+            tablaobstetrica.Show();
+        }
     }
 }

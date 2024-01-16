@@ -215,6 +215,7 @@
             this.btntablaobstetrica.TabIndex = 16;
             this.btntablaobstetrica.Text = "Tablas Obstetricas";
             this.btntablaobstetrica.UseVisualStyleBackColor = true;
+            this.btntablaobstetrica.Click += new System.EventHandler(this.btntablaobstetrica_Click);
             // 
             // btnanatomiafetal
             // 
