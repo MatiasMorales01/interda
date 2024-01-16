@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vistaprincipal));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +51,8 @@
             this.btnplanillautero = new System.Windows.Forms.Button();
             this.btnconclusionanatomia = new System.Windows.Forms.Button();
             this.btnidreferencias = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -197,17 +200,18 @@
             this.btninfobstetrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btninfobstetrico.Location = new System.Drawing.Point(616, 171);
             this.btninfobstetrico.Name = "btninfobstetrico";
-            this.btninfobstetrico.Size = new System.Drawing.Size(164, 32);
+            this.btninfobstetrico.Size = new System.Drawing.Size(164, 59);
             this.btninfobstetrico.TabIndex = 15;
             this.btninfobstetrico.Text = "Informe Obstetrico";
             this.btninfobstetrico.UseVisualStyleBackColor = true;
+            this.btninfobstetrico.Click += new System.EventHandler(this.btninfobstetrico_Click);
             // 
             // btntablaobstetrica
             // 
             this.btntablaobstetrica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btntablaobstetrica.Location = new System.Drawing.Point(810, 171);
             this.btntablaobstetrica.Name = "btntablaobstetrica";
-            this.btntablaobstetrica.Size = new System.Drawing.Size(164, 32);
+            this.btntablaobstetrica.Size = new System.Drawing.Size(164, 59);
             this.btntablaobstetrica.TabIndex = 16;
             this.btntablaobstetrica.Text = "Tablas Obstetricas";
             this.btntablaobstetrica.UseVisualStyleBackColor = true;
@@ -215,7 +219,7 @@
             // btnanatomiafetal
             // 
             this.btnanatomiafetal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnanatomiafetal.Location = new System.Drawing.Point(616, 225);
+            this.btnanatomiafetal.Location = new System.Drawing.Point(616, 246);
             this.btnanatomiafetal.Name = "btnanatomiafetal";
             this.btnanatomiafetal.Size = new System.Drawing.Size(164, 32);
             this.btnanatomiafetal.TabIndex = 17;
@@ -225,7 +229,7 @@
             // btnpiedepagina
             // 
             this.btnpiedepagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnpiedepagina.Location = new System.Drawing.Point(810, 225);
+            this.btnpiedepagina.Location = new System.Drawing.Point(810, 246);
             this.btnpiedepagina.Name = "btnpiedepagina";
             this.btnpiedepagina.Size = new System.Drawing.Size(164, 32);
             this.btnpiedepagina.TabIndex = 18;
@@ -235,7 +239,7 @@
             // btnplanillautero
             // 
             this.btnplanillautero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnplanillautero.Location = new System.Drawing.Point(616, 284);
+            this.btnplanillautero.Location = new System.Drawing.Point(616, 295);
             this.btnplanillautero.Name = "btnplanillautero";
             this.btnplanillautero.Size = new System.Drawing.Size(164, 56);
             this.btnplanillautero.TabIndex = 19;
@@ -245,7 +249,7 @@
             // btnconclusionanatomia
             // 
             this.btnconclusionanatomia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnconclusionanatomia.Location = new System.Drawing.Point(810, 284);
+            this.btnconclusionanatomia.Location = new System.Drawing.Point(810, 295);
             this.btnconclusionanatomia.Name = "btnconclusionanatomia";
             this.btnconclusionanatomia.Size = new System.Drawing.Size(164, 56);
             this.btnconclusionanatomia.TabIndex = 20;
@@ -263,11 +267,21 @@
             this.btnidreferencias.UseVisualStyleBackColor = true;
             this.btnidreferencias.Click += new System.EventHandler(this.btnidreferencias_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(214, 367);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 182);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
             // vistaprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 506);
+            this.ClientSize = new System.Drawing.Size(1029, 607);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnidreferencias);
             this.Controls.Add(this.btnconclusionanatomia);
             this.Controls.Add(this.btnplanillautero);
@@ -293,6 +307,7 @@
             this.Name = "vistaprincipal";
             this.Text = "vistaprincipal";
             this.Load += new System.EventHandler(this.vistaprincipal_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,5 +337,6 @@
         private System.Windows.Forms.Button btnplanillautero;
         private System.Windows.Forms.Button btnconclusionanatomia;
         private System.Windows.Forms.Button btnidreferencias;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -107,6 +107,12 @@
     <Compile Include="vistas\idreferencias.Designer.cs">
       <DependentUpon>idreferencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\informeobstetrico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\informeobstetrico.Designer.cs">
+      <DependentUpon>informeobstetrico.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\nuevo_informe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <EmbeddedResource Include="vistas\idreferencias.resx">
       <DependentUpon>idreferencias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\informeobstetrico.resx">
+      <DependentUpon>informeobstetrico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\nuevo_informe.resx">
       <DependentUpon>nuevo_informe.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="imagenes\" />
     <Folder Include="modelo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

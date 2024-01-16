@@ -41,5 +41,12 @@ namespace interda.vistas
             idreferencias.Show();
            // this.Hide();
         }
+
+        private void btninfobstetrico_Click(object sender, EventArgs e)
+        {
+            informeobstetrico informeobstetrico = new informeobstetrico();
+            informeobstetrico.Show();
+
+        }
     }
 }
