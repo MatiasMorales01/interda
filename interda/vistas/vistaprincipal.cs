@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace interda.vistas
 {
@@ -18,23 +19,36 @@ namespace interda.vistas
         public vistaprincipal()
         {
             InitializeComponent();
-            cargarDatoscomboboxdoctor();
+            cargarDatoscombobox();
             comboBoxdoctor.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxasistente.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxecografo.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxpiepag.DropDownStyle = ComboBoxStyle.DropDownList;
             this.FormClosing += vistaprincipal_close;
         }
 
-        private void cargarDatoscomboboxdoctor()
+        private void cargarDatoscombobox()
         {
             DataTable datos = miConector.leer("select * from ecografista");
             comboBoxdoctor.DataSource = datos;
             comboBoxdoctor.DisplayMember = "ecografista";
             comboBoxdoctor.ValueMember = "ecografista";
+            DataTable datos2 = miConector.leer("select * from secretarias");
+            comboBoxasistente.DataSource = datos2;
+            comboBoxasistente.DisplayMember = "Detalle secretaria";
+            comboBoxasistente.ValueMember = "Detalle secretaria";
+            DataTable datos3 = miConector.leer("select * from ecógrafo");
+            comboBoxecografo.DataSource = datos3;
+            comboBoxecografo.DisplayMember = "ecógrafo";
+            comboBoxecografo.ValueMember = "ecógrafo";
+            DataTable datos4 = miConector.leer("select * from `pie de pagina`");
+            comboBoxpiepag.DataSource = datos4;
+            comboBoxpiepag.DisplayMember = "pie de pagina";
+            comboBoxpiepag.ValueMember = "pie de pagina";
         }
 
-     
 
-
-
+    
         private void vistaprincipal_close(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

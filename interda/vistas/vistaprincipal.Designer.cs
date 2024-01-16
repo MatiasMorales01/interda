@@ -79,7 +79,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(341, 63);
+            this.label3.Location = new System.Drawing.Point(359, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 20);
             this.label3.TabIndex = 2;
@@ -90,13 +90,13 @@
             this.comboBoxdoctor.FormattingEnabled = true;
             this.comboBoxdoctor.Location = new System.Drawing.Point(12, 86);
             this.comboBoxdoctor.Name = "comboBoxdoctor";
-            this.comboBoxdoctor.Size = new System.Drawing.Size(303, 24);
+            this.comboBoxdoctor.Size = new System.Drawing.Size(328, 24);
             this.comboBoxdoctor.TabIndex = 3;
             // 
             // comboBoxasistente
             // 
             this.comboBoxasistente.FormattingEnabled = true;
-            this.comboBoxasistente.Location = new System.Drawing.Point(345, 86);
+            this.comboBoxasistente.Location = new System.Drawing.Point(363, 86);
             this.comboBoxasistente.Name = "comboBoxasistente";
             this.comboBoxasistente.Size = new System.Drawing.Size(192, 24);
             this.comboBoxasistente.TabIndex = 4;
@@ -115,7 +115,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(341, 147);
+            this.label5.Location = new System.Drawing.Point(359, 147);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 20);
             this.label5.TabIndex = 6;
@@ -124,7 +124,7 @@
             // comboBoxecografo
             // 
             this.comboBoxecografo.FormattingEnabled = true;
-            this.comboBoxecografo.Location = new System.Drawing.Point(345, 170);
+            this.comboBoxecografo.Location = new System.Drawing.Point(363, 170);
             this.comboBoxecografo.Name = "comboBoxecografo";
             this.comboBoxecografo.Size = new System.Drawing.Size(192, 24);
             this.comboBoxecografo.TabIndex = 7;
