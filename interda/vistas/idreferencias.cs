@@ -45,5 +45,11 @@ namespace interda.vistas
             valor valor = new valor();
             valor.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ecografo ecografo = new ecografo();
+            ecografo.Show();
+        }
     }
 }
