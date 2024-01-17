@@ -45,6 +45,8 @@
             // 
             // mh
             // 
+            this.mh.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.mh.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.mh.Location = new System.Drawing.Point(90, 104);
             this.mh.Name = "mh";

@@ -45,6 +45,8 @@
             // 
             // val
             // 
+            this.val.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.val.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.val.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.val.Location = new System.Drawing.Point(73, 105);
             this.val.Name = "val";

@@ -35,7 +35,10 @@
             // 
             // eco
             // 
+            this.eco.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.eco.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.eco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.eco.GridColor = System.Drawing.SystemColors.MenuBar;
             this.eco.Location = new System.Drawing.Point(42, 89);
             this.eco.Name = "eco";
             this.eco.RowHeadersWidth = 51;

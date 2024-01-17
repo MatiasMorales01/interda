@@ -45,6 +45,8 @@
             // 
             // exam
             // 
+            this.exam.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.exam.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.exam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.exam.Location = new System.Drawing.Point(115, 96);
             this.exam.Name = "exam";
