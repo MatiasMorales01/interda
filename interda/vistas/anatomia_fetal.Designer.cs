@@ -86,6 +86,7 @@
             this.button_cara.TabIndex = 3;
             this.button_cara.Text = "Cara";
             this.button_cara.UseVisualStyleBackColor = true;
+            this.button_cara.Click += new System.EventHandler(this.button_cara_Click);
             // 
             // button_cuelloFetal
             // 
@@ -104,6 +105,7 @@
             this.button_columnaVertebral.TabIndex = 5;
             this.button_columnaVertebral.Text = "Columna vertebral";
             this.button_columnaVertebral.UseVisualStyleBackColor = true;
+            this.button_columnaVertebral.Click += new System.EventHandler(this.button_columnaVertebral_Click);
             // 
             // button_torax
             // 
@@ -113,6 +115,7 @@
             this.button_torax.TabIndex = 6;
             this.button_torax.Text = "Tórax";
             this.button_torax.UseVisualStyleBackColor = true;
+            this.button_torax.Click += new System.EventHandler(this.button_torax_Click);
             // 
             // button_corazon
             // 

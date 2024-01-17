@@ -113,11 +113,23 @@
     <Compile Include="vistas\cabeza_anatomiaFetal.Designer.cs">
       <DependentUpon>cabeza_anatomiaFetal.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\cara_anatomiaFetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\cara_anatomiaFetal.Designer.cs">
+      <DependentUpon>cara_anatomiaFetal.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\cerebro_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="vistas\cerebro_anatomiaFetal.Designer.cs">
       <DependentUpon>cerebro_anatomiaFetal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\columna_anatomiaFetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\columna_anatomiaFetal.Designer.cs">
+      <DependentUpon>columna_anatomiaFetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\ecografistas.cs">
       <SubType>Form</SubType>
@@ -161,6 +173,12 @@
     <Compile Include="vistas\tablaobstetrica.Designer.cs">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\torax_anatomiaFetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\torax_anatomiaFetal.Designer.cs">
+      <DependentUpon>torax_anatomiaFetal.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\vistaprincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,8 +200,14 @@
     <EmbeddedResource Include="vistas\cabeza_anatomiaFetal.resx">
       <DependentUpon>cabeza_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\cara_anatomiaFetal.resx">
+      <DependentUpon>cara_anatomiaFetal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\cerebro_anatomiaFetal.resx">
       <DependentUpon>cerebro_anatomiaFetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\columna_anatomiaFetal.resx">
+      <DependentUpon>columna_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\ecografistas.resx">
       <DependentUpon>ecografistas.cs</DependentUpon>
@@ -205,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablaobstetrica.resx">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\torax_anatomiaFetal.resx">
+      <DependentUpon>torax_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\vistaprincipal.resx">
       <DependentUpon>vistaprincipal.cs</DependentUpon>

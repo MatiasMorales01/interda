@@ -38,5 +38,26 @@ namespace interda.vistas
             //this.Hide();
 
         }
+
+        private void button_cara_Click(object sender, EventArgs e)
+        {
+            cara_anatomiaFetal ventana = new cara_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
+
+        private void button_columnaVertebral_Click(object sender, EventArgs e)
+        {
+            columna_anatomiaFetal ventana = new columna_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
+
+        private void button_torax_Click(object sender, EventArgs e)
+        {
+            torax_anatomiaFetal ventana = new torax_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
     }
 }
