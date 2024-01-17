@@ -45,6 +45,8 @@
             // 
             // pie
             // 
+            this.pie.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.pie.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pie.Location = new System.Drawing.Point(39, 93);
             this.pie.Name = "pie";
