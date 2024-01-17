@@ -59,5 +59,12 @@ namespace interda.vistas
             ventana.Show();
             //this.Hide();
         }
+
+        private void button_corazon_Click(object sender, EventArgs e)
+        {
+            corazon_anatomiaFetal ventana = new corazon_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
     }
 }

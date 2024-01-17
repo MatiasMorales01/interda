@@ -125,6 +125,7 @@
             this.button_corazon.TabIndex = 7;
             this.button_corazon.Text = "Corazón";
             this.button_corazon.UseVisualStyleBackColor = true;
+            this.button_corazon.Click += new System.EventHandler(this.button_corazon_Click);
             // 
             // button_diafragma
             // 
