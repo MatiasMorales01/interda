@@ -17,7 +17,7 @@ namespace interda.vistas
         public torax_anatomiaFetal()
         {
             InitializeComponent();
-            DataTable datos = miConector.leer("select * from Formato_columna_vertebral");
+            DataTable datos = miConector.leer("select * from Formato_torax");
             torax.DataSource = datos;
 
             torax.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
