@@ -107,6 +107,12 @@
     <Compile Include="vistas\anatomia_fetal.Designer.cs">
       <DependentUpon>anatomia_fetal.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\cabeza_anatomiaFetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\cabeza_anatomiaFetal.Designer.cs">
+      <DependentUpon>cabeza_anatomiaFetal.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\cerebro_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </Compile>
     <EmbeddedResource Include="vistas\anatomia_fetal.resx">
       <DependentUpon>anatomia_fetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\cabeza_anatomiaFetal.resx">
+      <DependentUpon>cabeza_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\cerebro_anatomiaFetal.resx">
       <DependentUpon>cerebro_anatomiaFetal.cs</DependentUpon>

@@ -76,6 +76,7 @@
             this.button_cabeza.TabIndex = 2;
             this.button_cabeza.Text = "Cabeza";
             this.button_cabeza.UseVisualStyleBackColor = true;
+            this.button_cabeza.Click += new System.EventHandler(this.button_cabeza_Click);
             // 
             // button_cara
             // 

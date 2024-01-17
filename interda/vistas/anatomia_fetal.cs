@@ -30,5 +30,13 @@ namespace interda.vistas
             ventana.Show();
             //this.Hide();
         }
+
+        private void button_cabeza_Click(object sender, EventArgs e)
+        {
+            cabeza_anatomiaFetal ventana = new cabeza_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+
+        }
     }
 }
