@@ -35,5 +35,10 @@ namespace interda.vistas
         {
 
         }
+
+        private void ecografistas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,6 +64,7 @@
             this.Controls.Add(this.label1);
             this.Name = "cerebro_anatomiaFetal";
             this.Text = "cerebro_anatomiaFetal";
+            this.Load += new System.EventHandler(this.cerebro_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cerebro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,6 +1,6 @@
 ﻿namespace interda.vistas
 {
-    partial class ecografistas
+    partial class codigoexamen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,43 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.eco = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.eco)).BeginInit();
+            this.exam = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.exam)).BeginInit();
             this.SuspendLayout();
-            // 
-            // eco
-            // 
-            this.eco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.eco.Location = new System.Drawing.Point(42, 89);
-            this.eco.Name = "eco";
-            this.eco.RowHeadersWidth = 51;
-            this.eco.RowTemplate.Height = 24;
-            this.eco.Size = new System.Drawing.Size(943, 417);
-            this.eco.TabIndex = 0;
-            this.eco.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.eco_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(37, 29);
+            this.label1.Location = new System.Drawing.Point(110, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ecografistas";
+            this.label1.Size = new System.Drawing.Size(231, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Codigo del examen";
             // 
-            // ecografistas
+            // exam
+            // 
+            this.exam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.exam.Location = new System.Drawing.Point(115, 96);
+            this.exam.Name = "exam";
+            this.exam.RowHeadersWidth = 51;
+            this.exam.RowTemplate.Height = 24;
+            this.exam.Size = new System.Drawing.Size(679, 234);
+            this.exam.TabIndex = 1;
+            // 
+            // codigoexamen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 537);
+            this.ClientSize = new System.Drawing.Size(1028, 538);
+            this.Controls.Add(this.exam);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.eco);
-            this.Name = "ecografistas";
-            this.Text = "ecografistas";
-            this.Load += new System.EventHandler(this.ecografistas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.eco)).EndInit();
+            this.Name = "codigoexamen";
+            this.Text = "codigoexamen";
+            this.Load += new System.EventHandler(this.codigoexamen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.exam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,7 +71,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView eco;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView exam;
     }
 }

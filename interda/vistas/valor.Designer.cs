@@ -1,6 +1,6 @@
 ﻿namespace interda.vistas
 {
-    partial class ecografistas
+    partial class valor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,43 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.eco = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.eco)).BeginInit();
+            this.val = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.val)).BeginInit();
             this.SuspendLayout();
-            // 
-            // eco
-            // 
-            this.eco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.eco.Location = new System.Drawing.Point(42, 89);
-            this.eco.Name = "eco";
-            this.eco.RowHeadersWidth = 51;
-            this.eco.RowTemplate.Height = 24;
-            this.eco.Size = new System.Drawing.Size(943, 417);
-            this.eco.TabIndex = 0;
-            this.eco.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.eco_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(37, 29);
+            this.label1.Location = new System.Drawing.Point(68, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ecografistas";
+            this.label1.Size = new System.Drawing.Size(169, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Valor examen";
             // 
-            // ecografistas
+            // val
+            // 
+            this.val.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.val.Location = new System.Drawing.Point(73, 105);
+            this.val.Name = "val";
+            this.val.RowHeadersWidth = 51;
+            this.val.RowTemplate.Height = 24;
+            this.val.Size = new System.Drawing.Size(861, 381);
+            this.val.TabIndex = 1;
+            // 
+            // valor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 537);
+            this.ClientSize = new System.Drawing.Size(1029, 532);
+            this.Controls.Add(this.val);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.eco);
-            this.Name = "ecografistas";
-            this.Text = "ecografistas";
-            this.Load += new System.EventHandler(this.ecografistas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.eco)).EndInit();
+            this.Name = "valor";
+            this.Text = "valor";
+            this.Load += new System.EventHandler(this.valor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.val)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,7 +71,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView eco;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView val;
     }
 }
