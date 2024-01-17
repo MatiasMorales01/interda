@@ -35,6 +35,8 @@
             // 
             // torax
             // 
+            this.torax.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.torax.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.torax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.torax.Location = new System.Drawing.Point(12, 49);
             this.torax.Name = "torax";

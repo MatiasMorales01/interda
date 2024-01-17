@@ -35,6 +35,8 @@
             // 
             // corazon
             // 
+            this.corazon.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.corazon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.corazon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.corazon.Location = new System.Drawing.Point(12, 49);
             this.corazon.Name = "corazon";

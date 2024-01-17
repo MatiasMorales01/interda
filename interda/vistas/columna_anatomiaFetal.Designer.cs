@@ -35,6 +35,8 @@
             // 
             // columna
             // 
+            this.columna.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.columna.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.columna.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.columna.Location = new System.Drawing.Point(12, 49);
             this.columna.Name = "columna";

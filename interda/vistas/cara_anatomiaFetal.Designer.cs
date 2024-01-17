@@ -35,6 +35,8 @@
             // 
             // cara
             // 
+            this.cara.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.cara.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cara.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cara.Location = new System.Drawing.Point(12, 49);
             this.cara.Name = "cara";

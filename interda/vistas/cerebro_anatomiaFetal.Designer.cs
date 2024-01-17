@@ -46,6 +46,8 @@
             // 
             // cerebro
             // 
+            this.cerebro.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.cerebro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cerebro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cerebro.Location = new System.Drawing.Point(12, 54);
             this.cerebro.Name = "cerebro";

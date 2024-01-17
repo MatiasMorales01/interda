@@ -46,6 +46,8 @@
             // 
             // cabeza
             // 
+            this.cabeza.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.cabeza.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cabeza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cabeza.Location = new System.Drawing.Point(12, 54);
             this.cabeza.Name = "cabeza";
