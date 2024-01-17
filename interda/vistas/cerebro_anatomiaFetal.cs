@@ -40,5 +40,10 @@ namespace interda.vistas
         {
            
         }
+
+        private void cerebro_anatomiaFetal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

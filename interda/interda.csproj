@@ -125,6 +125,12 @@
     <Compile Include="vistas\cerebro_anatomiaFetal.Designer.cs">
       <DependentUpon>cerebro_anatomiaFetal.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\codigoexamen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\codigoexamen.Designer.cs">
+      <DependentUpon>codigoexamen.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\columna_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,12 @@
     <Compile Include="vistas\tablaobstetrica.Designer.cs">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\valor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\valor.Designer.cs">
+      <DependentUpon>valor.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\torax_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +218,9 @@
     <EmbeddedResource Include="vistas\cerebro_anatomiaFetal.resx">
       <DependentUpon>cerebro_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\codigoexamen.resx">
+      <DependentUpon>codigoexamen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\columna_anatomiaFetal.resx">
       <DependentUpon>columna_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablaobstetrica.resx">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\valor.resx">
+      <DependentUpon>valor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\torax_anatomiaFetal.resx">
       <DependentUpon>torax_anatomiaFetal.cs</DependentUpon>

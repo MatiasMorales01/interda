@@ -33,5 +33,17 @@ namespace interda.vistas
             mhz mhz = new mhz();    
             mhz.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            codigoexamen codigoexamen = new codigoexamen(); 
+            codigoexamen.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            valor valor = new valor();
+            valor.Show();
+        }
     }
 }
