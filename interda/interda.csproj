@@ -191,10 +191,10 @@
     <Compile Include="vistas\idreferencias\idreferencias.Designer.cs">
       <DependentUpon>idreferencias.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\informeobstetrico.cs">
+    <Compile Include="vistas\informe obstetrico\informeobstetrico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\informeobstetrico.Designer.cs">
+    <Compile Include="vistas\informe obstetrico\informeobstetrico.Designer.cs">
       <DependentUpon>informeobstetrico.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\idreferencias\isapre.cs">
@@ -329,7 +329,7 @@
     <EmbeddedResource Include="vistas\idreferencias\idreferencias.resx">
       <DependentUpon>idreferencias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\informeobstetrico.resx">
+    <EmbeddedResource Include="vistas\informe obstetrico\informeobstetrico.resx">
       <DependentUpon>informeobstetrico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\isapre.resx">
