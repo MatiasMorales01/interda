@@ -191,6 +191,12 @@
     <Compile Include="vistas\tablaobstetrica.Designer.cs">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\tratante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tratante.Designer.cs">
+      <DependentUpon>tratante.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\valor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablaobstetrica.resx">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tratante.resx">
+      <DependentUpon>tratante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\valor.resx">
       <DependentUpon>valor.cs</DependentUpon>

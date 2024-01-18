@@ -51,5 +51,11 @@ namespace interda.vistas
             ecografo ecografo = new ecografo();
             ecografo.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tratante tratante = new tratante();
+            tratante.Show();
+        }
     }
 }
