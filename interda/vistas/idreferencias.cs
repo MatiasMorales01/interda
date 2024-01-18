@@ -63,5 +63,11 @@ namespace interda.vistas
             isapre isapre = new isapre();
             isapre.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            anexo anexo = new anexo();
+            anexo.Show();
+        }
     }
 }
