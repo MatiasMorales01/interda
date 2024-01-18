@@ -41,6 +41,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -109,7 +110,6 @@
             this.comboBox1_tipo_examen = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -293,6 +293,13 @@
             this.panel2.Size = new System.Drawing.Size(1264, 496);
             this.panel2.TabIndex = 33;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(620, 31);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(303, 22);
+            this.dateTimePicker1.TabIndex = 85;
             // 
             // pictureBox1
             // 
@@ -860,6 +867,7 @@
             this.comboBox1_tipo_examen.Name = "comboBox1_tipo_examen";
             this.comboBox1_tipo_examen.Size = new System.Drawing.Size(303, 24);
             this.comboBox1_tipo_examen.TabIndex = 28;
+            this.comboBox1_tipo_examen.SelectedIndexChanged += new System.EventHandler(this.comboBox1_tipo_examen_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -876,13 +884,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1247, 93);
             this.panel5.TabIndex = 34;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(620, 31);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(303, 22);
-            this.dateTimePicker1.TabIndex = 85;
             // 
             // nuevo_informe
             // 

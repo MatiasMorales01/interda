@@ -24,6 +24,7 @@ namespace interda.vistas
             comboBox1_ecografo.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1_codigo.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3_prevision.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1_tipo_examen.DropDownStyle = ComboBoxStyle.DropDownList;
             cargarDatoscombobox();
         }
         private void cargarDatoscombobox()
@@ -43,7 +44,6 @@ namespace interda.vistas
             comboBox1_ecografo.DisplayMember = "Ecógrafo";
             comboBox1_ecografo.ValueMember = "Ecógrafo";
 
-
             DataTable datos4 = conector.leer("SELECT CONCAT(`Código del examen`, ' | ', detalle) AS codigoexamen FROM codex");
             comboBox1_codigo.DataSource = datos4;
             comboBox1_codigo.DisplayMember = "codigoexamen";
@@ -54,6 +54,10 @@ namespace interda.vistas
             comboBox3_prevision.DisplayMember = "Isapre";
             comboBox3_prevision.ValueMember = "Isapre";
 
+            DataTable datos6 = conector.leer("select * from Tipo_de_examen");
+            comboBox1_tipo_examen.DataSource = datos6;
+            comboBox1_tipo_examen.DisplayMember = "Tipo de exámen";
+            comboBox1_tipo_examen.ValueMember = "Tipo de exámen";
 
         }
 
@@ -140,6 +144,11 @@ namespace interda.vistas
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_tipo_examen_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
