@@ -38,11 +38,11 @@
             this.cara.BackgroundColor = System.Drawing.SystemColors.MenuBar;
             this.cara.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cara.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cara.Location = new System.Drawing.Point(12, 49);
+            this.cara.Location = new System.Drawing.Point(12, 85);
             this.cara.Name = "cara";
             this.cara.RowHeadersWidth = 51;
             this.cara.RowTemplate.Height = 24;
-            this.cara.Size = new System.Drawing.Size(776, 384);
+            this.cara.Size = new System.Drawing.Size(776, 348);
             this.cara.TabIndex = 5;
             this.cara.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cara_CellContentClick);
             // 

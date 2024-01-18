@@ -49,11 +49,11 @@
             this.cabeza.BackgroundColor = System.Drawing.SystemColors.MenuBar;
             this.cabeza.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cabeza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cabeza.Location = new System.Drawing.Point(12, 54);
+            this.cabeza.Location = new System.Drawing.Point(12, 85);
             this.cabeza.Name = "cabeza";
             this.cabeza.RowHeadersWidth = 51;
             this.cabeza.RowTemplate.Height = 24;
-            this.cabeza.Size = new System.Drawing.Size(776, 384);
+            this.cabeza.Size = new System.Drawing.Size(776, 353);
             this.cabeza.TabIndex = 4;
             this.cabeza.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cerebro_CellContentClick);
             // 

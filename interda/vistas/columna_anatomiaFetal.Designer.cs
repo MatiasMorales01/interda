@@ -38,11 +38,11 @@
             this.columna.BackgroundColor = System.Drawing.SystemColors.MenuBar;
             this.columna.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.columna.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.columna.Location = new System.Drawing.Point(12, 49);
+            this.columna.Location = new System.Drawing.Point(12, 80);
             this.columna.Name = "columna";
             this.columna.RowHeadersWidth = 51;
             this.columna.RowTemplate.Height = 24;
-            this.columna.Size = new System.Drawing.Size(776, 384);
+            this.columna.Size = new System.Drawing.Size(776, 353);
             this.columna.TabIndex = 5;
             this.columna.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cerebro_CellContentClick);
             // 

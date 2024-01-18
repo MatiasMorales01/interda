@@ -38,11 +38,11 @@
             this.torax.BackgroundColor = System.Drawing.SystemColors.MenuBar;
             this.torax.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.torax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.torax.Location = new System.Drawing.Point(12, 49);
+            this.torax.Location = new System.Drawing.Point(12, 79);
             this.torax.Name = "torax";
             this.torax.RowHeadersWidth = 51;
             this.torax.RowTemplate.Height = 24;
-            this.torax.Size = new System.Drawing.Size(776, 384);
+            this.torax.Size = new System.Drawing.Size(776, 354);
             this.torax.TabIndex = 7;
             this.torax.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.columna_CellContentClick);
             // 

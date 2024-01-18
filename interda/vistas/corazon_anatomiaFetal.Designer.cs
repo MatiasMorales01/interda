@@ -38,11 +38,11 @@
             this.corazon.BackgroundColor = System.Drawing.SystemColors.MenuBar;
             this.corazon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.corazon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.corazon.Location = new System.Drawing.Point(12, 49);
+            this.corazon.Location = new System.Drawing.Point(12, 75);
             this.corazon.Name = "corazon";
             this.corazon.RowHeadersWidth = 51;
             this.corazon.RowTemplate.Height = 24;
-            this.corazon.Size = new System.Drawing.Size(776, 384);
+            this.corazon.Size = new System.Drawing.Size(776, 358);
             this.corazon.TabIndex = 9;
             this.corazon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.corazon_CellContentClick);
             // 
