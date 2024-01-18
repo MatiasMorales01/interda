@@ -57,5 +57,11 @@ namespace interda.vistas
             tratante tratante = new tratante();
             tratante.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            isapre isapre = new isapre();
+            isapre.Show();
+        }
     }
 }

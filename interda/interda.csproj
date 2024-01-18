@@ -167,6 +167,12 @@
     <Compile Include="vistas\informeobstetrico.Designer.cs">
       <DependentUpon>informeobstetrico.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\isapre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\isapre.Designer.cs">
+      <DependentUpon>isapre.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\mhz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\informeobstetrico.resx">
       <DependentUpon>informeobstetrico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\isapre.resx">
+      <DependentUpon>isapre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\mhz.resx">
       <DependentUpon>mhz.cs</DependentUpon>
