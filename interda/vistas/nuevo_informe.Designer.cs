@@ -41,6 +41,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -104,16 +105,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2_digito = new System.Windows.Forms.TextBox();
             this.textBox1_CI = new System.Windows.Forms.TextBox();
-            this.comboBox2_fecha = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1_tipo_examen = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -228,6 +228,7 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.textBox12);
             this.panel2.Controls.Add(this.label39);
@@ -284,7 +285,6 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBox2_digito);
             this.panel2.Controls.Add(this.textBox1_CI);
-            this.panel2.Controls.Add(this.comboBox2_fecha);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.comboBox1_tipo_examen);
             this.panel2.Controls.Add(this.label1);
@@ -293,6 +293,15 @@
             this.panel2.Size = new System.Drawing.Size(1264, 496);
             this.panel2.TabIndex = 33;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1038, 475);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 134);
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
             // 
             // textBox12
             // 
@@ -835,14 +844,6 @@
             this.textBox1_CI.Size = new System.Drawing.Size(100, 22);
             this.textBox1_CI.TabIndex = 31;
             // 
-            // comboBox2_fecha
-            // 
-            this.comboBox2_fecha.FormattingEnabled = true;
-            this.comboBox2_fecha.Location = new System.Drawing.Point(620, 28);
-            this.comboBox2_fecha.Name = "comboBox2_fecha";
-            this.comboBox2_fecha.Size = new System.Drawing.Size(303, 24);
-            this.comboBox2_fecha.TabIndex = 30;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -876,14 +877,12 @@
             this.panel5.Size = new System.Drawing.Size(1247, 93);
             this.panel5.TabIndex = 34;
             // 
-            // pictureBox1
+            // dateTimePicker1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1038, 475);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 134);
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(620, 31);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(303, 22);
+            this.dateTimePicker1.TabIndex = 85;
             // 
             // nuevo_informe
             // 
@@ -901,9 +900,9 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -948,7 +947,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2_digito;
         private System.Windows.Forms.TextBox textBox1_CI;
-        private System.Windows.Forms.ComboBox comboBox2_fecha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1_tipo_examen;
         private System.Windows.Forms.Label label1;
@@ -991,5 +989,6 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

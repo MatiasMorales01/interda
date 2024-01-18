@@ -1,4 +1,5 @@
-﻿using System;
+﻿using interda.controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,16 +8,55 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace interda.vistas
 {
     public partial class nuevo_informe : Form
     {
+        conector conector= new conector();
         public nuevo_informe()
         {
             InitializeComponent();
             this.FormClosing += nuevo_informe_close;
+            comboBox2_procedencia.DropDownStyle= ComboBoxStyle.DropDownList;
+            comboBox1_ecografista.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1_ecografo.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1_codigo.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox3_prevision.DropDownStyle = ComboBoxStyle.DropDownList;
+            cargarDatoscombobox();
         }
+        private void cargarDatoscombobox()
+        {
+            DataTable datos = conector.leer("select * from tratante");
+            comboBox2_procedencia.DataSource = datos;
+            comboBox2_procedencia.DisplayMember = "Tratante";
+            comboBox2_procedencia.ValueMember = "Tratante";
+
+            DataTable datos2 = conector.leer("select * from ecografista");
+            comboBox1_ecografista.DataSource = datos2;
+            comboBox1_ecografista.DisplayMember = "Ecografista";
+            comboBox1_ecografista.ValueMember = "Ecografista";
+
+            DataTable datos3 = conector.leer("select * from ecografo");
+            comboBox1_ecografo.DataSource = datos3;
+            comboBox1_ecografo.DisplayMember = "Ecógrafo";
+            comboBox1_ecografo.ValueMember = "Ecógrafo";
+
+
+            DataTable datos4 = conector.leer("SELECT CONCAT(`Código del examen`, ' | ', detalle) AS codigoexamen FROM codex");
+            comboBox1_codigo.DataSource = datos4;
+            comboBox1_codigo.DisplayMember = "codigoexamen";
+            comboBox1_codigo.ValueMember = "codigoexamen";
+
+            DataTable datos5 = conector.leer("select * from isapre");
+            comboBox3_prevision.DataSource = datos5;
+            comboBox3_prevision.DisplayMember = "Isapre";
+            comboBox3_prevision.ValueMember = "Isapre";
+
+
+        }
+
 
         private void nuevo_informe_close(object sender, FormClosingEventArgs e)
         {
