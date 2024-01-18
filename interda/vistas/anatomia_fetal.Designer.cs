@@ -174,6 +174,7 @@
             this.button_vejigaFetal.TabIndex = 12;
             this.button_vejigaFetal.Text = "Vejiga fetal";
             this.button_vejigaFetal.UseVisualStyleBackColor = true;
+            this.button_vejigaFetal.Click += new System.EventHandler(this.button_vejigaFetal_Click);
             // 
             // button_cordonUmbilical
             // 

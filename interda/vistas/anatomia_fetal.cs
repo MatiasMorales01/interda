@@ -87,5 +87,12 @@ namespace interda.vistas
             ventana.Show();
             //this.Hide();
         }
+
+        private void button_vejigaFetal_Click(object sender, EventArgs e)
+        {
+            vejiga_anatomiaFetal ventana = new vejiga_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
     }
 }
