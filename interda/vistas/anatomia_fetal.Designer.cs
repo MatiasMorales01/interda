@@ -154,6 +154,7 @@
             this.button_riñones.TabIndex = 10;
             this.button_riñones.Text = "Riñones";
             this.button_riñones.UseVisualStyleBackColor = true;
+            this.button_riñones.Click += new System.EventHandler(this.button_riñones_Click);
             // 
             // button_paredAbdominal
             // 

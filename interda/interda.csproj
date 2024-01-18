@@ -197,6 +197,12 @@
     <Compile Include="vistas\piedepag.Designer.cs">
       <DependentUpon>piedepag.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\rinones_anatomiaFetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\rinones_anatomiaFetal.Designer.cs">
+      <DependentUpon>rinones_anatomiaFetal.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\tablaobstetrica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\piedepag.resx">
       <DependentUpon>piedepag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\rinones_anatomiaFetal.resx">
+      <DependentUpon>rinones_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablaobstetrica.resx">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>

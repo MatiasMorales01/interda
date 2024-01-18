@@ -73,5 +73,12 @@ namespace interda.vistas
             ventana.Show();
             //this.Hide();
         }
+
+        private void button_riñones_Click(object sender, EventArgs e)
+        {
+            rinones_anatomiaFetal ventana = new rinones_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
     }
 }
