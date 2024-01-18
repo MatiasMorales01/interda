@@ -16,5 +16,11 @@ namespace interda.vistas
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            abdomen abdomen = new abdomen();    
+            abdomen.Show();
+        }
     }
 }
