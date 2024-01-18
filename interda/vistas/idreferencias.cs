@@ -69,5 +69,11 @@ namespace interda.vistas
             anexo anexo = new anexo();
             anexo.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            douglas douglas = new douglas();
+            douglas.Show();
+        }
     }
 }
