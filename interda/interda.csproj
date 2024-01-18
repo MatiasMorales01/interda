@@ -197,6 +197,12 @@
     <Compile Include="vistas\tablaobstetrica.Designer.cs">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\tracto_anatomiaFetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tracto_anatomiaFetal.Designer.cs">
+      <DependentUpon>tracto_anatomiaFetal.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\tratante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablaobstetrica.resx">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tracto_anatomiaFetal.resx">
+      <DependentUpon>tracto_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tratante.resx">
       <DependentUpon>tratante.cs</DependentUpon>

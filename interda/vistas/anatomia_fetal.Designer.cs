@@ -144,6 +144,7 @@
             this.button_Tgastrointestinal.TabIndex = 9;
             this.button_Tgastrointestinal.Text = "Tracto Gastroinstestinal";
             this.button_Tgastrointestinal.UseVisualStyleBackColor = true;
+            this.button_Tgastrointestinal.Click += new System.EventHandler(this.button_Tgastrointestinal_Click);
             // 
             // button_riñones
             // 

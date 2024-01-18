@@ -66,5 +66,12 @@ namespace interda.vistas
             ventana.Show();
             //this.Hide();
         }
+
+        private void button_Tgastrointestinal_Click(object sender, EventArgs e)
+        {
+            tracto_anatomiaFetal ventana = new tracto_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
     }
 }
