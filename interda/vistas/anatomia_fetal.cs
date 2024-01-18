@@ -80,5 +80,12 @@ namespace interda.vistas
             ventana.Show();
             //this.Hide();
         }
+
+        private void button_paredAbdominal_Click(object sender, EventArgs e)
+        {
+            pared_anatomiaFetal ventana = new pared_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
     }
 }

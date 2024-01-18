@@ -164,6 +164,7 @@
             this.button_paredAbdominal.TabIndex = 11;
             this.button_paredAbdominal.Text = "Pared abdominal";
             this.button_paredAbdominal.UseVisualStyleBackColor = true;
+            this.button_paredAbdominal.Click += new System.EventHandler(this.button_paredAbdominal_Click);
             // 
             // button_vejigaFetal
             // 
