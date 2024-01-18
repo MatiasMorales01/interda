@@ -1,4 +1,5 @@
-﻿using System;
+﻿using interda.vistas.anatomia_fetal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace interda.vistas
 {
-    public partial class anatomia_fetal : Form
+    public partial class anatomia_Fetal : Form
     {
-        public anatomia_fetal()
+        public anatomia_Fetal()
         {
             InitializeComponent();
         }
@@ -91,6 +92,20 @@ namespace interda.vistas
         private void button_vejigaFetal_Click(object sender, EventArgs e)
         {
             vejiga_anatomiaFetal ventana = new vejiga_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
+
+        private void button_cordonUmbilical_Click(object sender, EventArgs e)
+        {
+            cordon_anatomiaFetal ventana = new cordon_anatomiaFetal();
+            ventana.Show();
+            //this.Hide();
+        }
+
+        private void button_extremidades_Click(object sender, EventArgs e)
+        {
+            extremidades_anatomiaFetal ventana = new extremidades_anatomiaFetal();
             ventana.Show();
             //this.Hide();
         }

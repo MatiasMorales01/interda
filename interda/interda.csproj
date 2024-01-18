@@ -101,17 +101,23 @@
     <Compile Include="controlador\conector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\anatomia_Fetal\extremidades_anatomiaFetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\anatomia_Fetal\extremidades_anatomiaFetal.Designer.cs">
+      <DependentUpon>extremidades_anatomiaFetal.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\tablas obstetricas\abdomen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="vistas\tablas obstetricas\abdomen.Designer.cs">
       <DependentUpon>abdomen.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\anatomia_fetal.cs">
+    <Compile Include="vistas\anatomia_Fetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\anatomia_fetal.Designer.cs">
-      <DependentUpon>anatomia_fetal.cs</DependentUpon>
+    <Compile Include="vistas\anatomia_Fetal.Designer.cs">
+      <DependentUpon>anatomia_Fetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\idreferencias\anexo.cs">
       <SubType>Form</SubType>
@@ -119,22 +125,22 @@
     <Compile Include="vistas\idreferencias\anexo.Designer.cs">
       <DependentUpon>anexo.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\cabeza_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\cabeza_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\cabeza_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\cabeza_anatomiaFetal.Designer.cs">
       <DependentUpon>cabeza_anatomiaFetal.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\cara_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\cara_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\cara_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\cara_anatomiaFetal.Designer.cs">
       <DependentUpon>cara_anatomiaFetal.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\cerebro_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\cerebro_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\cerebro_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\cerebro_anatomiaFetal.Designer.cs">
       <DependentUpon>cerebro_anatomiaFetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\idreferencias\codigoexamen.cs">
@@ -143,22 +149,22 @@
     <Compile Include="vistas\idreferencias\codigoexamen.Designer.cs">
       <DependentUpon>codigoexamen.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\columna_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\columna_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\columna_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\columna_anatomiaFetal.Designer.cs">
       <DependentUpon>columna_anatomiaFetal.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\corazon_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\corazon_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\corazon_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\corazon_anatomiaFetal.Designer.cs">
       <DependentUpon>corazon_anatomiaFetal.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\cordon_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\cordon_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\cordon_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\cordon_anatomiaFetal.Designer.cs">
       <DependentUpon>cordon_anatomiaFetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\idreferencias\douglas.cs">
@@ -209,10 +215,10 @@
     <Compile Include="vistas\nuevo_informe.Designer.cs">
       <DependentUpon>nuevo_informe.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\pared_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\pared_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\pared_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\pared_anatomiaFetal.Designer.cs">
       <DependentUpon>pared_anatomiaFetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\piedepag.cs">
@@ -221,10 +227,10 @@
     <Compile Include="vistas\piedepag.Designer.cs">
       <DependentUpon>piedepag.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\rinones_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\rinones_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\rinones_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\rinones_anatomiaFetal.Designer.cs">
       <DependentUpon>rinones_anatomiaFetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\tablas obstetricas\tablaobstetrica.cs">
@@ -233,10 +239,10 @@
     <Compile Include="vistas\tablas obstetricas\tablaobstetrica.Designer.cs">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\tracto_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\tracto_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\tracto_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\tracto_anatomiaFetal.Designer.cs">
       <DependentUpon>tracto_anatomiaFetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\idreferencias\tratante.cs">
@@ -251,16 +257,16 @@
     <Compile Include="vistas\idreferencias\valor.Designer.cs">
       <DependentUpon>valor.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\torax_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\torax_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\torax_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\torax_anatomiaFetal.Designer.cs">
       <DependentUpon>torax_anatomiaFetal.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\vejiga_anatomiaFetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\vejiga_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_fetal\vejiga_anatomiaFetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\vejiga_anatomiaFetal.Designer.cs">
       <DependentUpon>vejiga_anatomiaFetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\vista prinicpal\vistaprincipal.cs">
@@ -278,34 +284,37 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vistas\anatomia_Fetal\extremidades_anatomiaFetal.resx">
+      <DependentUpon>extremidades_anatomiaFetal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\abdomen.resx">
       <DependentUpon>abdomen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\anatomia_fetal.resx">
-      <DependentUpon>anatomia_fetal.cs</DependentUpon>
+    <EmbeddedResource Include="vistas\anatomia_Fetal.resx">
+      <DependentUpon>anatomia_Fetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\anexo.resx">
       <DependentUpon>anexo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\cabeza_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\cabeza_anatomiaFetal.resx">
       <DependentUpon>cabeza_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\cara_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\cara_anatomiaFetal.resx">
       <DependentUpon>cara_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\cerebro_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\cerebro_anatomiaFetal.resx">
       <DependentUpon>cerebro_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\codigoexamen.resx">
       <DependentUpon>codigoexamen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\columna_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\columna_anatomiaFetal.resx">
       <DependentUpon>columna_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\corazon_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\corazon_anatomiaFetal.resx">
       <DependentUpon>corazon_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\cordon_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\cordon_anatomiaFetal.resx">
       <DependentUpon>cordon_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\douglas.resx">
@@ -332,19 +341,19 @@
     <EmbeddedResource Include="vistas\nuevo_informe.resx">
       <DependentUpon>nuevo_informe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\pared_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\pared_anatomiaFetal.resx">
       <DependentUpon>pared_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\piedepag.resx">
       <DependentUpon>piedepag.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\rinones_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\rinones_anatomiaFetal.resx">
       <DependentUpon>rinones_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\tablaobstetrica.resx">
       <DependentUpon>tablaobstetrica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\tracto_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\tracto_anatomiaFetal.resx">
       <DependentUpon>tracto_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\tratante.resx">
@@ -353,10 +362,10 @@
     <EmbeddedResource Include="vistas\idreferencias\valor.resx">
       <DependentUpon>valor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\torax_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\torax_anatomiaFetal.resx">
       <DependentUpon>torax_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_fetal\vejiga_anatomiaFetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\vejiga_anatomiaFetal.resx">
       <DependentUpon>vejiga_anatomiaFetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\vista prinicpal\vistaprincipal.resx">

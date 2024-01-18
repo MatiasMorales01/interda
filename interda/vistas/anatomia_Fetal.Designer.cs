@@ -1,6 +1,6 @@
 ﻿namespace interda.vistas
 {
-    partial class anatomia_fetal
+    partial class anatomia_Fetal
     {
         /// <summary>
         /// Required designer variable.
@@ -184,6 +184,7 @@
             this.button_cordonUmbilical.TabIndex = 13;
             this.button_cordonUmbilical.Text = "Cordón umbilical";
             this.button_cordonUmbilical.UseVisualStyleBackColor = true;
+            this.button_cordonUmbilical.Click += new System.EventHandler(this.button_cordonUmbilical_Click);
             // 
             // button_extremidades
             // 
@@ -193,6 +194,7 @@
             this.button_extremidades.TabIndex = 14;
             this.button_extremidades.Text = "Extremidades";
             this.button_extremidades.UseVisualStyleBackColor = true;
+            this.button_extremidades.Click += new System.EventHandler(this.button_extremidades_Click);
             // 
             // button1
             // 
