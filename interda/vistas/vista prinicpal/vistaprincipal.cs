@@ -110,5 +110,11 @@ namespace interda.vistas
             }
             
         }
+
+        private void btnconclusionanatomia_Click(object sender, EventArgs e)
+        {
+            pruebas pruebas = new pruebas();   
+            pruebas.Show();
+        }
     }
 }

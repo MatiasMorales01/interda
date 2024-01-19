@@ -258,6 +258,7 @@
             this.btnconclusionanatomia.TabIndex = 20;
             this.btnconclusionanatomia.Text = "Conclusion anatomia";
             this.btnconclusionanatomia.UseVisualStyleBackColor = true;
+            this.btnconclusionanatomia.Click += new System.EventHandler(this.btnconclusionanatomia_Click);
             // 
             // btnidreferencias
             // 
