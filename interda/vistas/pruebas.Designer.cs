@@ -64,6 +64,7 @@
             this.textBoxci.Name = "textBoxci";
             this.textBoxci.Size = new System.Drawing.Size(345, 22);
             this.textBoxci.TabIndex = 2;
+            this.textBoxci.TextChanged += new System.EventHandler(this.textBoxci_TextChanged);
             // 
             // textBoxapellidos
             // 

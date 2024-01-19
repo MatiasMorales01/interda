@@ -37,8 +37,14 @@ namespace interda.vistas
 
         private void buscarci_Click(object sender, EventArgs e)
         {
-            string textoci= textBoxci.Text;
-            DataTable datos = conector.leer("select Fecha, CI, Nombres, Apellidos,`Tipo de exámen`,FUR,Ecografista,Correlativo from buscador where CI='"+textoci+"'");
+            string textoci = textBoxci.Text;
+
+            // Verificar si el campo de búsqueda está vacío o nulo
+            string consultaSQL = string.IsNullOrEmpty(textoci)
+                ? "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador"
+                : "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador where CI='" + textoci + "'";
+
+            DataTable datos = conector.leer(consultaSQL);
             tablabuscador.DataSource = datos;
 
             tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -57,6 +63,11 @@ namespace interda.vistas
             tablabuscador.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             tablabuscador.AutoResizeColumns();
             tablabuscador.AutoResizeRows();
+        }
+
+        private void textBoxci_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
