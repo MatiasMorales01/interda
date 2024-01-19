@@ -8,38 +8,55 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace interda.vistas
 {
     public partial class pruebas : Form
     {
-        private conector Conector = new conector(); 
-        private TableLayoutPanel tableLayoutPanel1;
+        private conector conector = new conector();
+        
+
         public pruebas()
         {
             InitializeComponent();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            tableLayoutPanel1.Dock = DockStyle.Fill;
-            this.Controls.Add(tableLayoutPanel1);
-            DataTable dataTable = Conector.leer("SELECT uwu FROM pruebas");
+            DataTable datos = conector.leer("select Fecha, CI, Nombres, Apellidos,`Tipo de exámen`,FUR,Ecografista,Correlativo from buscador");
+            tablabuscador.DataSource = datos;
 
-            foreach (DataRow row in dataTable.Rows)
-            {
-                string dato = row["uwu"].ToString();
-                AgregarTextBox(dato);
-            }
-
+            tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            tablabuscador.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            tablabuscador.AutoResizeColumns();
+            tablabuscador.AutoResizeRows();
         }
-        private void AgregarTextBox(string texto)
-        {
-            TextBox textBox = new TextBox();
-            textBox.Text = texto;
-            tableLayoutPanel1.Controls.Add(textBox);
-        }
+    
 
         private void pruebas_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buscarci_Click(object sender, EventArgs e)
+        {
+            string textoci= textBoxci.Text;
+            DataTable datos = conector.leer("select Fecha, CI, Nombres, Apellidos,`Tipo de exámen`,FUR,Ecografista,Correlativo from buscador where CI='"+textoci+"'");
+            tablabuscador.DataSource = datos;
+
+            tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            tablabuscador.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            tablabuscador.AutoResizeColumns();
+            tablabuscador.AutoResizeRows();
+        }
+
+        private void buscarapellidos_Click(object sender, EventArgs e)
+        {
+            string textoap = textBoxapellidos.Text;
+            DataTable datos = conector.leer("SELECT Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo FROM buscador WHERE Apellidos LIKE '%" + textoap + "%'");
+            tablabuscador.DataSource = datos;
+
+            tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            tablabuscador.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            tablabuscador.AutoResizeColumns();
+            tablabuscador.AutoResizeRows();
         }
     }
 }
