@@ -115,8 +115,8 @@ namespace interda.vistas
 
         private void btnconclusionanatomia_Click(object sender, EventArgs e)
         {
-            //pruebas pruebas = new pruebas();   
-            //pruebas.Show();
+            conclusion_anatomia conclusionA = new conclusion_anatomia();
+            conclusionA.Show();
         }
 
         private void btnbuscarinf_Click(object sender, EventArgs e)
