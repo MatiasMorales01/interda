@@ -95,6 +95,8 @@ namespace interda.vistas
         private void btntablaobstetrica_Click(object sender, EventArgs e)
         {
             tablaobstetrica tablaobstetrica = new tablaobstetrica();
+            tablaobstetrica.StartPosition = FormStartPosition.Manual;
+            tablaobstetrica.Location = new Point(120, 170);
             tablaobstetrica.Show();
         }
 

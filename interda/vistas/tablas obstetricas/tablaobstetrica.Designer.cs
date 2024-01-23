@@ -116,6 +116,7 @@
             this.rnpg.TabIndex = 11;
             this.rnpg.Text = "RN partos gemelares";
             this.rnpg.UseVisualStyleBackColor = true;
+            this.rnpg.Click += new System.EventHandler(this.rnpg_Click);
             // 
             // radio
             // 
@@ -126,6 +127,7 @@
             this.radio.TabIndex = 10;
             this.radio.Text = "Radio";
             this.radio.UseVisualStyleBackColor = true;
+            this.radio.Click += new System.EventHandler(this.radio_Click);
             // 
             // perone
             // 
@@ -136,6 +138,7 @@
             this.perone.TabIndex = 9;
             this.perone.Text = "Peroné";
             this.perone.UseVisualStyleBackColor = true;
+            this.perone.Click += new System.EventHandler(this.perone_Click);
             // 
             // lcn
             // 
@@ -146,6 +149,7 @@
             this.lcn.TabIndex = 8;
             this.lcn.Text = "LCN";
             this.lcn.UseVisualStyleBackColor = true;
+            this.lcn.Click += new System.EventHandler(this.lcn_Click);
             // 
             // humero
             // 
@@ -156,6 +160,7 @@
             this.humero.TabIndex = 7;
             this.humero.Text = "Humero";
             this.humero.UseVisualStyleBackColor = true;
+            this.humero.Click += new System.EventHandler(this.humero_Click);
             // 
             // femur
             // 
@@ -166,6 +171,7 @@
             this.femur.TabIndex = 6;
             this.femur.Text = "Fémur";
             this.femur.UseVisualStyleBackColor = true;
+            this.femur.Click += new System.EventHandler(this.femur_Click);
             // 
             // dfo
             // 
@@ -176,6 +182,7 @@
             this.dfo.TabIndex = 5;
             this.dfo.Text = "DFO";
             this.dfo.UseVisualStyleBackColor = true;
+            this.dfo.Click += new System.EventHandler(this.dfo_Click);
             // 
             // bbp
             // 
@@ -186,6 +193,7 @@
             this.bbp.TabIndex = 4;
             this.bbp.Text = "DBP";
             this.bbp.UseVisualStyleBackColor = true;
+            this.bbp.Click += new System.EventHandler(this.bbp_Click);
             // 
             // cubito
             // 
@@ -196,6 +204,7 @@
             this.cubito.TabIndex = 3;
             this.cubito.Text = "Cúbito";
             this.cubito.UseVisualStyleBackColor = true;
+            this.cubito.Click += new System.EventHandler(this.cubito_Click);
             // 
             // label2
             // 
@@ -216,6 +225,7 @@
             this.cerebelo.TabIndex = 1;
             this.cerebelo.Text = "Cerebelo";
             this.cerebelo.UseVisualStyleBackColor = true;
+            this.cerebelo.Click += new System.EventHandler(this.cerebelo_Click);
             // 
             // abdomen
             // 

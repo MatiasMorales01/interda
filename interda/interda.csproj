@@ -119,6 +119,42 @@
     <Compile Include="vistas\conclusion_anatomia.Designer.cs">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\cerebelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\cerebelo.Designer.cs">
+      <DependentUpon>cerebelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\cubito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\cubito.Designer.cs">
+      <DependentUpon>cubito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\dbp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\dbp.Designer.cs">
+      <DependentUpon>dbp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\dfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\dfo.Designer.cs">
+      <DependentUpon>dfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\femur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\femur.Designer.cs">
+      <DependentUpon>femur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\humero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\humero.Designer.cs">
+      <DependentUpon>humero.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\idreferencias\conclu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +178,30 @@
     </Compile>
     <Compile Include="vistas\idreferencias\secretarias.Designer.cs">
       <DependentUpon>secretarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\lcn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\lcn.Designer.cs">
+      <DependentUpon>lcn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\perone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\perone.Designer.cs">
+      <DependentUpon>perone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\radio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\radio.Designer.cs">
+      <DependentUpon>radio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\rnpartosgem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\rnpartosgem.Designer.cs">
+      <DependentUpon>rnpartosgem.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\plantilla_uteros.cs">
       <SubType>Form</SubType>
@@ -347,6 +407,24 @@
     <EmbeddedResource Include="vistas\conclusion_anatomia.resx">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vistas\cerebelo.resx">
+      <DependentUpon>cerebelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\cubito.resx">
+      <DependentUpon>cubito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\dbp.resx">
+      <DependentUpon>dbp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\dfo.resx">
+      <DependentUpon>dfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\femur.resx">
+      <DependentUpon>femur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\humero.resx">
+      <DependentUpon>humero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\conclu.resx">
       <DependentUpon>conclu.cs</DependentUpon>
     </EmbeddedResource>
@@ -358,6 +436,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\secretarias.resx">
       <DependentUpon>secretarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\lcn.resx">
+      <DependentUpon>lcn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\perone.resx">
+      <DependentUpon>perone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\radio.resx">
+      <DependentUpon>radio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\rnpartosgem.resx">
+      <DependentUpon>rnpartosgem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\plantilla_uteros.resx">
       <DependentUpon>plantilla_uteros.cs</DependentUpon>
