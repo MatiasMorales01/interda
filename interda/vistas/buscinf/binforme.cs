@@ -20,7 +20,7 @@ namespace interda.vistas
         public binforme()
         {
             InitializeComponent();
-            DataTable datos = conector.leer("select Fecha, CI, Nombres, Apellidos,`Tipo de exámen`,FUR,Ecografista,Correlativo from buscador");
+            DataTable datos = conector.leer("select Fecha, CI, Nombres, Apellidos,`Tipo de exámen`,FUR,Ecografista,Correlativo from buscador limit 15");
             tablabuscador.DataSource = datos;
 
             tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -41,7 +41,7 @@ namespace interda.vistas
 
             // Verificar si el campo de búsqueda está vacío o nulo
             string consultaSQL = string.IsNullOrEmpty(textoci)
-                ? "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador"
+                ? "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador limit 15"
                 : "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador where CI='" + textoci + "'";
 
             DataTable datos = conector.leer(consultaSQL);
