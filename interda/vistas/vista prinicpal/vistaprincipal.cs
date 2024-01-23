@@ -126,5 +126,11 @@ namespace interda.vistas
             binforme buscarinf = new binforme();
             buscarinf.Show();
         }
+
+        private void btnplanillautero_Click(object sender, EventArgs e)
+        {
+            plantilla_uteros plantilla_utero = new plantilla_uteros();
+            plantilla_utero.Show();
+        }
     }
 }
