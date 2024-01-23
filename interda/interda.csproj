@@ -113,6 +113,12 @@
     <Compile Include="vistas\buscinf\binforme.Designer.cs">
       <DependentUpon>binforme.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\conclusion_anatomia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\conclusion_anatomia.Designer.cs">
+      <DependentUpon>conclusion_anatomia.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\cerebelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -391,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\buscinf\binforme.resx">
       <DependentUpon>binforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\conclusion_anatomia.resx">
+      <DependentUpon>conclusion_anatomia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\cerebelo.resx">
       <DependentUpon>cerebelo.cs</DependentUpon>
