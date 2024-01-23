@@ -1,6 +1,6 @@
 ﻿namespace interda.vistas
 {
-    partial class pruebas
+    partial class binforme
     {
         /// <summary>
         /// Required designer variable.

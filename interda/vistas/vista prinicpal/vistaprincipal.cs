@@ -113,8 +113,14 @@ namespace interda.vistas
 
         private void btnconclusionanatomia_Click(object sender, EventArgs e)
         {
-            pruebas pruebas = new pruebas();   
-            pruebas.Show();
+            //pruebas pruebas = new pruebas();   
+            //pruebas.Show();
+        }
+
+        private void btnbuscarinf_Click(object sender, EventArgs e)
+        {
+            binforme buscarinf = new binforme();
+            buscarinf.Show();
         }
     }
 }

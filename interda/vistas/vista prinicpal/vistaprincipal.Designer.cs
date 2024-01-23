@@ -184,6 +184,7 @@
             this.btnbuscarinf.TabIndex = 13;
             this.btnbuscarinf.Text = "Buscar informe";
             this.btnbuscarinf.UseVisualStyleBackColor = true;
+            this.btnbuscarinf.Click += new System.EventHandler(this.btnbuscarinf_Click);
             // 
             // btninstitucionencabezado
             // 

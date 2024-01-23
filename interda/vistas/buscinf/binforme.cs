@@ -12,12 +12,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace interda.vistas
 {
-    public partial class pruebas : Form
+    public partial class binforme : Form
     {
         private conector conector = new conector();
         
 
-        public pruebas()
+        public binforme()
         {
             InitializeComponent();
             DataTable datos = conector.leer("select Fecha, CI, Nombres, Apellidos,`Tipo de exámen`,FUR,Ecografista,Correlativo from buscador");
