@@ -17,14 +17,33 @@ namespace interda.vistas
         public secretarias()
         {
             InitializeComponent();
+
             DataTable datos = conector.leer("select * from secretarias");
             secre.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            secre.Location = new Point(50, 60);
+            secre.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            secre.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            secre.ScrollBars = ScrollBars.Both;
 
-            secre.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            secre.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            secre.AutoResizeColumns();
-            secre.AutoResizeRows();
+            for (int i = 0; i < secre.Columns.Count - 1; i++)
+            {
+                secre.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+            // La última columna ocupará todo el espacio disponible
+            secre.Columns[secre.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            secre.Width = 700;
+            secre.Height = 350;
+
         }
+
+
+
+
+
+
 
         private void secretarias_Load(object sender, EventArgs e)
         {

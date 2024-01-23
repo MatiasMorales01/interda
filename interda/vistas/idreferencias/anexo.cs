@@ -17,13 +17,24 @@ namespace interda.vistas
         public anexo()
         {
             InitializeComponent();
+            label1.Location = new Point(40, 30);
             DataTable datos = conector.leer("select * from anexos");
             anex.DataSource = datos;
+            anex.Location = new Point(50, 60);
+            anex.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            anex.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            anex.ScrollBars = ScrollBars.Both;
 
-            anex.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            anex.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            anex.AutoResizeColumns();
-            anex.AutoResizeRows();
+            for (int i = 0; i < anex.Columns.Count; i++)
+            {
+                anex.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+            anex.Columns[anex.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            anex.Width = 700;
+            anex.Height = 350;
+
         }
 
         private void anexo_Load(object sender, EventArgs e)

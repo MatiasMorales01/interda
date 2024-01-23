@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "tratante";
             this.Text = "tratante";
+            this.Load += new System.EventHandler(this.tratante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -17,13 +17,26 @@ namespace interda.vistas
         public utero()
         {
             InitializeComponent();
-            DataTable datos = conector.leer("select * from utero");
-           ut.DataSource = datos;
 
-            ut.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            ut.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            ut.AutoResizeColumns();
-            ut.AutoResizeRows();
+            DataTable datos = conector.leer("select * from utero");
+            ut.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            ut.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            ut.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            ut.ScrollBars = ScrollBars.Both;
+
+            for (int i = 0; i < ut.Columns.Count; i++)
+            {
+                ut.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+          
+            ut.Columns[ut.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            ut.Width = 700;
+            ut.Height = 350;
+            ut.Location = new Point(50, 60);
+
         }
 
         private void utero_Load(object sender, EventArgs e)

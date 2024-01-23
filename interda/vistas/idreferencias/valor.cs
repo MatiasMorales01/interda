@@ -20,11 +20,23 @@ namespace interda.vistas
 
             DataTable datos = miConector.leer("select * from valormonetario");
             val.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            val.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            val.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            val.ScrollBars = ScrollBars.Both;
 
-            val.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            val.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            val.AutoResizeColumns();
-            val.AutoResizeRows();
+            for (int i = 0; i < val.Columns.Count; i++)
+            {
+                val.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+           
+            val.Columns[val.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            val.Width = 700;
+            val.Height = 350;
+            val.Location = new Point(50, 60);
+
         }
 
         private void valor_Load(object sender, EventArgs e)

@@ -17,13 +17,25 @@ namespace interda.vistas
         public isapre()
         {
             InitializeComponent();
+
             DataTable datos = conector.leer("select * from isapre");
             isa.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            isa.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            isa.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            isa.ScrollBars = ScrollBars.Both;
 
-            isa.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            isa.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            isa.AutoResizeColumns();
-            isa.AutoResizeRows();
+            for (int i = 0; i < isa.Columns.Count; i++)
+            {
+                isa.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+            isa.Columns[isa.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            isa.Width = 700;
+            isa.Height = 350;
+            isa.Location = new Point(50, 60);
+
         }
 
         private void isapre_Load(object sender, EventArgs e)

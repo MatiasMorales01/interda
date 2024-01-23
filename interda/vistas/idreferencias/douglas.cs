@@ -17,13 +17,24 @@ namespace interda.vistas
         public douglas()
         {
             InitializeComponent();
+            label1.Location = new Point(40, 30);
             DataTable datos = conector.leer("select * from douglas");
             doug.DataSource = datos;
 
-            doug.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            doug.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            doug.AutoResizeColumns();
-            doug.AutoResizeRows();
+            doug.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            doug.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            doug.ScrollBars = ScrollBars.Both;
+
+            for (int i = 0; i < doug.Columns.Count; i++)
+            {
+                doug.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+            doug.Columns[doug.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            doug.Width = 700;
+            doug.Height = 350;
+            doug.Location = new Point(50, 60);
         }
 
         private void douglas_Load(object sender, EventArgs e)

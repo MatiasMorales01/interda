@@ -17,13 +17,26 @@ namespace interda.vistas
         public ovarios()
         {
             InitializeComponent();
+
             DataTable datos = conector.leer("select * from ovarios");
             ov.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            ov.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            ov.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            ov.ScrollBars = ScrollBars.Both;
 
-            ov.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            ov.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            ov.AutoResizeColumns();
-            ov.AutoResizeRows();
+            for (int i = 0; i < ov.Columns.Count; i++)
+            {
+                ov.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+    
+            ov.Columns[ov.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            ov.Width = 700;
+            ov.Height = 350;
+            ov.Location = new Point(50, 60);
+
         }
 
         private void ovarios_Load(object sender, EventArgs e)

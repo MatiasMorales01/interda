@@ -59,11 +59,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 462);
+            this.ClientSize = new System.Drawing.Size(1022, 535);
             this.Controls.Add(this.mh);
             this.Controls.Add(this.label1);
             this.Name = "mhz";
             this.Text = "mhz";
+            this.Load += new System.EventHandler(this.mhz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.mh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

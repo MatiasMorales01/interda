@@ -70,7 +70,9 @@ namespace interda.vistas
         private void btnidreferencias_Click(object sender, EventArgs e)
         {
             idreferencias idreferencias = new idreferencias();
-            idreferencias.StartPosition = FormStartPosition.CenterScreen;
+            idreferencias.StartPosition = FormStartPosition.Manual;
+            idreferencias.Location = new Point(120, 170);
+            //idreferencias.StartPosition = FormStartPosition.CenterScreen;
             idreferencias.Show();
            // this.Hide();
         }

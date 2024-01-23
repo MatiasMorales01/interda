@@ -17,16 +17,33 @@ namespace interda.vistas
         public tratante()
         {
             InitializeComponent();
+
             DataTable datos = miConector.leer("select * from tratante");
             tra.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            tra.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            tra.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            tra.ScrollBars = ScrollBars.Both;
 
-            tra.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            tra.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            tra.AutoResizeColumns();
-            tra.AutoResizeRows();
+            for (int i = 0; i < tra.Columns.Count; i++)
+            {
+                tra.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+            tra.Columns[tra.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            tra.Width = 700;
+            tra.Height = 350;
+            tra.Location = new Point(50, 60);
+
         }
 
         private void tra_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tratante_Load(object sender, EventArgs e)
         {
 
         }

@@ -17,13 +17,25 @@ namespace interda.vistas
         public conclu()
         {
             InitializeComponent();
+            label1.Location = new Point(40, 30);
             DataTable datos = conector.leer("select * from conclusion");
             con.DataSource = datos;
 
-            con.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            con.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            con.AutoResizeColumns();
-            con.AutoResizeRows();
+            con.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            con.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            con.ScrollBars = ScrollBars.Both;
+
+            for (int i = 0; i < con.Columns.Count; i++)
+            {
+                con.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+            con.Columns[con.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            con.Width = 700;
+            con.Height = 350;
+            con.Location = new Point(50, 60);
+
         }
 
         private void conclu_Load(object sender, EventArgs e)

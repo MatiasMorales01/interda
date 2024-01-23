@@ -17,13 +17,26 @@ namespace interda.vistas
         public vejiga()
         {
             InitializeComponent();
+
             DataTable datos = conector.leer("select * from vejiga");
             vejig.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            vejig.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            vejig.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            vejig.ScrollBars = ScrollBars.Both;
 
-            vejig.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            vejig.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            vejig.AutoResizeColumns();
-            vejig.AutoResizeRows();
+            for (int i = 0; i < vejig.Columns.Count; i++)
+            {
+                vejig.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+           
+            vejig.Columns[vejig.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            vejig.Width = 700;
+            vejig.Height = 350;
+            vejig.Location = new Point(50, 60);
+
         }
 
         private void vejiga_Load(object sender, EventArgs e)

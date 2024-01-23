@@ -23,11 +23,18 @@ namespace interda.vistas
         {
             DataTable datos = conector.leer("select * from endometriotipo");
             endo.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            endo.Location = new Point(50, 60);
 
-            endo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            endo.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            endo.AutoResizeColumns();
-            endo.AutoResizeRows();
+            endo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None; 
+            endo.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None; 
+            endo.ScrollBars = ScrollBars.Both; 
+            if (endo.Columns.Count > 0)
+            {
+                endo.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+            endo.Width = 700;
+            endo.Height = 350;
         }
     }
 }

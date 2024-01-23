@@ -17,14 +17,23 @@ namespace interda.vistas
         public codigoexamen()
         {
             InitializeComponent();
-          
+            label1.Location = new Point(40, 30);
             DataTable datos = miConector.leer("select * from codex");
             exam.DataSource = datos;
+            exam.Location = new Point(50, 60);
+            exam.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            exam.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            exam.ScrollBars = ScrollBars.Both;
 
-            exam.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            exam.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            exam.AutoResizeColumns();
-            exam.AutoResizeRows();
+            for (int i = 0; i < exam.Columns.Count; i++)
+            {
+                exam.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+            exam.Columns[exam.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            exam.Width = 700;
+            exam.Height = 350;
         }
 
         private void codigoexamen_Load(object sender, EventArgs e)
