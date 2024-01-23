@@ -119,40 +119,40 @@
     <Compile Include="vistas\conclusion_anatomia.Designer.cs">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\cerebelo.cs">
+    <Compile Include="vistas\tablas obstetricas\cerebelo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\cerebelo.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\cerebelo.Designer.cs">
       <DependentUpon>cerebelo.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\cubito.cs">
+    <Compile Include="vistas\tablas obstetricas\cubito.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\cubito.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\cubito.Designer.cs">
       <DependentUpon>cubito.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\dbp.cs">
+    <Compile Include="vistas\tablas obstetricas\dbp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\dbp.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\dbp.Designer.cs">
       <DependentUpon>dbp.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\dfo.cs">
+    <Compile Include="vistas\tablas obstetricas\dfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\dfo.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\dfo.Designer.cs">
       <DependentUpon>dfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\femur.cs">
+    <Compile Include="vistas\tablas obstetricas\femur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\femur.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\femur.Designer.cs">
       <DependentUpon>femur.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\humero.cs">
+    <Compile Include="vistas\tablas obstetricas\humero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\humero.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\humero.Designer.cs">
       <DependentUpon>humero.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\idreferencias\conclu.cs">
@@ -179,28 +179,28 @@
     <Compile Include="vistas\idreferencias\secretarias.Designer.cs">
       <DependentUpon>secretarias.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\lcn.cs">
+    <Compile Include="vistas\tablas obstetricas\lcn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\lcn.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\lcn.Designer.cs">
       <DependentUpon>lcn.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\perone.cs">
+    <Compile Include="vistas\tablas obstetricas\perone.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\perone.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\perone.Designer.cs">
       <DependentUpon>perone.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\radio.cs">
+    <Compile Include="vistas\tablas obstetricas\radio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\radio.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\radio.Designer.cs">
       <DependentUpon>radio.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\rnpartosgem.cs">
+    <Compile Include="vistas\tablas obstetricas\rnpartosgem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\rnpartosgem.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\rnpartosgem.Designer.cs">
       <DependentUpon>rnpartosgem.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\tablas obstetricas\abdomen.cs">
@@ -401,22 +401,22 @@
     <EmbeddedResource Include="vistas\conclusion_anatomia.resx">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\cerebelo.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\cerebelo.resx">
       <DependentUpon>cerebelo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\cubito.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\cubito.resx">
       <DependentUpon>cubito.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\dbp.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\dbp.resx">
       <DependentUpon>dbp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\dfo.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\dfo.resx">
       <DependentUpon>dfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\femur.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\femur.resx">
       <DependentUpon>femur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\humero.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\humero.resx">
       <DependentUpon>humero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\conclu.resx">
@@ -431,16 +431,16 @@
     <EmbeddedResource Include="vistas\idreferencias\secretarias.resx">
       <DependentUpon>secretarias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\lcn.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\lcn.resx">
       <DependentUpon>lcn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\perone.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\perone.resx">
       <DependentUpon>perone.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\radio.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\radio.resx">
       <DependentUpon>radio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\rnpartosgem.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\rnpartosgem.resx">
       <DependentUpon>rnpartosgem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\abdomen.resx">

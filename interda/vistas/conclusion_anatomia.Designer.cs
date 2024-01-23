@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.izq = new System.Windows.Forms.Button();
             this.der = new System.Windows.Forms.Button();
+            this.izq = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,16 +52,15 @@
             this.panel1.Size = new System.Drawing.Size(799, 87);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // der
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Formato general";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.der.Location = new System.Drawing.Point(615, 38);
+            this.der.Name = "der";
+            this.der.Size = new System.Drawing.Size(75, 23);
+            this.der.TabIndex = 2;
+            this.der.Text = "->";
+            this.der.UseVisualStyleBackColor = true;
+            this.der.Click += new System.EventHandler(this.der_Click);
             // 
             // izq
             // 
@@ -73,15 +72,16 @@
             this.izq.UseVisualStyleBackColor = true;
             this.izq.Click += new System.EventHandler(this.button1_Click);
             // 
-            // der
+            // label1
             // 
-            this.der.Location = new System.Drawing.Point(615, 38);
-            this.der.Name = "der";
-            this.der.Size = new System.Drawing.Size(75, 23);
-            this.der.TabIndex = 2;
-            this.der.Text = "->";
-            this.der.UseVisualStyleBackColor = true;
-            this.der.Click += new System.EventHandler(this.der_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(266, 39);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Formato general";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -161,6 +161,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "conclusion_anatomia";
             this.Text = "conclusion_anatomia";
+            this.Load += new System.EventHandler(this.conclusion_anatomia_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -37,6 +37,12 @@ namespace interda.vistas
             DataTable datos = conector.leer("select * from formato_general");
             textBox_nombre.Text = datos.Rows[index]["Formato general nombre"].ToString();
             textBox_detalle.Text = datos.Rows[index]["Formato general detalle"].ToString();
+
+            DataTable datos2 = conector.leer("SELECT `Formato general filtro tipo` FROM formato_general");
+            comboBox_filtro.DataSource = datos2;
+            comboBox_filtro.DisplayMember = "Formato general filtro tipo";
+            comboBox_filtro.ValueMember = "Formato general filtro tipo";
+
         }
 
         private void textBox_nombre_TextChanged(object sender, EventArgs e)
@@ -60,6 +66,11 @@ namespace interda.vistas
                 index++;
                 cargarDatos(index);
             }
+        }
+
+        private void conclusion_anatomia_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
