@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,10 +27,30 @@ namespace interda.vistas
             comboBox_nombre.DisplayMember = "Nombre";
             comboBox_nombre.ValueMember = "Nombre";
             comboBox_nombre.SelectedIndex = -1;
+
+            comboBox_nombre.SelectedIndexChanged += comboBox_nombre_SelectedIndexChanged;
         }
 
         private void comboBox_nombre_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int selectedIndex = comboBox_nombre.SelectedIndex;
+
+            if (selectedIndex >= 0)
+            {
+                DataRowView selectedRow = (DataRowView)comboBox_nombre.SelectedItem;
+
+                if (selectedRow != null)
+                {
+                    string plantillaUtero = selectedRow["Plantila_utero"].ToString();
+                    textBox_plantilla.Text = plantillaUtero;
+
+                }
+            }
+            else
+            {
+                textBox_plantilla.Text = string.Empty;
+            }
+
             textBox_nombre.Text = comboBox_nombre.Text;
         }
 
