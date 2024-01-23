@@ -119,6 +119,12 @@
     <Compile Include="vistas\conclusion_anatomia.Designer.cs">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\rnpartsimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\rnpartsimples.Designer.cs">
+      <DependentUpon>rnpartsimples.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\tablas obstetricas\cerebelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -383,6 +389,12 @@
     <Compile Include="vistas\idreferencias\vejiga.Designer.cs">
       <DependentUpon>vejiga.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\tibia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tibia.Designer.cs">
+      <DependentUpon>tibia.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\vista prinicpal\vistaprincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -406,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\conclusion_anatomia.resx">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\rnpartsimples.resx">
+      <DependentUpon>rnpartsimples.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\cerebelo.resx">
       <DependentUpon>cerebelo.cs</DependentUpon>
@@ -538,6 +553,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\vejiga.resx">
       <DependentUpon>vejiga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tibia.resx">
+      <DependentUpon>tibia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\vista prinicpal\vistaprincipal.resx">
       <DependentUpon>vistaprincipal.cs</DependentUpon>

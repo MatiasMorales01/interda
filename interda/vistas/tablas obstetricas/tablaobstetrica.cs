@@ -104,5 +104,21 @@ namespace interda.vistas
             venetana.Location = new Point(720, 205);
             venetana.Show();
         }
+
+        private void rnps_Click(object sender, EventArgs e)
+        {
+            rnpartsimples venetana = new rnpartsimples();
+            venetana.StartPosition = FormStartPosition.Manual;
+            venetana.Location = new Point(720, 205);
+            venetana.Show();
+        }
+
+        private void tibia_Click(object sender, EventArgs e)
+        {
+            tibia venetana =new tibia();
+            venetana.StartPosition = FormStartPosition.Manual;
+            venetana.Location = new Point(720, 205);
+            venetana.Show();
+        }
     }
 }

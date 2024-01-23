@@ -96,6 +96,7 @@
             this.tibia.TabIndex = 13;
             this.tibia.Text = "Tibia";
             this.tibia.UseVisualStyleBackColor = true;
+            this.tibia.Click += new System.EventHandler(this.tibia_Click);
             // 
             // rnps
             // 
@@ -106,6 +107,7 @@
             this.rnps.TabIndex = 12;
             this.rnps.Text = "RN partos simples";
             this.rnps.UseVisualStyleBackColor = true;
+            this.rnps.Click += new System.EventHandler(this.rnps_Click);
             // 
             // rnpg
             // 
