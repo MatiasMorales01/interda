@@ -37,7 +37,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.boton_conclusion = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
@@ -144,15 +144,16 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button9
+            // boton_conclusion
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button9.Location = new System.Drawing.Point(573, 146);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(245, 36);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Conclusion/Diagnostico";
-            this.button9.UseVisualStyleBackColor = true;
+            this.boton_conclusion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.boton_conclusion.Location = new System.Drawing.Point(573, 146);
+            this.boton_conclusion.Name = "boton_conclusion";
+            this.boton_conclusion.Size = new System.Drawing.Size(245, 36);
+            this.boton_conclusion.TabIndex = 9;
+            this.boton_conclusion.Text = "Conclusion/Diagnostico";
+            this.boton_conclusion.UseVisualStyleBackColor = true;
+            this.boton_conclusion.Click += new System.EventHandler(this.boton_conclusion_Click);
             // 
             // button10
             // 
@@ -174,6 +175,7 @@
             this.button11.TabIndex = 11;
             this.button11.Text = "Endometrio";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -184,6 +186,7 @@
             this.button12.TabIndex = 12;
             this.button12.Text = "Ovarios";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -194,6 +197,7 @@
             this.button13.TabIndex = 13;
             this.button13.Text = "Utero";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -204,6 +208,7 @@
             this.button14.TabIndex = 14;
             this.button14.Text = "Vejiga";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -214,6 +219,7 @@
             this.button15.TabIndex = 15;
             this.button15.Text = "Secretarias";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // idreferencias
             // 
@@ -226,7 +232,7 @@
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.boton_conclusion);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -255,7 +261,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button boton_conclusion;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;

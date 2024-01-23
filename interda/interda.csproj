@@ -113,6 +113,30 @@
     <Compile Include="vistas\buscinf\binforme.Designer.cs">
       <DependentUpon>binforme.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\idreferencias\conclu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\idreferencias\conclu.Designer.cs">
+      <DependentUpon>conclu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\idreferencias\endometrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\idreferencias\endometrio.Designer.cs">
+      <DependentUpon>endometrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\idreferencias\ovarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\idreferencias\ovarios.Designer.cs">
+      <DependentUpon>ovarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\idreferencias\secretarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\idreferencias\secretarias.Designer.cs">
+      <DependentUpon>secretarias.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\tablas obstetricas\abdomen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +299,18 @@
     <Compile Include="vistas\anatomia_Fetal\vejiga_anatomiaFetal.Designer.cs">
       <DependentUpon>vejiga_anatomiaFetal.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\idreferencias\utero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\idreferencias\utero.Designer.cs">
+      <DependentUpon>utero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\idreferencias\vejiga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\idreferencias\vejiga.Designer.cs">
+      <DependentUpon>vejiga.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\vista prinicpal\vistaprincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +331,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\buscinf\binforme.resx">
       <DependentUpon>binforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\idreferencias\conclu.resx">
+      <DependentUpon>conclu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\idreferencias\endometrio.resx">
+      <DependentUpon>endometrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\idreferencias\ovarios.resx">
+      <DependentUpon>ovarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\idreferencias\secretarias.resx">
+      <DependentUpon>secretarias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\abdomen.resx">
       <DependentUpon>abdomen.cs</DependentUpon>
@@ -376,6 +424,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\anatomia_Fetal\vejiga_anatomiaFetal.resx">
       <DependentUpon>vejiga_anatomiaFetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\idreferencias\utero.resx">
+      <DependentUpon>utero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\idreferencias\vejiga.resx">
+      <DependentUpon>vejiga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\vista prinicpal\vistaprincipal.resx">
       <DependentUpon>vistaprincipal.cs</DependentUpon>

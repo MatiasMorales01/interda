@@ -1,4 +1,5 @@
-﻿using System;
+﻿//using interda.vistas.idreferencias;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -74,6 +75,42 @@ namespace interda.vistas
         {
             douglas douglas = new douglas();
             douglas.Show();
+        }
+
+        private void boton_conclusion_Click(object sender, EventArgs e)
+        {
+            conclu conclu = new conclu();
+            conclu.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            endometrio endometrio = new endometrio();   
+                endometrio.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            ovarios ovarios = new ovarios();
+            ovarios.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            utero utero = new utero(); 
+            utero.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            vejiga vejiga = new vejiga();
+            vejiga.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            secretarias secretarias = new secretarias();   
+            secretarias.Show();
         }
     }
 }
