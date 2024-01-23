@@ -17,13 +17,25 @@ namespace interda.vistas
         public abdomen()
         {
             InitializeComponent();
+
             DataTable datos = conector.leer("select * from abdomen");
             abd.DataSource = datos;
+            label1.Location = new Point(40, 30);
+            abd.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            abd.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+            abd.ScrollBars = ScrollBars.Both;
 
-            abd.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            abd.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            abd.AutoResizeColumns();
-            abd.AutoResizeRows();
+            for (int i = 0; i < abd.Columns.Count; i++)
+            {
+                abd.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            }
+
+            abd.Columns[abd.Columns.Count - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            abd.Width = 700;
+            abd.Height = 350;
+            abd.Location = new Point(50, 60);
+
         }
 
         private void abdomen_Load(object sender, EventArgs e)
