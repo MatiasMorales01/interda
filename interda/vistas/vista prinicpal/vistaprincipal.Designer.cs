@@ -249,6 +249,7 @@
             this.btnplanillautero.TabIndex = 19;
             this.btnplanillautero.Text = "Planilla utero";
             this.btnplanillautero.UseVisualStyleBackColor = true;
+            this.btnplanillautero.Click += new System.EventHandler(this.btnplanillautero_Click);
             // 
             // btnconclusionanatomia
             // 

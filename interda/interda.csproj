@@ -143,6 +143,12 @@
     <Compile Include="vistas\idreferencias\secretarias.Designer.cs">
       <DependentUpon>secretarias.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\plantilla_uteros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\plantilla_uteros.Designer.cs">
+      <DependentUpon>plantilla_uteros.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\tablas obstetricas\abdomen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -352,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\secretarias.resx">
       <DependentUpon>secretarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\plantilla_uteros.resx">
+      <DependentUpon>plantilla_uteros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\abdomen.resx">
       <DependentUpon>abdomen.cs</DependentUpon>
