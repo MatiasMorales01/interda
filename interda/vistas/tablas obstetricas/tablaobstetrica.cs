@@ -17,156 +17,108 @@ namespace interda.vistas
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void MostrarFormulario<T>() where T : Form, new()
         {
-            abdomen ventana = new abdomen();
+            T ventana = new T();
             ventana.StartPosition = FormStartPosition.Manual;
             ventana.Location = new Point(720, 205);
             ventana.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MostrarFormulario<abdomen>();
         }
 
         private void cerebelo_Click(object sender, EventArgs e)
         {
-            cerebelo ventana = new cerebelo();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<cerebelo>();
         }
 
         private void cubito_Click(object sender, EventArgs e)
         {
-            cubito ventana = new cubito();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<cubito>();
         }
 
         private void bbp_Click(object sender, EventArgs e)
         {
-            dbp ventana = new dbp();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<dbp>();
         }
 
         private void dfo_Click(object sender, EventArgs e)
         {
-            dfo ventana = new dfo();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<dfo>();
         }
-            private void femur_Click(object sender, EventArgs e)
+
+        private void femur_Click(object sender, EventArgs e)
         {
-            femur ventana = new femur();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<femur>();
         }
 
         private void humero_Click(object sender, EventArgs e)
         {
-            humero ventana = new humero();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<humero>();
         }
 
         private void lcn_Click(object sender, EventArgs e)
         {
-            lcn ventana = new lcn();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<lcn>();
         }
 
         private void perone_Click(object sender, EventArgs e)
         {
-            perone ventana = new perone();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<perone>();
         }
 
         private void radio_Click(object sender, EventArgs e)
         {
-            radio ventana = new radio();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<radio>();
         }
 
         private void rnpg_Click(object sender, EventArgs e)
         {
-            rnpartosgem ventana = new rnpartosgem();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<rnpartosgem>();
         }
 
         private void rnps_Click(object sender, EventArgs e)
         {
-            rnpartsimples ventana = new rnpartsimples();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<rnpartsimples>();
         }
 
         private void tibia_Click(object sender, EventArgs e)
         {
-            tibia ventana = new tibia();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<tibia>();
         }
 
         private void acm_Click(object sender, EventArgs e)
         {
-            acm ventana = new acm();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
-
+            MostrarFormulario<acm>();
         }
 
         private void au_Click(object sender, EventArgs e)
         {
-            arteriauternia ventana = new arteriauternia();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<arteriauternia>();
         }
 
         private void aum_Click(object sender, EventArgs e)
         {
-            arteriumbilical ventana = new arteriumbilical();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<arteriumbilical>();
         }
 
         private void ductus_Click(object sender, EventArgs e)
         {
-            ductus ventana = new ductus();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<ductus>();
         }
 
         private void psacm_Click(object sender, EventArgs e)
         {
-            peaksistolicoacm ventana = new peaksistolicoacm();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<peaksistolicoacm>();
         }
 
         private void ad_Click(object sender, EventArgs e)
         {
-            aortadescendiente ventana = new aortadescendiente();
-            ventana.StartPosition = FormStartPosition.Manual;
-            ventana.Location = new Point(720, 205);
-            ventana.Show();
+            MostrarFormulario<aortadescendiente>();
         }
     }
+
 }
