@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,8 @@ namespace interda.vistas
     public partial class nuevo_informe : Form
     {
         conector conector= new conector();
+        int index = 0;
+        bool access = false;
         public nuevo_informe()
         {
             InitializeComponent();
@@ -151,6 +154,50 @@ namespace interda.vistas
         private void comboBox1_tipo_examen_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            access = true;
+            actualizar(index);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (index < conector.leer("select * from formato_general").Rows.Count - 1 && access==true)
+            {
+                index++;
+                actualizar(index);
+            }
+        }
+
+        private void actualizar(int index)
+        {
+            DataTable datos = conector.leer("select * from buscador");
+            hospitales.Text = datos.Rows[index]["Institucion o empresa"].ToString();
+            comboBox1_tipo_examen.Text = datos.Rows[index]["Tipo de exámen"].ToString();
+            textBox1_CI.Text = datos.Rows[index]["CI"].ToString();
+            textBox3_nombre.Text = datos.Rows[index]["Nombres"].ToString();
+            textBox1_Apellido.Text = datos.Rows[index]["Apellidos"].ToString();
+            textBox1_edad.Text = datos.Rows[index]["Edad"].ToString();
+            comboBox1_codigo.Text = datos.Rows[index]["Código de la prestación"].ToString();
+            textBox1_edad.Text = datos.Rows[index]["Edad"].ToString();
+            comboBox2_procedencia.Text = datos.Rows[index]["Tratante"].ToString();
+            comboBox3_prevision.Text = datos.Rows[index]["Isapre"].ToString();
+            comboBox1_ecografista.Text = datos.Rows[index]["Ecografista"].ToString();
+            comboBox1_ecografo.Text = datos.Rows[index]["Ecógrafo"].ToString();
+            textBox1.Text = datos.Rows[index]["FURpaciente"].ToString();
+            textBox9.Text = datos.Rows[index]["FUR"].ToString();
+            comboBox1.Text = datos.Rows[index]["Pied de pagina"].ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (index > 0 && access == true)
+            {
+                index--;
+                actualizar(index);
+            }
         }
     }
 }

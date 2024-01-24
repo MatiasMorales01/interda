@@ -125,6 +125,7 @@
             this.button1.TabIndex = 28;
             this.button1.Text = "buscar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -134,6 +135,7 @@
             this.button2.TabIndex = 29;
             this.button2.Text = "<-";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -143,6 +145,7 @@
             this.button3.TabIndex = 30;
             this.button3.Text = "->";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1_atras
             // 
@@ -179,7 +182,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(619, 9);
+            this.button7.Location = new System.Drawing.Point(587, 14);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(163, 68);
             this.button7.TabIndex = 32;
@@ -190,9 +193,9 @@
             // 
             this.hospitales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hospitales.FormattingEnabled = true;
-            this.hospitales.Location = new System.Drawing.Point(803, 32);
+            this.hospitales.Location = new System.Drawing.Point(756, 32);
             this.hospitales.Name = "hospitales";
-            this.hospitales.Size = new System.Drawing.Size(171, 28);
+            this.hospitales.Size = new System.Drawing.Size(218, 28);
             this.hospitales.TabIndex = 33;
             // 
             // label14

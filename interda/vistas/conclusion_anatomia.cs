@@ -42,7 +42,6 @@ namespace interda.vistas
             comboBox_filtro.DataSource = datos2;
             comboBox_filtro.DisplayMember = "Formato general filtro tipo";
             comboBox_filtro.ValueMember = "Formato general filtro tipo";
-
         }
 
         private void textBox_nombre_TextChanged(object sender, EventArgs e)
