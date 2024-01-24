@@ -133,5 +133,11 @@ namespace interda.vistas
             plantilla_uteros plantilla_utero = new plantilla_uteros();
             plantilla_utero.Show();
         }
+
+        private void btninstitucionencabezado_Click(object sender, EventArgs e)
+        {
+            institucion institucion = new institucion();
+            institucion.Show();
+        }
     }
 }

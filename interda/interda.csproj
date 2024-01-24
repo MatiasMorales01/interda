@@ -156,6 +156,13 @@
       <DependentUpon>peaksistolicoacm.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\tablas obstetricas\rnpartsimples.cs">
+    <Compile Include="vistas\institucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\institucion.Designer.cs">
+      <DependentUpon>institucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\rnpartsimples.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="vistas\tablas obstetricas\rnpartsimples.Designer.cs">
@@ -474,6 +481,10 @@
       <DependentUpon>peaksistolicoacm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\rnpartsimples.resx">
+    <EmbeddedResource Include="vistas\institucion.resx">
+      <DependentUpon>institucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\rnpartsimples.resx">
       <DependentUpon>rnpartsimples.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\cerebelo.resx">
