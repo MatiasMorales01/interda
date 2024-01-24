@@ -164,7 +164,8 @@ namespace interda.vistas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (index < conector.leer("select * from formato_general").Rows.Count - 1 && access==true)
+            int cantidadFilasTabla = ObtenerCantidadFilasTabla("buscador");
+            if (index < cantidadFilasTabla && access==true)
             {
                 index++;
                 actualizar(index);
@@ -173,6 +174,7 @@ namespace interda.vistas
 
         private void actualizar(int index)
         {
+            textBox13.Text = index.ToString();
             DataTable datos = conector.leer("select * from buscador");
             hospitales.Text = datos.Rows[index]["Institucion o empresa"].ToString();
             comboBox1_tipo_examen.Text = datos.Rows[index]["Tipo de exámen"].ToString();
@@ -198,6 +200,19 @@ namespace interda.vistas
                 index--;
                 actualizar(index);
             }
+        }
+
+        private int ObtenerCantidadFilasTabla(string nombreTabla)
+        {
+            string query = $"SELECT COUNT(*) FROM {nombreTabla}";
+            int cantidadFilas = Convert.ToInt32(conector.leer(query).Rows[0][0]);
+            return cantidadFilas;
+        }
+
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
