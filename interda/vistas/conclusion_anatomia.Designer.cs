@@ -97,7 +97,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 206);
+            this.label3.Location = new System.Drawing.Point(24, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 25);
             this.label3.TabIndex = 2;
@@ -107,7 +107,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 288);
+            this.label4.Location = new System.Drawing.Point(24, 350);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 25);
             this.label4.TabIndex = 3;
@@ -119,9 +119,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_detalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_detalle.Location = new System.Drawing.Point(117, 206);
+            this.textBox_detalle.Location = new System.Drawing.Point(117, 162);
+            this.textBox_detalle.Multiline = true;
             this.textBox_detalle.Name = "textBox_detalle";
-            this.textBox_detalle.Size = new System.Drawing.Size(587, 26);
+            this.textBox_detalle.Size = new System.Drawing.Size(587, 165);
             this.textBox_detalle.TabIndex = 4;
             this.textBox_detalle.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -141,7 +142,7 @@
             // 
             this.comboBox_filtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_filtro.FormattingEnabled = true;
-            this.comboBox_filtro.Location = new System.Drawing.Point(117, 285);
+            this.comboBox_filtro.Location = new System.Drawing.Point(117, 347);
             this.comboBox_filtro.Name = "comboBox_filtro";
             this.comboBox_filtro.Size = new System.Drawing.Size(185, 33);
             this.comboBox_filtro.TabIndex = 6;
