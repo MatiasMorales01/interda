@@ -21,6 +21,7 @@ namespace interda.vistas
             label1.Text = "RN Partos Gemelares";
             label1.Font = new Font(label1.Font.FontFamily, 15, label1.Font.Style);
             DataGridView dataGridView1 = new DataGridView();
+            label1.AutoSize = true;
             this.Controls.Add(dataGridView1);
             this.Controls.Add(label1);
             DataTable datos = conector.leer("select * from rnpartosgemelares");

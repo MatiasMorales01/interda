@@ -25,7 +25,7 @@ namespace interda.vistas
             comboBoxecografo.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxpiepag.DropDownStyle = ComboBoxStyle.DropDownList;
             this.FormClosing += vistaprincipal_close;
-            //comboBoxpiepag.Multiline = true;
+            
         }
 
         private void cargarDatoscombobox()

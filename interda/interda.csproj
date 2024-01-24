@@ -101,11 +101,35 @@
     <Compile Include="controlador\conector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\tablas obstetricas\acm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\acm.Designer.cs">
+      <DependentUpon>acm.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\anatomia_Fetal\extremidades_anatomiaFetal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="vistas\anatomia_Fetal\extremidades_anatomiaFetal.Designer.cs">
       <DependentUpon>extremidades_anatomiaFetal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\aortadescendiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\aortadescendiente.Designer.cs">
+      <DependentUpon>aortadescendiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\arteriauternia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\arteriauternia.Designer.cs">
+      <DependentUpon>arteriauternia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\arteriumbilical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\arteriumbilical.Designer.cs">
+      <DependentUpon>arteriumbilical.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\buscinf\binforme.cs">
       <SubType>Form</SubType>
@@ -118,6 +142,18 @@
     </Compile>
     <Compile Include="vistas\conclusion_anatomia.Designer.cs">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\ductus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\ductus.Designer.cs">
+      <DependentUpon>ductus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\peaksistolicoacm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\tablas obstetricas\peaksistolicoacm.Designer.cs">
+      <DependentUpon>peaksistolicoacm.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\tablas obstetricas\rnpartsimples.cs">
       <SubType>Form</SubType>
@@ -410,14 +446,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vistas\tablas obstetricas\acm.resx">
+      <DependentUpon>acm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vistas\anatomia_Fetal\extremidades_anatomiaFetal.resx">
       <DependentUpon>extremidades_anatomiaFetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tablas obstetricas\aortadescendiente.resx">
+      <DependentUpon>aortadescendiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tablas obstetricas\arteriauternia.resx">
+      <DependentUpon>arteriauternia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tablas obstetricas\arteriumbilical.resx">
+      <DependentUpon>arteriumbilical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\buscinf\binforme.resx">
       <DependentUpon>binforme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\conclusion_anatomia.resx">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tablas obstetricas\ductus.resx">
+      <DependentUpon>ductus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\tablas obstetricas\peaksistolicoacm.resx">
+      <DependentUpon>peaksistolicoacm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\rnpartsimples.resx">
       <DependentUpon>rnpartsimples.cs</DependentUpon>

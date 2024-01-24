@@ -19,106 +19,154 @@ namespace interda.vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            abdomen abdomen = new abdomen();
-            abdomen.StartPosition = FormStartPosition.Manual;
-            abdomen.Location = new Point(720, 205);
-            abdomen.Show();
+            abdomen ventana = new abdomen();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void cerebelo_Click(object sender, EventArgs e)
         {
-            cerebelo cerebelo = new cerebelo();
-            cerebelo.StartPosition = FormStartPosition.Manual;
-            cerebelo.Location = new Point(720, 205);
-            cerebelo.Show();
+            cerebelo ventana = new cerebelo();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void cubito_Click(object sender, EventArgs e)
         {
-            cubito cubito = new cubito();
-            cubito.StartPosition=FormStartPosition.Manual;
-            cubito.Location = new Point(720,205);
-            cubito.Show();
+            cubito ventana = new cubito();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void bbp_Click(object sender, EventArgs e)
         {
-            dbp dbp = new dbp();
-            dbp.StartPosition = FormStartPosition.Manual;
-            dbp.Location = new Point(720, 205);
-            dbp.Show();
+            dbp ventana = new dbp();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void dfo_Click(object sender, EventArgs e)
         {
-            dfo dbp = new dfo();
-            dbp.StartPosition = FormStartPosition.Manual;
-            dbp.Location = new Point(720, 205);
-            dbp.Show();
+            dfo ventana = new dfo();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
-
-        private void femur_Click(object sender, EventArgs e)
+            private void femur_Click(object sender, EventArgs e)
         {
-            femur venetana = new femur();
-            venetana.StartPosition = FormStartPosition.Manual;
-            venetana.Location = new Point(720, 205);
-            venetana.Show();
+            femur ventana = new femur();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void humero_Click(object sender, EventArgs e)
         {
-            humero venetana = new humero();
-            venetana.StartPosition = FormStartPosition.Manual;
-            venetana.Location = new Point(720, 205);
-            venetana.Show();
+            humero ventana = new humero();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void lcn_Click(object sender, EventArgs e)
         {
-            lcn venetana = new lcn();
-            venetana.StartPosition = FormStartPosition.Manual;
-            venetana.Location = new Point(720, 205);
-            venetana.Show();
+            lcn ventana = new lcn();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void perone_Click(object sender, EventArgs e)
         {
-            perone venetana = new perone();
-            venetana.StartPosition = FormStartPosition.Manual;
-            venetana.Location = new Point(720, 205);
-            venetana.Show();
+            perone ventana = new perone();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void radio_Click(object sender, EventArgs e)
         {
-            radio venetana = new radio();
-            venetana.StartPosition = FormStartPosition.Manual;
-            venetana.Location = new Point(720, 205);
-            venetana.Show();
+            radio ventana = new radio();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void rnpg_Click(object sender, EventArgs e)
         {
-            rnpartosgem venetana = new rnpartosgem();
-            venetana.StartPosition = FormStartPosition.Manual;
-            venetana.Location = new Point(720, 205);
-            venetana.Show();
+            rnpartosgem ventana = new rnpartosgem();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void rnps_Click(object sender, EventArgs e)
         {
-            rnpartsimples venetana = new rnpartsimples();
-            venetana.StartPosition = FormStartPosition.Manual;
-            venetana.Location = new Point(720, 205);
-            venetana.Show();
+            rnpartsimples ventana = new rnpartsimples();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void tibia_Click(object sender, EventArgs e)
         {
-            tibia venetana =new tibia();
-            venetana.StartPosition = FormStartPosition.Manual;
-            venetana.Location = new Point(720, 205);
-            venetana.Show();
+            tibia ventana = new tibia();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
+        }
+
+        private void acm_Click(object sender, EventArgs e)
+        {
+            acm ventana = new acm();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
+
+        }
+
+        private void au_Click(object sender, EventArgs e)
+        {
+            arteriauternia ventana = new arteriauternia();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
+        }
+
+        private void aum_Click(object sender, EventArgs e)
+        {
+            arteriumbilical ventana = new arteriumbilical();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
+        }
+
+        private void ductus_Click(object sender, EventArgs e)
+        {
+            ductus ventana = new ductus();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
+        }
+
+        private void psacm_Click(object sender, EventArgs e)
+        {
+            peaksistolicoacm ventana = new peaksistolicoacm();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
+        }
+
+        private void ad_Click(object sender, EventArgs e)
+        {
+            aortadescendiente ventana = new aortadescendiente();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
     }
 }

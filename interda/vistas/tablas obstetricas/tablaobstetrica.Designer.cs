@@ -263,6 +263,7 @@
             this.ad.TabIndex = 6;
             this.ad.Text = "Aorta decendente";
             this.ad.UseVisualStyleBackColor = true;
+            this.ad.Click += new System.EventHandler(this.ad_Click);
             // 
             // psacm
             // 
@@ -273,6 +274,7 @@
             this.psacm.TabIndex = 5;
             this.psacm.Text = "Peack sistolico ACM";
             this.psacm.UseVisualStyleBackColor = true;
+            this.psacm.Click += new System.EventHandler(this.psacm_Click);
             // 
             // ductus
             // 
@@ -283,6 +285,7 @@
             this.ductus.TabIndex = 4;
             this.ductus.Text = "Ductus";
             this.ductus.UseVisualStyleBackColor = true;
+            this.ductus.Click += new System.EventHandler(this.ductus_Click);
             // 
             // au
             // 
@@ -293,6 +296,7 @@
             this.au.TabIndex = 3;
             this.au.Text = "Arteria uterina";
             this.au.UseVisualStyleBackColor = true;
+            this.au.Click += new System.EventHandler(this.au_Click);
             // 
             // aum
             // 
@@ -303,6 +307,7 @@
             this.aum.TabIndex = 2;
             this.aum.Text = "Arteria umbilical";
             this.aum.UseVisualStyleBackColor = true;
+            this.aum.Click += new System.EventHandler(this.aum_Click);
             // 
             // acm
             // 
@@ -313,6 +318,7 @@
             this.acm.TabIndex = 1;
             this.acm.Text = "Arteria cerebral media";
             this.acm.UseVisualStyleBackColor = true;
+            this.acm.Click += new System.EventHandler(this.acm_Click);
             // 
             // label3
             // 

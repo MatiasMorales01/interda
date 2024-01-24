@@ -11,28 +11,25 @@ using System.Windows.Forms;
 
 namespace interda.vistas
 {
-    public partial class rnpartsimples : Form
+    public partial class ductus : Form
     {
-        conector conector=new conector();
-        public rnpartsimples()
+        conector conector = new conector();
+        public ductus()
         {
             InitializeComponent();
             Label label1 = new Label();
-            label1.Text = "RN Partos Simples";
+            label1.Text = "Ductus";
             label1.Font = new Font(label1.Font.FontFamily, 15, label1.Font.Style);
             DataGridView dataGridView1 = new DataGridView();
-            label1.AutoSize = true;
             this.Controls.Add(dataGridView1);
             this.Controls.Add(label1);
-            DataTable datos = conector.leer("select * from rnpartossimples");
+            DataTable datos = conector.leer("select * from ductus");
             dataGridView1.DataSource = datos;
             label1.Location = new Point(40, 30);
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             dataGridView1.ScrollBars = ScrollBars.Both;
-
-
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
                 dataGridView1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -45,7 +42,7 @@ namespace interda.vistas
             dataGridView1.Location = new Point(50, 60);
         }
 
-        private void rnpartsimples_Load(object sender, EventArgs e)
+        private void ductus_Load(object sender, EventArgs e)
         {
 
         }
