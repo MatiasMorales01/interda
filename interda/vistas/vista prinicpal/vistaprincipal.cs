@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,11 +17,18 @@ namespace interda.vistas
     public partial class vistaprincipal : Form
     {
         conector miConector = new conector();
+        Dictionary<string, string> institucionImagenes = new Dictionary<string, string>
+                {
+                    { "Hospital San Pablo de Coquimbo", "hc.png" },
+                    { "CLINICA ELQUI", "rse.png" },
+                };
         public vistaprincipal()
         {
             InitializeComponent();
             cargarDatoscombobox();
-            
+
+         
+
             comboBoxdoctor.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxasistente.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxecografo.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -35,17 +43,16 @@ namespace interda.vistas
         {
             System.Windows.Forms.ComboBox comboBox = (System.Windows.Forms.ComboBox)sender;
 
-            // Obtener la fila completa (DataRowView) del elemento seleccionado
+           
             DataRowView selectedRow = (DataRowView)comboBox.SelectedItem;
 
-            // Construir la información detallada
             StringBuilder detalleStringBuilder = new StringBuilder();
             for (int i = 0; i < selectedRow.Row.ItemArray.Length; i++)
             {
                 detalleStringBuilder.AppendLine($"{selectedRow.Row.Table.Columns[i].ColumnName}: {selectedRow.Row[i]}");
             }
 
-            // Mostrar la información detallada en el TextBox
+           
             textBox1.Text = detalleStringBuilder.ToString();
         }
 
@@ -181,6 +188,14 @@ namespace interda.vistas
                 {
                     string institucion = selectedRow["Nombre tributario"].ToString();
                     textBox2.Text = institucion;
+
+                    // Verifica si la institución está en el diccionario
+                    if (institucionImagenes.ContainsKey(institucion))
+                    {
+                        string nombreImagen = institucionImagenes[institucion];
+                        MostrarImagen(nombreImagen);
+                    }
+
                     string mail1 = selectedRow["Mail 1"].ToString();
                     textBox3.Text = mail1;
                     string mail2 = selectedRow["Mail 2"].ToString();
@@ -191,12 +206,36 @@ namespace interda.vistas
             }
             else
             {
-                textBox2.Text = string.Empty;
-                textBox3.Text = string.Empty;
-                textBox4.Text = string.Empty;
-                textBox5.Text = string.Empty;
+                LimpiarDatosInstitucion();
             }
         }
+
+        private void LimpiarDatosInstitucion()
+        {
+            textBox2.Text = string.Empty;
+            textBox3.Text = string.Empty;
+            textBox4.Text = string.Empty;
+            textBox5.Text = string.Empty;
+
+            // Puedes agregar más limpieza según sea necesario
+        }
+
+        private void MostrarImagen(string nombreImagen)
+        {
+            string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes", nombreImagen);
+
+            // Verifica si el archivo de imagen existe
+            if (File.Exists(rutaImagen))
+            {
+                pictureBox2.Image = Image.FromFile(rutaImagen);
+            }
+            else
+            {
+                // Puedes manejar el caso en el que la imagen no existe
+                pictureBox2.Image = null;
+            }
+        }
+
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
