@@ -81,9 +81,10 @@
             // 
             // textBox_plantilla
             // 
-            this.textBox_plantilla.Location = new System.Drawing.Point(17, 210);
+            this.textBox_plantilla.Location = new System.Drawing.Point(17, 200);
+            this.textBox_plantilla.Multiline = true;
             this.textBox_plantilla.Name = "textBox_plantilla";
-            this.textBox_plantilla.Size = new System.Drawing.Size(712, 22);
+            this.textBox_plantilla.Size = new System.Drawing.Size(757, 221);
             this.textBox_plantilla.TabIndex = 13;
             this.textBox_plantilla.TextChanged += new System.EventHandler(this.textBox_plantilla_TextChanged);
             // 
