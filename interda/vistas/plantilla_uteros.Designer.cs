@@ -62,7 +62,10 @@
             // 
             // comboBox_nombre
             // 
+            this.comboBox_nombre.AllowDrop = true;
             this.comboBox_nombre.FormattingEnabled = true;
+            this.comboBox_nombre.IntegralHeight = false;
+            this.comboBox_nombre.ItemHeight = 16;
             this.comboBox_nombre.Location = new System.Drawing.Point(408, 40);
             this.comboBox_nombre.Name = "comboBox_nombre";
             this.comboBox_nombre.Size = new System.Drawing.Size(335, 24);

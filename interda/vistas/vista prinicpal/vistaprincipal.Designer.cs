@@ -195,6 +195,7 @@
             this.btninstitucionencabezado.TabIndex = 14;
             this.btninstitucionencabezado.Text = "Institucion/Encabezado de pagina";
             this.btninstitucionencabezado.UseVisualStyleBackColor = true;
+            this.btninstitucionencabezado.Click += new System.EventHandler(this.btninstitucionencabezado_Click);
             // 
             // btninfobstetrico
             // 
