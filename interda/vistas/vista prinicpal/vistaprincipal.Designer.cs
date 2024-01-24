@@ -52,6 +52,7 @@
             this.btnconclusionanatomia = new System.Windows.Forms.Button();
             this.btnidreferencias = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,7 +158,7 @@
             // btnactualizar
             // 
             this.btnactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnactualizar.Location = new System.Drawing.Point(235, 321);
+            this.btnactualizar.Location = new System.Drawing.Point(235, 475);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(105, 30);
             this.btnactualizar.TabIndex = 11;
@@ -277,18 +278,28 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(214, 367);
+            this.pictureBox1.Location = new System.Drawing.Point(189, 511);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(186, 182);
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(16, 324);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(521, 123);
+            this.textBox1.TabIndex = 23;
+            // 
             // vistaprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 607);
+            this.ClientSize = new System.Drawing.Size(1029, 701);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnidreferencias);
             this.Controls.Add(this.btnconclusionanatomia);
@@ -346,5 +357,6 @@
         private System.Windows.Forms.Button btnconclusionanatomia;
         private System.Windows.Forms.Button btnidreferencias;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

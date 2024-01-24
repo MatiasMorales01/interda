@@ -20,12 +20,33 @@ namespace interda.vistas
         {
             InitializeComponent();
             cargarDatoscombobox();
+            
             comboBoxdoctor.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxasistente.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxecografo.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxpiepag.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            comboBoxpiepag.SelectedIndexChanged += MostrarDetalleSeleccionado;
+
             this.FormClosing += vistaprincipal_close;
             
+        }
+        private void MostrarDetalleSeleccionado(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ComboBox comboBox = (System.Windows.Forms.ComboBox)sender;
+
+            // Obtener la fila completa (DataRowView) del elemento seleccionado
+            DataRowView selectedRow = (DataRowView)comboBox.SelectedItem;
+
+            // Construir la información detallada
+            StringBuilder detalleStringBuilder = new StringBuilder();
+            for (int i = 0; i < selectedRow.Row.ItemArray.Length; i++)
+            {
+                detalleStringBuilder.AppendLine($"{selectedRow.Row.Table.Columns[i].ColumnName}: {selectedRow.Row[i]}");
+            }
+
+            // Mostrar la información detallada en el TextBox
+            textBox1.Text = detalleStringBuilder.ToString();
         }
 
         private void cargarDatoscombobox()
@@ -42,10 +63,11 @@ namespace interda.vistas
             comboBoxecografo.DataSource = datos3;
             comboBoxecografo.DisplayMember = "ecógrafo";
             comboBoxecografo.ValueMember = "ecógrafo";
+
             DataTable datos4 = miConector.leer("select * from `pie de pagina`");
             comboBoxpiepag.DataSource = datos4;
             comboBoxpiepag.DisplayMember = "pie de pagina";
-            comboBoxpiepag.ValueMember = "pie de pagina";
+            comboBoxpiepag.ValueMember = "pie de pagina";  
         }
 
 
