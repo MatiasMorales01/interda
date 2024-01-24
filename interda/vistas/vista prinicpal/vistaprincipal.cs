@@ -21,6 +21,7 @@ namespace interda.vistas
                 {
                     { "Hospital San Pablo de Coquimbo", "hc.png" },
                     { "CLINICA ELQUI", "rse.png" },
+                    { "Unidad de Ecotomografía Obstétrica y Ginecológica","hls.png"}
                 };
         public vistaprincipal()
         {
