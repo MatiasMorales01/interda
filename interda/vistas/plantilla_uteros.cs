@@ -63,5 +63,10 @@ namespace interda.vistas
         {
 
         }
+
+        private void plantilla_uteros_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

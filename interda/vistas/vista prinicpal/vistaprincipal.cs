@@ -51,6 +51,8 @@ namespace interda.vistas
 
         private void cargarDatoscombobox()
         {
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+
             DataTable datos = miConector.leer("select * from ecografista");
             comboBoxdoctor.DataSource = datos;
             comboBoxdoctor.DisplayMember = "ecografista";
@@ -67,7 +69,12 @@ namespace interda.vistas
             DataTable datos4 = miConector.leer("select * from `pie de pagina`");
             comboBoxpiepag.DataSource = datos4;
             comboBoxpiepag.DisplayMember = "pie de pagina";
-            comboBoxpiepag.ValueMember = "pie de pagina";  
+            comboBoxpiepag.ValueMember = "pie de pagina";
+
+            DataTable datos5 = miConector.leer("select * from institucion");
+            comboBox1.DataSource = datos5;
+            comboBox1.DisplayMember = "Nombre de fantasia";
+            comboBox1.ValueMember = "Nombre de fantasia";
         }
 
 
@@ -160,6 +167,40 @@ namespace interda.vistas
         {
             institucion institucion = new institucion();
             institucion.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedIndex = comboBox1.SelectedIndex;
+
+            if (selectedIndex >= 0)
+            {
+                DataRowView selectedRow = (DataRowView)comboBox1.SelectedItem;
+
+                if (selectedRow != null)
+                {
+                    string institucion = selectedRow["Nombre tributario"].ToString();
+                    textBox2.Text = institucion;
+                    string mail1 = selectedRow["Mail 1"].ToString();
+                    textBox3.Text = mail1;
+                    string mail2 = selectedRow["Mail 2"].ToString();
+                    textBox4.Text = mail2;
+                    string text_mail = selectedRow["Texto de salida mail"].ToString();
+                    textBox5.Text = text_mail;
+                }
+            }
+            else
+            {
+                textBox2.Text = string.Empty;
+                textBox3.Text = string.Empty;
+                textBox4.Text = string.Empty;
+                textBox5.Text = string.Empty;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

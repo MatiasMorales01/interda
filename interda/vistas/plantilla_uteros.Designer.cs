@@ -132,6 +132,7 @@
             this.Controls.Add(this.label3);
             this.Name = "plantilla_uteros";
             this.Text = "plantilla_uteros";
+            this.Load += new System.EventHandler(this.plantilla_uteros_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
