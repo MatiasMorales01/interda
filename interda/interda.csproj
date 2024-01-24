@@ -119,10 +119,10 @@
     <Compile Include="vistas\conclusion_anatomia.Designer.cs">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\rnpartsimples.cs">
+    <Compile Include="vistas\tablas obstetricas\rnpartsimples.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\rnpartsimples.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\rnpartsimples.Designer.cs">
       <DependentUpon>rnpartsimples.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\tablas obstetricas\cerebelo.cs">
@@ -389,10 +389,10 @@
     <Compile Include="vistas\idreferencias\vejiga.Designer.cs">
       <DependentUpon>vejiga.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\tibia.cs">
+    <Compile Include="vistas\tablas obstetricas\tibia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\tibia.Designer.cs">
+    <Compile Include="vistas\tablas obstetricas\tibia.Designer.cs">
       <DependentUpon>tibia.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\vista prinicpal\vistaprincipal.cs">
@@ -419,7 +419,7 @@
     <EmbeddedResource Include="vistas\conclusion_anatomia.resx">
       <DependentUpon>conclusion_anatomia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\rnpartsimples.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\rnpartsimples.resx">
       <DependentUpon>rnpartsimples.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\cerebelo.resx">
@@ -554,7 +554,7 @@
     <EmbeddedResource Include="vistas\idreferencias\vejiga.resx">
       <DependentUpon>vejiga.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\tibia.resx">
+    <EmbeddedResource Include="vistas\tablas obstetricas\tibia.resx">
       <DependentUpon>tibia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\vista prinicpal\vistaprincipal.resx">
