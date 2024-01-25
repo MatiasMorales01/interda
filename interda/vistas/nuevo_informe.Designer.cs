@@ -885,6 +885,7 @@
             this.textBox1_CI.Name = "textBox1_CI";
             this.textBox1_CI.Size = new System.Drawing.Size(113, 26);
             this.textBox1_CI.TabIndex = 31;
+            this.textBox1_CI.TextChanged += new System.EventHandler(this.textBox1_CI_TextChanged);
             // 
             // label2
             // 

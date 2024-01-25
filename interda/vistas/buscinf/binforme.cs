@@ -43,7 +43,7 @@ namespace interda.vistas
                 string apellido = filaSeleccionada.Cells["Apellidos"].Value.ToString();
 
                 // Muestra un mensaje con el nombre y apellido
-                pb ventana = new pb();
+                pb ventana = new pb(rowIndex);
                 ventana.Show();
 
                 // Puedes usar el índice (rowIndex) como desees

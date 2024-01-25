@@ -87,8 +87,6 @@ namespace interda.vistas
             comboBox1.DisplayMember = "Nombre de fantasia";
             comboBox1.ValueMember = "Nombre de fantasia";
         }
-
-
     
         private void vistaprincipal_close(object sender, FormClosingEventArgs e)
         {

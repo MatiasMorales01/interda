@@ -233,5 +233,10 @@ namespace interda.vistas
         {
 
         }
+
+        private void textBox1_CI_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
