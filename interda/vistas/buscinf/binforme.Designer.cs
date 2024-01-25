@@ -106,8 +106,9 @@
             this.tablabuscador.RowTemplate.Height = 24;
             this.tablabuscador.Size = new System.Drawing.Size(967, 411);
             this.tablabuscador.TabIndex = 6;
+            this.tablabuscador.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablabuscador_CellContentClick);
             // 
-            // pruebas
+            // binforme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,7 +120,7 @@
             this.Controls.Add(this.textBoxci);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "pruebas";
+            this.Name = "binforme";
             this.Text = "pruebas";
             this.Load += new System.EventHandler(this.pruebas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablabuscador)).EndInit();

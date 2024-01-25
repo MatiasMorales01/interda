@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace interda.vistas
 {
@@ -174,7 +175,6 @@ namespace interda.vistas
 
         private void actualizar(int index)
         {
-            textBox13.Text = index.ToString();
             DataTable datos = conector.leer("select * from buscador");
             hospitales.Text = datos.Rows[index]["Institucion o empresa"].ToString();
             comboBox1_tipo_examen.Text = datos.Rows[index]["Tipo de exámen"].ToString();
@@ -191,6 +191,20 @@ namespace interda.vistas
             textBox1.Text = datos.Rows[index]["FURpaciente"].ToString();
             textBox9.Text = datos.Rows[index]["FUR"].ToString();
             comboBox1.Text = datos.Rows[index]["Pied de pagina"].ToString();
+
+            //cargar panel inferior
+            string textoci = textBox1_CI.Text;
+            string consultaSQL = string.IsNullOrEmpty(textoci)
+                ? "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador limit 15"
+                : "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador where CI='" + textoci + "'";
+
+            DataTable datos2 = conector.leer(consultaSQL);
+            tablabuscador.DataSource = datos2;
+
+            tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            tablabuscador.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            tablabuscador.AutoResizeColumns();
+            tablabuscador.AutoResizeRows();
         }
 
         private void button2_Click(object sender, EventArgs e)
