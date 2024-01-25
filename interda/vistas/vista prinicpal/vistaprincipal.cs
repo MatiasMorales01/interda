@@ -223,8 +223,8 @@ namespace interda.vistas
 
         private void MostrarImagen(string nombreImagen)
         {
-            string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\MatiasMorales01\interda\interda\imagenes", nombreImagen);
-
+           // string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\MatiasMorales01\interda\interda\imagenes", nombreImagen);
+            string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes", nombreImagen);
             // Verifica si el archivo de imagen existe
             if (File.Exists(rutaImagen))
             {

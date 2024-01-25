@@ -39,9 +39,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.Location = new System.Drawing.Point(41, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 29);
+            this.label1.Size = new System.Drawing.Size(86, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cerebelo";
+            this.label1.Text = "Cubito";
             // 
             // dataGridView1
             // 
