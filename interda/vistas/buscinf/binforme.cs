@@ -30,18 +30,22 @@ namespace interda.vistas
         }
         private void tablabuscador_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) // Asegura que se hace clic en una fila válida
+            if (e.RowIndex >= 0)
             {
-                DataGridViewRow filaSeleccionada = tablabuscador.Rows[e.RowIndex];
+                int rowIndex = e.RowIndex;
+
+                DataGridViewRow filaSeleccionada = tablabuscador.Rows[rowIndex];
 
                 // Obtiene los valores de nombre y apellido de la fila seleccionada
                 string nombre = filaSeleccionada.Cells["Nombres"].Value.ToString();
                 string apellido = filaSeleccionada.Cells["Apellidos"].Value.ToString();
 
                 // Muestra un mensaje con el nombre y apellido
-                pb ventana=new pb(nombre,apellido);
+                pb ventana = new pb();
                 ventana.Show();
-               // MessageBox.Show($"Has seleccionado:\nNombre: {nombre}\nApellido: {apellido}", "Información");
+
+                // Puedes usar el índice (rowIndex) como desees
+                MessageBox.Show($"Has seleccionado:\nNombre: {nombre}\nApellido: {apellido}\nÍndice: {rowIndex}", "Información");
             }
         }
 
