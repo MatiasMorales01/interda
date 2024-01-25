@@ -17,6 +17,8 @@ namespace interda.vistas
         public femur()
         {
             InitializeComponent();
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             Label label1 = new Label();

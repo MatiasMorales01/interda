@@ -21,6 +21,8 @@ namespace interda.vistas
             DataTable datos = miConector.leer("select * from codex");
             exam.DataSource = datos;
             exam.Location = new Point(50, 60);
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             exam.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;

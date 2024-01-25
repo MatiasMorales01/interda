@@ -19,6 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_pared_abdominal");
             pared.DataSource = datos;
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             pared.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;

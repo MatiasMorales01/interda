@@ -18,6 +18,8 @@ namespace interda.vistas
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.Width = 800;
+            this.Height = 583;
         }
 
         private void idreferencias_Load(object sender, EventArgs e)

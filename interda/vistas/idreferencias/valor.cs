@@ -17,6 +17,8 @@ namespace interda.vistas
         public valor()
         {
             InitializeComponent();
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             DataTable datos = miConector.leer("select * from valormonetario");

@@ -16,6 +16,8 @@ namespace interda.vistas
         conector conector = new conector();
         public liquidoamniotico()
         {
+            this.Width = 800;
+            this.Height = 583;
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

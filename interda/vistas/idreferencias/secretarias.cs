@@ -17,6 +17,8 @@ namespace interda.vistas
         public secretarias()
         {
             InitializeComponent();
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             DataTable datos = conector.leer("select * from secretarias");

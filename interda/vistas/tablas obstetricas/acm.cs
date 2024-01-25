@@ -16,6 +16,8 @@ namespace interda.vistas
         conector conector = new conector();
         public acm(){
             InitializeComponent();
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             Label label1 = new Label();
