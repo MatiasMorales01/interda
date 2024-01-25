@@ -19,6 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_cordon_umbilical");
             cordon.DataSource = datos;
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             cordon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;

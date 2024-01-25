@@ -17,12 +17,10 @@ namespace interda.vistas
         public endometrio()
         {
             InitializeComponent();
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-        }
-
-        private void endometrio_Load(object sender, EventArgs e)
-        {
             DataTable datos = conector.leer("select * from endometriotipo");
             endo.DataSource = datos;
             label1.Location = new Point(40, 30);
@@ -37,6 +35,11 @@ namespace interda.vistas
             }
             endo.Width = 700;
             endo.Height = 350;
+        }
+
+        private void endometrio_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

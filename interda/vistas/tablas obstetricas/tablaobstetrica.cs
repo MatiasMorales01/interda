@@ -15,6 +15,8 @@ namespace interda.vistas
         public tablaobstetrica()
         {
             InitializeComponent();
+            this.Width = 800;
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
         }

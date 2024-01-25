@@ -18,6 +18,8 @@ namespace interda.vistas
         {
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_tracto_gastrointestinal");
+            this.Width = 800;
+            this.Height = 583;
             tracto.DataSource = datos;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

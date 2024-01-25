@@ -22,6 +22,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = conector.leer("select Fecha, CI, Nombres, Apellidos,`Tipo de exámen`,FUR,Ecografista,Correlativo from buscador limit 15");
             tablabuscador.DataSource = datos;
+            this.Width = 800; 
+            this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             tablabuscador.CellDoubleClick += tablabuscador_CellDoubleClick;
