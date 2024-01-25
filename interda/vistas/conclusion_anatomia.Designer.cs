@@ -49,7 +49,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(799, 87);
+            this.panel1.Size = new System.Drawing.Size(1138, 87);
             this.panel1.TabIndex = 0;
             // 
             // der
@@ -122,7 +122,7 @@
             this.textBox_detalle.Location = new System.Drawing.Point(117, 162);
             this.textBox_detalle.Multiline = true;
             this.textBox_detalle.Name = "textBox_detalle";
-            this.textBox_detalle.Size = new System.Drawing.Size(587, 165);
+            this.textBox_detalle.Size = new System.Drawing.Size(806, 167);
             this.textBox_detalle.TabIndex = 4;
             this.textBox_detalle.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -134,7 +134,7 @@
             this.textBox_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_nombre.Location = new System.Drawing.Point(117, 116);
             this.textBox_nombre.Name = "textBox_nombre";
-            this.textBox_nombre.Size = new System.Drawing.Size(587, 26);
+            this.textBox_nombre.Size = new System.Drawing.Size(806, 26);
             this.textBox_nombre.TabIndex = 5;
             this.textBox_nombre.TextChanged += new System.EventHandler(this.textBox_nombre_TextChanged);
             // 
@@ -152,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1019, 535);
             this.Controls.Add(this.comboBox_filtro);
             this.Controls.Add(this.textBox_nombre);
             this.Controls.Add(this.textBox_detalle);

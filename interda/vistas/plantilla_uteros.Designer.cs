@@ -57,7 +57,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 100);
+            this.panel1.Size = new System.Drawing.Size(1094, 100);
             this.panel1.TabIndex = 9;
             // 
             // comboBox_nombre
@@ -68,7 +68,7 @@
             this.comboBox_nombre.ItemHeight = 16;
             this.comboBox_nombre.Location = new System.Drawing.Point(408, 40);
             this.comboBox_nombre.Name = "comboBox_nombre";
-            this.comboBox_nombre.Size = new System.Drawing.Size(335, 24);
+            this.comboBox_nombre.Size = new System.Drawing.Size(396, 24);
             this.comboBox_nombre.TabIndex = 4;
             this.comboBox_nombre.SelectedIndexChanged += new System.EventHandler(this.comboBox_nombre_SelectedIndexChanged);
             // 
@@ -84,7 +84,7 @@
             // 
             // textBox_plantilla
             // 
-            this.textBox_plantilla.Location = new System.Drawing.Point(17, 200);
+            this.textBox_plantilla.Location = new System.Drawing.Point(176, 248);
             this.textBox_plantilla.Multiline = true;
             this.textBox_plantilla.Name = "textBox_plantilla";
             this.textBox_plantilla.Size = new System.Drawing.Size(757, 221);
@@ -95,15 +95,15 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 162);
+            this.label4.Location = new System.Drawing.Point(40, 210);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 25);
+            this.label4.Size = new System.Drawing.Size(128, 25);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Plantilla_útero";
+            this.label4.Text = "Plantilla útero";
             // 
             // textBox_nombre
             // 
-            this.textBox_nombre.Location = new System.Drawing.Point(133, 120);
+            this.textBox_nombre.Location = new System.Drawing.Point(176, 124);
             this.textBox_nombre.Name = "textBox_nombre";
             this.textBox_nombre.Size = new System.Drawing.Size(504, 22);
             this.textBox_nombre.TabIndex = 11;
@@ -113,7 +113,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 116);
+            this.label3.Location = new System.Drawing.Point(40, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 10;
@@ -124,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1020, 508);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox_plantilla);
             this.Controls.Add(this.label4);
