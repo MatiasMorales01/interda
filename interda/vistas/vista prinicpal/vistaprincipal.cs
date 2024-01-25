@@ -27,7 +27,8 @@ namespace interda.vistas
         {
             InitializeComponent();
             cargarDatoscombobox();
-
+            //string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes\fondo.jpg");
+            //this.BackgroundImage = Image.FromFile(rutaImagen);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
 
@@ -111,14 +112,15 @@ namespace interda.vistas
             idreferencias idreferencias = new idreferencias();
             idreferencias.StartPosition = FormStartPosition.Manual;
             idreferencias.Location = new Point(120, 170);
-            //idreferencias.StartPosition = FormStartPosition.CenterScreen;
             idreferencias.Show();
-           // this.Hide();
+           
         }
 
         private void btninfobstetrico_Click(object sender, EventArgs e)
         {
             informeobstetrico informeobstetrico = new informeobstetrico();
+            informeobstetrico.StartPosition = FormStartPosition.Manual;
+            informeobstetrico.Location = new Point(120, 170);
             informeobstetrico.Show();
 
         }
@@ -126,6 +128,8 @@ namespace interda.vistas
         private void btnanatomiafetal_Click(object sender, EventArgs e)
         {
             anatomia_Fetal ventana = new anatomia_Fetal();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(120, 170);
             ventana.Show();
            // this.Hide();
 
@@ -141,8 +145,10 @@ namespace interda.vistas
 
         private void btnpiedepagina_Click(object sender, EventArgs e)
         {
-            piedepag piedepag = new piedepag();
-            piedepag.Show();
+            piedepa piedepa = new piedepa();
+            piedepa.StartPosition = FormStartPosition.CenterScreen;
+
+            piedepa.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -157,24 +163,29 @@ namespace interda.vistas
         private void btnconclusionanatomia_Click(object sender, EventArgs e)
         {
             conclusion_anatomia conclusionA = new conclusion_anatomia();
+            conclusionA.StartPosition = FormStartPosition.CenterScreen;
             conclusionA.Show();
         }
 
         private void btnbuscarinf_Click(object sender, EventArgs e)
         {
             binforme buscarinf = new binforme();
+            buscarinf.StartPosition = FormStartPosition.CenterScreen;
             buscarinf.Show();
         }
 
         private void btnplanillautero_Click(object sender, EventArgs e)
         {
             plantilla_uteros plantilla_utero = new plantilla_uteros();
+            plantilla_utero.StartPosition = FormStartPosition.CenterScreen;
             plantilla_utero.Show();
         }
 
         private void btninstitucionencabezado_Click(object sender, EventArgs e)
         {
             institucion institucion = new institucion();
+            institucion.StartPosition = FormStartPosition.Manual;
+            institucion.Location = new Point(120, 170);
             institucion.Show();
         }
 
@@ -224,8 +235,8 @@ namespace interda.vistas
 
         private void MostrarImagen(string nombreImagen)
         {
-            string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\MatiasMorales01\interda\interda\imagenes", nombreImagen);
-           // string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes", nombreImagen);
+            //string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\MatiasMorales01\interda\interda\imagenes", nombreImagen);
+            string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes", nombreImagen);
             // Verifica si el archivo de imagen existe
             if (File.Exists(rutaImagen))
             {

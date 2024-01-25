@@ -131,6 +131,12 @@
     <Compile Include="vistas\pb.Designer.cs">
       <DependentUpon>pb.cs</DependentUpon>
     </Compile>
+    <Compile Include="vistas\piedepa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\piedepa.Designer.cs">
+      <DependentUpon>piedepa.cs</DependentUpon>
+    </Compile>
     <Compile Include="vistas\tablas obstetricas\acm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -499,6 +505,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\pb.resx">
       <DependentUpon>pb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\piedepa.resx">
+      <DependentUpon>piedepa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\acm.resx">
       <DependentUpon>acm.cs</DependentUpon>

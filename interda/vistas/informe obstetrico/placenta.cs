@@ -17,6 +17,8 @@ namespace interda.vistas
         public placenta()
         {
             InitializeComponent();
+            string rutaImagen = "C:\\Users\\clinica\\source\\repos\\interda\\interda\\imagenes\\fondo.png";
+            this.BackgroundImage = Image.FromFile(rutaImagen);
             this.Width = 800;
             this.Height = 583;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -32,7 +34,7 @@ namespace interda.vistas
             this.Controls.Add(label1);
             DataTable datos = conector.leer("select * from placenta");
             dataGridView1.DataSource = datos;
-            label1.Location = new Point(40, 30);
+           
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
@@ -48,7 +50,8 @@ namespace interda.vistas
 
             dataGridView1.Width = 700;
             dataGridView1.Height = 350;
-            dataGridView1.Location = new Point(50, 60);
+            label1.Location = new Point(40, 90);
+            dataGridView1.Location = new Point(50, 130);
         }
 
         private void placenta_Load(object sender, EventArgs e)

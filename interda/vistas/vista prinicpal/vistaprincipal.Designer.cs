@@ -62,8 +62,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -192,7 +192,7 @@
             // btnbuscarinf
             // 
             this.btnbuscarinf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnbuscarinf.Location = new System.Drawing.Point(616, 63);
+            this.btnbuscarinf.Location = new System.Drawing.Point(616, 61);
             this.btnbuscarinf.Name = "btnbuscarinf";
             this.btnbuscarinf.Size = new System.Drawing.Size(164, 32);
             this.btnbuscarinf.TabIndex = 13;
@@ -203,7 +203,7 @@
             // btninstitucionencabezado
             // 
             this.btninstitucionencabezado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btninstitucionencabezado.Location = new System.Drawing.Point(616, 101);
+            this.btninstitucionencabezado.Location = new System.Drawing.Point(616, 100);
             this.btninstitucionencabezado.Name = "btninstitucionencabezado";
             this.btninstitucionencabezado.Size = new System.Drawing.Size(164, 73);
             this.btninstitucionencabezado.TabIndex = 14;
@@ -214,7 +214,7 @@
             // btninfobstetrico
             // 
             this.btninfobstetrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btninfobstetrico.Location = new System.Drawing.Point(616, 259);
+            this.btninfobstetrico.Location = new System.Drawing.Point(616, 258);
             this.btninfobstetrico.Name = "btninfobstetrico";
             this.btninfobstetrico.Size = new System.Drawing.Size(164, 59);
             this.btninfobstetrico.TabIndex = 15;
@@ -225,7 +225,7 @@
             // btntablaobstetrica
             // 
             this.btntablaobstetrica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btntablaobstetrica.Location = new System.Drawing.Point(616, 324);
+            this.btntablaobstetrica.Location = new System.Drawing.Point(616, 323);
             this.btntablaobstetrica.Name = "btntablaobstetrica";
             this.btntablaobstetrica.Size = new System.Drawing.Size(164, 59);
             this.btntablaobstetrica.TabIndex = 16;
@@ -236,7 +236,7 @@
             // btnanatomiafetal
             // 
             this.btnanatomiafetal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnanatomiafetal.Location = new System.Drawing.Point(616, 389);
+            this.btnanatomiafetal.Location = new System.Drawing.Point(616, 388);
             this.btnanatomiafetal.Name = "btnanatomiafetal";
             this.btnanatomiafetal.Size = new System.Drawing.Size(164, 32);
             this.btnanatomiafetal.TabIndex = 17;
@@ -247,7 +247,7 @@
             // btnpiedepagina
             // 
             this.btnpiedepagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnpiedepagina.Location = new System.Drawing.Point(616, 427);
+            this.btnpiedepagina.Location = new System.Drawing.Point(616, 430);
             this.btnpiedepagina.Name = "btnpiedepagina";
             this.btnpiedepagina.Size = new System.Drawing.Size(164, 32);
             this.btnpiedepagina.TabIndex = 18;
@@ -258,7 +258,7 @@
             // btnplanillautero
             // 
             this.btnplanillautero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnplanillautero.Location = new System.Drawing.Point(616, 465);
+            this.btnplanillautero.Location = new System.Drawing.Point(616, 468);
             this.btnplanillautero.Name = "btnplanillautero";
             this.btnplanillautero.Size = new System.Drawing.Size(164, 56);
             this.btnplanillautero.TabIndex = 19;
@@ -269,7 +269,7 @@
             // btnconclusionanatomia
             // 
             this.btnconclusionanatomia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnconclusionanatomia.Location = new System.Drawing.Point(616, 527);
+            this.btnconclusionanatomia.Location = new System.Drawing.Point(616, 530);
             this.btnconclusionanatomia.Name = "btnconclusionanatomia";
             this.btnconclusionanatomia.Size = new System.Drawing.Size(164, 56);
             this.btnconclusionanatomia.TabIndex = 20;
@@ -280,7 +280,7 @@
             // btnidreferencias
             // 
             this.btnidreferencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnidreferencias.Location = new System.Drawing.Point(616, 180);
+            this.btnidreferencias.Location = new System.Drawing.Point(616, 179);
             this.btnidreferencias.Name = "btnidreferencias";
             this.btnidreferencias.Size = new System.Drawing.Size(164, 73);
             this.btnidreferencias.TabIndex = 21;
@@ -291,7 +291,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(189, 511);
+            this.pictureBox1.Location = new System.Drawing.Point(199, 511);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(186, 182);
             this.pictureBox1.TabIndex = 22;
@@ -407,6 +407,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1353, 716);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);

@@ -43,7 +43,6 @@
             this.button_vejigaFetal = new System.Windows.Forms.Button();
             this.button_cordonUmbilical = new System.Windows.Forms.Button();
             this.button_extremidades = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -52,7 +51,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(154, 29);
+            this.label1.Location = new System.Drawing.Point(206, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(454, 29);
             this.label1.TabIndex = 0;
@@ -61,7 +60,7 @@
             // button_cerebro
             // 
             this.button_cerebro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cerebro.Location = new System.Drawing.Point(202, 138);
+            this.button_cerebro.Location = new System.Drawing.Point(355, 187);
             this.button_cerebro.Name = "button_cerebro";
             this.button_cerebro.Size = new System.Drawing.Size(124, 28);
             this.button_cerebro.TabIndex = 1;
@@ -72,7 +71,7 @@
             // button_cabeza
             // 
             this.button_cabeza.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cabeza.Location = new System.Drawing.Point(202, 172);
+            this.button_cabeza.Location = new System.Drawing.Point(355, 221);
             this.button_cabeza.Name = "button_cabeza";
             this.button_cabeza.Size = new System.Drawing.Size(124, 28);
             this.button_cabeza.TabIndex = 2;
@@ -83,7 +82,7 @@
             // button_cara
             // 
             this.button_cara.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cara.Location = new System.Drawing.Point(202, 206);
+            this.button_cara.Location = new System.Drawing.Point(355, 255);
             this.button_cara.Name = "button_cara";
             this.button_cara.Size = new System.Drawing.Size(124, 27);
             this.button_cara.TabIndex = 3;
@@ -94,7 +93,7 @@
             // button_cuelloFetal
             // 
             this.button_cuelloFetal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cuelloFetal.Location = new System.Drawing.Point(202, 239);
+            this.button_cuelloFetal.Location = new System.Drawing.Point(355, 288);
             this.button_cuelloFetal.Name = "button_cuelloFetal";
             this.button_cuelloFetal.Size = new System.Drawing.Size(124, 27);
             this.button_cuelloFetal.TabIndex = 4;
@@ -104,7 +103,7 @@
             // button_columnaVertebral
             // 
             this.button_columnaVertebral.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_columnaVertebral.Location = new System.Drawing.Point(202, 272);
+            this.button_columnaVertebral.Location = new System.Drawing.Point(355, 321);
             this.button_columnaVertebral.Name = "button_columnaVertebral";
             this.button_columnaVertebral.Size = new System.Drawing.Size(124, 27);
             this.button_columnaVertebral.TabIndex = 5;
@@ -115,7 +114,7 @@
             // button_torax
             // 
             this.button_torax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_torax.Location = new System.Drawing.Point(202, 305);
+            this.button_torax.Location = new System.Drawing.Point(355, 354);
             this.button_torax.Name = "button_torax";
             this.button_torax.Size = new System.Drawing.Size(124, 27);
             this.button_torax.TabIndex = 6;
@@ -126,7 +125,7 @@
             // button_corazon
             // 
             this.button_corazon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_corazon.Location = new System.Drawing.Point(202, 338);
+            this.button_corazon.Location = new System.Drawing.Point(355, 387);
             this.button_corazon.Name = "button_corazon";
             this.button_corazon.Size = new System.Drawing.Size(124, 27);
             this.button_corazon.TabIndex = 7;
@@ -137,7 +136,7 @@
             // button_diafragma
             // 
             this.button_diafragma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_diafragma.Location = new System.Drawing.Point(405, 138);
+            this.button_diafragma.Location = new System.Drawing.Point(558, 187);
             this.button_diafragma.Name = "button_diafragma";
             this.button_diafragma.Size = new System.Drawing.Size(171, 28);
             this.button_diafragma.TabIndex = 8;
@@ -147,7 +146,7 @@
             // button_Tgastrointestinal
             // 
             this.button_Tgastrointestinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Tgastrointestinal.Location = new System.Drawing.Point(405, 172);
+            this.button_Tgastrointestinal.Location = new System.Drawing.Point(558, 221);
             this.button_Tgastrointestinal.Name = "button_Tgastrointestinal";
             this.button_Tgastrointestinal.Size = new System.Drawing.Size(171, 28);
             this.button_Tgastrointestinal.TabIndex = 9;
@@ -158,7 +157,7 @@
             // button_riñones
             // 
             this.button_riñones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_riñones.Location = new System.Drawing.Point(405, 206);
+            this.button_riñones.Location = new System.Drawing.Point(558, 255);
             this.button_riñones.Name = "button_riñones";
             this.button_riñones.Size = new System.Drawing.Size(171, 27);
             this.button_riñones.TabIndex = 10;
@@ -169,7 +168,7 @@
             // button_paredAbdominal
             // 
             this.button_paredAbdominal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_paredAbdominal.Location = new System.Drawing.Point(405, 235);
+            this.button_paredAbdominal.Location = new System.Drawing.Point(558, 284);
             this.button_paredAbdominal.Name = "button_paredAbdominal";
             this.button_paredAbdominal.Size = new System.Drawing.Size(171, 31);
             this.button_paredAbdominal.TabIndex = 11;
@@ -180,7 +179,7 @@
             // button_vejigaFetal
             // 
             this.button_vejigaFetal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_vejigaFetal.Location = new System.Drawing.Point(405, 272);
+            this.button_vejigaFetal.Location = new System.Drawing.Point(558, 321);
             this.button_vejigaFetal.Name = "button_vejigaFetal";
             this.button_vejigaFetal.Size = new System.Drawing.Size(171, 27);
             this.button_vejigaFetal.TabIndex = 12;
@@ -191,7 +190,7 @@
             // button_cordonUmbilical
             // 
             this.button_cordonUmbilical.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_cordonUmbilical.Location = new System.Drawing.Point(405, 305);
+            this.button_cordonUmbilical.Location = new System.Drawing.Point(558, 354);
             this.button_cordonUmbilical.Name = "button_cordonUmbilical";
             this.button_cordonUmbilical.Size = new System.Drawing.Size(171, 27);
             this.button_cordonUmbilical.TabIndex = 13;
@@ -202,7 +201,7 @@
             // button_extremidades
             // 
             this.button_extremidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_extremidades.Location = new System.Drawing.Point(405, 338);
+            this.button_extremidades.Location = new System.Drawing.Point(558, 387);
             this.button_extremidades.Name = "button_extremidades";
             this.button_extremidades.Size = new System.Drawing.Size(171, 27);
             this.button_extremidades.TabIndex = 14;
@@ -210,23 +209,12 @@
             this.button_extremidades.UseVisualStyleBackColor = true;
             this.button_extremidades.Click += new System.EventHandler(this.button_extremidades_Click);
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(653, 406);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 32);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "<- Atrás";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(53, 87);
+            this.label2.Location = new System.Drawing.Point(206, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 25);
             this.label2.TabIndex = 16;
@@ -236,9 +224,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1022, 547);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button_extremidades);
             this.Controls.Add(this.button_cordonUmbilical);
             this.Controls.Add(this.button_vejigaFetal);
@@ -279,7 +266,6 @@
         private System.Windows.Forms.Button button_vejigaFetal;
         private System.Windows.Forms.Button button_cordonUmbilical;
         private System.Windows.Forms.Button button_extremidades;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
     }
 }

@@ -49,7 +49,7 @@ namespace interda.vistas
                 ventana.Show();
 
                 // Puedes usar el índice (rowIndex) como desees
-                MessageBox.Show($"Has seleccionado:\nNombre: {nombre}\nApellido: {apellido}\nÍndice: {rowIndex}", "Información");
+               // MessageBox.Show($"Has seleccionado:\nNombre: {nombre}\nApellido: {apellido}\nÍndice: {rowIndex}", "Información");
             }
         }
 

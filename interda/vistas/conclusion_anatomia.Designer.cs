@@ -122,7 +122,7 @@
             this.textBox_detalle.Location = new System.Drawing.Point(117, 162);
             this.textBox_detalle.Multiline = true;
             this.textBox_detalle.Name = "textBox_detalle";
-            this.textBox_detalle.Size = new System.Drawing.Size(806, 167);
+            this.textBox_detalle.Size = new System.Drawing.Size(806, 44);
             this.textBox_detalle.TabIndex = 4;
             this.textBox_detalle.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
