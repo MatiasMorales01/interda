@@ -174,7 +174,7 @@ namespace interda.vistas
 
         private void actualizar(int index)
         {
-            textBox13.Text = index.ToString();
+            //textBox13.Text = index.ToString();
             DataTable datos = conector.leer("select * from buscador");
             hospitales.Text = datos.Rows[index]["Institucion o empresa"].ToString();
             comboBox1_tipo_examen.Text = datos.Rows[index]["Tipo de exámen"].ToString();

@@ -54,6 +54,7 @@
             this.btnconcldiaginfobst.TabIndex = 1;
             this.btnconcldiaginfobst.Text = "Conclusion/Diagnostico";
             this.btnconcldiaginfobst.UseVisualStyleBackColor = true;
+            this.btnconcldiaginfobst.Click += new System.EventHandler(this.btnconcldiaginfobst_Click);
             // 
             // btnliquamniotico
             // 
@@ -64,6 +65,7 @@
             this.btnliquamniotico.TabIndex = 2;
             this.btnliquamniotico.Text = "Liquido amniotico";
             this.btnliquamniotico.UseVisualStyleBackColor = true;
+            this.btnliquamniotico.Click += new System.EventHandler(this.btnliquamniotico_Click);
             // 
             // btnplacenta
             // 
@@ -74,6 +76,7 @@
             this.btnplacenta.TabIndex = 3;
             this.btnplacenta.Text = "Placenta";
             this.btnplacenta.UseVisualStyleBackColor = true;
+            this.btnplacenta.Click += new System.EventHandler(this.btnplacenta_Click);
             // 
             // btnpresentacion
             // 
@@ -84,6 +87,7 @@
             this.btnpresentacion.TabIndex = 4;
             this.btnpresentacion.Text = "Presentacion";
             this.btnpresentacion.UseVisualStyleBackColor = true;
+            this.btnpresentacion.Click += new System.EventHandler(this.btnpresentacion_Click);
             // 
             // informeobstetrico
             // 
