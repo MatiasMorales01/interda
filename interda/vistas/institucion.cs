@@ -67,12 +67,29 @@ namespace interda.vistas
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            int cantidadFilasTabla = ObtenerCantidadFilasTabla("institucion");
+            if (cantidadFilasTabla > 0)
+            {
+                index = cantidadFilasTabla - 1;
+                cargarDatos(index);
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void institucion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private int ObtenerCantidadFilasTabla(string nombreTabla)
+        {
+            string query = $"SELECT COUNT(*) FROM {nombreTabla}";
+            int cantidadFilas = Convert.ToInt32(conector.leer(query).Rows[0][0]);
+            return cantidadFilas;
         }
     }
 }
