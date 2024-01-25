@@ -19,6 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_rinones");
             rinones.DataSource = datos;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             rinones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             rinones.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             rinones.AutoResizeColumns();
@@ -31,6 +33,11 @@ namespace interda.vistas
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rinones_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

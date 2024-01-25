@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "cordon_anatomiaFetal";
             this.Text = "cordon_anatomiaFetal";
+            this.Load += new System.EventHandler(this.cordon_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cordon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

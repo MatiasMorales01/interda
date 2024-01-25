@@ -66,6 +66,7 @@
             this.Controls.Add(this.label1);
             this.Name = "extremidades_anatomiaFetal";
             this.Text = "extremidades_anatomiaFetal";
+            this.Load += new System.EventHandler(this.extremidades_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ext)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

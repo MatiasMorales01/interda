@@ -18,6 +18,8 @@ namespace interda.vistas
         public plantilla_uteros()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             cargarDatos();
         }
         private void cargarDatos()

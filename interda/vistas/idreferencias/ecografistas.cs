@@ -21,7 +21,8 @@ namespace interda.vistas
             
             DataTable datos = miConector.leer("Select * from ecografista");
             eco.DataSource = datos;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             eco.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             eco.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             eco.ScrollBars = ScrollBars.Both;

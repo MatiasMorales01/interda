@@ -17,6 +17,8 @@ namespace interda.vistas
         public piedepag()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = miConector.leer("select * from `pie de pagina`");
             pie.DataSource = datos;
 
@@ -32,6 +34,11 @@ namespace interda.vistas
         }
 
         private void pie_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void piedepag_Load(object sender, EventArgs e)
         {
 
         }

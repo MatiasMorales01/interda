@@ -256,6 +256,7 @@
             this.Controls.Add(this.label1);
             this.Name = "anatomia_Fetal";
             this.Text = "anatomia_fetal";
+            this.Load += new System.EventHandler(this.anatomia_Fetal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

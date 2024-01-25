@@ -19,6 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_cordon_umbilical");
             cordon.DataSource = datos;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             cordon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             cordon.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             cordon.AutoResizeColumns();
@@ -26,6 +28,11 @@ namespace interda.vistas
         }
 
         private void cordon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cordon_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

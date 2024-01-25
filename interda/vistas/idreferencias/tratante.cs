@@ -17,7 +17,8 @@ namespace interda.vistas
         public tratante()
         {
             InitializeComponent();
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = miConector.leer("select * from tratante");
             tra.DataSource = datos;
             label1.Location = new Point(40, 30);

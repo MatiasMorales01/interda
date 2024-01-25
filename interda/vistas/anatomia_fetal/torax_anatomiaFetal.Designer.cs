@@ -66,6 +66,7 @@
             this.Controls.Add(this.label1);
             this.Name = "torax_anatomiaFetal";
             this.Text = "torax_anatomiaFetal";
+            this.Load += new System.EventHandler(this.torax_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.torax)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

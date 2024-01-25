@@ -66,6 +66,7 @@
             this.Controls.Add(this.label1);
             this.Name = "rinones_anatomiaFetal";
             this.Text = "rinones_anatomiaFetal";
+            this.Load += new System.EventHandler(this.rinones_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rinones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

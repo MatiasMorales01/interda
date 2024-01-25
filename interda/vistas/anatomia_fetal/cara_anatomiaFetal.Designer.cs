@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "cara_anatomiaFetal";
             this.Text = "cara_anatomiaFetal";
+            this.Load += new System.EventHandler(this.cara_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cara)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -16,7 +16,8 @@ namespace interda.vistas
         public cerebelo()
         {
             InitializeComponent();
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = conector.leer("select * from cerebelo");
             dataGridView1.DataSource = datos;
             label1.Location = new Point(40, 30);

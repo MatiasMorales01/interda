@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "corazon_anatomiaFetal";
             this.Text = "corazon_anatomiaFetal";
+            this.Load += new System.EventHandler(this.corazon_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.corazon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

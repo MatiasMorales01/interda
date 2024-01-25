@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "piedepag";
             this.Text = "piedepag";
+            this.Load += new System.EventHandler(this.piedepag_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

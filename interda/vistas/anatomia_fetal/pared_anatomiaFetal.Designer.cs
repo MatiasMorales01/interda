@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "pared_anatomiaFetal";
             this.Text = "pared_anatomiaFetal";
+            this.Load += new System.EventHandler(this.pared_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pared)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

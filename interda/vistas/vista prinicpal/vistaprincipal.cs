@@ -28,7 +28,9 @@ namespace interda.vistas
             InitializeComponent();
             cargarDatoscombobox();
 
-         
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+
 
             comboBoxdoctor.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxasistente.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -40,6 +42,7 @@ namespace interda.vistas
             this.FormClosing += vistaprincipal_close;
             
         }
+ 
         private void MostrarDetalleSeleccionado(object sender, EventArgs e)
         {
             System.Windows.Forms.ComboBox comboBox = (System.Windows.Forms.ComboBox)sender;

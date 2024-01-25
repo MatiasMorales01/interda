@@ -17,7 +17,8 @@ namespace interda.vistas
         public valor()
         {
             InitializeComponent();
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = miConector.leer("select * from valormonetario");
             val.DataSource = datos;
             label1.Location = new Point(40, 30);

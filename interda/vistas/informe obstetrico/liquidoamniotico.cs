@@ -17,6 +17,8 @@ namespace interda.vistas
         public liquidoamniotico()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             Label label1 = new Label();
             label1.Text = "Liquido Amniotico";
             label1.Font = new Font(label1.Font.FontFamily, 15, label1.Font.Style);

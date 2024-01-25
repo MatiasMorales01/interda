@@ -17,7 +17,8 @@ namespace interda.vistas
         public isapre()
         {
             InitializeComponent();
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = conector.leer("select * from isapre");
             isa.DataSource = datos;
             label1.Location = new Point(40, 30);

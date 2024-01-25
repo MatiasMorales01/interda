@@ -19,7 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_torax");
             torax.DataSource = datos;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             torax.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             torax.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             torax.AutoResizeColumns();
@@ -32,6 +33,11 @@ namespace interda.vistas
         }
 
         private void columna_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void torax_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

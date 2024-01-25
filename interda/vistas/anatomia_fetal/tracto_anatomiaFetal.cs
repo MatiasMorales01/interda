@@ -19,6 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_tracto_gastrointestinal");
             tracto.DataSource = datos;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             tracto.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             tracto.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             tracto.AutoResizeColumns();
@@ -26,6 +28,11 @@ namespace interda.vistas
         }
 
         private void tracto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tracto_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

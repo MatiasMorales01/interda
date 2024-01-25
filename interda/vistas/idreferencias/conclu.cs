@@ -20,7 +20,8 @@ namespace interda.vistas
             label1.Location = new Point(40, 30);
             DataTable datos = conector.leer("select * from conclusion");
             con.DataSource = datos;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             con.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             con.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             con.ScrollBars = ScrollBars.Both;

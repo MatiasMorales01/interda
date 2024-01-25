@@ -15,6 +15,8 @@ namespace interda.vistas
         public tablaobstetrica()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void MostrarFormulario<T>() where T : Form, new()
@@ -118,6 +120,11 @@ namespace interda.vistas
         private void ad_Click(object sender, EventArgs e)
         {
             MostrarFormulario<aortadescendiente>();
+        }
+
+        private void tablaobstetrica_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

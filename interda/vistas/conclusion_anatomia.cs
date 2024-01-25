@@ -19,6 +19,8 @@ namespace interda.vistas
         public conclusion_anatomia()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             cargarDatos(index);
         }
 
