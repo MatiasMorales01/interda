@@ -289,6 +289,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "institucion";
             this.Text = "institucion";
+            this.Load += new System.EventHandler(this.institucion_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
