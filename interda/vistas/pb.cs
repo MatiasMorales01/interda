@@ -69,7 +69,21 @@ namespace interda.vistas
             comboBox1_ecografo.Text = data.Rows[index]["Ecógrafo"].ToString();
             textBox1.Text = data.Rows[index]["FURpaciente"].ToString();
             textBox1.Text = data.Rows[index]["FUR"].ToString();
-            comboBox1.Text = data.Rows[index]["Pied de pagina"].ToString();
+            textBox2.Text = data.Rows[index]["Pied de pagina"].ToString();
+
+            //cargar panel inferior
+            string textoci = textBox1_CI.Text;
+            string consultaSQL = string.IsNullOrEmpty(textoci)
+                ? "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador limit 15"
+                : "select Fecha, CI, Nombres, Apellidos, `Tipo de exámen`, FUR, Ecografista, Correlativo from buscador where CI='" + textoci + "'";
+
+            DataTable panel = miConector.leer(consultaSQL);
+            tablabuscador.DataSource = panel;
+
+            tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            tablabuscador.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            tablabuscador.AutoResizeColumns();
+            tablabuscador.AutoResizeRows();
         }
 
         private void pb_Load(object sender, EventArgs e)
@@ -83,6 +97,41 @@ namespace interda.vistas
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label38_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hospitales_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
