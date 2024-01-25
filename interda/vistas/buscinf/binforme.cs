@@ -39,7 +39,9 @@ namespace interda.vistas
                 string apellido = filaSeleccionada.Cells["Apellidos"].Value.ToString();
 
                 // Muestra un mensaje con el nombre y apellido
-                MessageBox.Show($"Has seleccionado:\nNombre: {nombre}\nApellido: {apellido}", "Información");
+                pb ventana=new pb(nombre,apellido);
+                ventana.Show();
+               // MessageBox.Show($"Has seleccionado:\nNombre: {nombre}\nApellido: {apellido}", "Información");
             }
         }
 

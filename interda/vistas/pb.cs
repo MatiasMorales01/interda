@@ -12,9 +12,18 @@ namespace interda.vistas
 {
     public partial class pb : Form
     {
-        public pb()
+        public pb(string nombre, string apellido)
         {
+
+            
             InitializeComponent();
+            label1.Text = nombre;
+            label2.Text = apellido;
+        }
+
+        private void pb_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
