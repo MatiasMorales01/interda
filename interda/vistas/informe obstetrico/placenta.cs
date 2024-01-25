@@ -11,20 +11,22 @@ using System.Windows.Forms;
 
 namespace interda.vistas
 {
-    public partial class conclusionobstetrica : Form
+    public partial class placenta : Form
     {
         conector conector = new conector();
-        public conclusionobstetrica()
+        public placenta()
         {
             InitializeComponent();
             Label label1 = new Label();
-            label1.Text = "Conclusion Obstetrica";
+            label1.Text = "Placenta";
             label1.Font = new Font(label1.Font.FontFamily, 15, label1.Font.Style);
             DataGridView dataGridView1 = new DataGridView();
+            Color nuevoColorDeFondo = Color.FromArgb(240, 240, 240);
+            dataGridView1.BackgroundColor = nuevoColorDeFondo;
             label1.AutoSize = true;
             this.Controls.Add(dataGridView1);
             this.Controls.Add(label1);
-            DataTable datos = conector.leer("select * from conclusiónobstétrica");
+            DataTable datos = conector.leer("select * from placenta");
             dataGridView1.DataSource = datos;
             label1.Location = new Point(40, 30);
             dataGridView1.BorderStyle = BorderStyle.None;
@@ -45,7 +47,7 @@ namespace interda.vistas
             dataGridView1.Location = new Point(50, 60);
         }
 
-        private void conclusionobstetrica_Load(object sender, EventArgs e)
+        private void placenta_Load(object sender, EventArgs e)
         {
 
         }

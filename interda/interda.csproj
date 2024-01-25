@@ -101,29 +101,35 @@
     <Compile Include="controlador\conector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="vistas\conclusionobstetrica.cs">
+    <Compile Include="vistas\informe obstetrico\conclusionobstetrica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\conclusionobstetrica.Designer.cs">
+    <Compile Include="vistas\informe obstetrico\conclusionobstetrica.Designer.cs">
       <DependentUpon>conclusionobstetrica.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\liquidoamniotico.cs">
+    <Compile Include="vistas\informe obstetrico\liquidoamniotico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\liquidoamniotico.Designer.cs">
+    <Compile Include="vistas\informe obstetrico\liquidoamniotico.Designer.cs">
       <DependentUpon>liquidoamniotico.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\placenta.cs">
+    <Compile Include="vistas\informe obstetrico\placenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\placenta.Designer.cs">
+    <Compile Include="vistas\informe obstetrico\placenta.Designer.cs">
       <DependentUpon>placenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\presentacion.cs">
+    <Compile Include="vistas\informe obstetrico\presentacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\presentacion.Designer.cs">
+    <Compile Include="vistas\informe obstetrico\presentacion.Designer.cs">
       <DependentUpon>presentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vistas\pb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vistas\pb.Designer.cs">
+      <DependentUpon>pb.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\tablas obstetricas\acm.cs">
       <SubType>Form</SubType>
@@ -479,17 +485,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="vistas\conclusionobstetrica.resx">
+    <EmbeddedResource Include="vistas\informe obstetrico\conclusionobstetrica.resx">
       <DependentUpon>conclusionobstetrica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\liquidoamniotico.resx">
+    <EmbeddedResource Include="vistas\informe obstetrico\liquidoamniotico.resx">
       <DependentUpon>liquidoamniotico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\placenta.resx">
+    <EmbeddedResource Include="vistas\informe obstetrico\placenta.resx">
       <DependentUpon>placenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\presentacion.resx">
+    <EmbeddedResource Include="vistas\informe obstetrico\presentacion.resx">
       <DependentUpon>presentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vistas\pb.resx">
+      <DependentUpon>pb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\tablas obstetricas\acm.resx">
       <DependentUpon>acm.cs</DependentUpon>

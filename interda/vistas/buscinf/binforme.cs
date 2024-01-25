@@ -22,13 +22,26 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = conector.leer("select Fecha, CI, Nombres, Apellidos,`Tipo de exámen`,FUR,Ecografista,Correlativo from buscador limit 15");
             tablabuscador.DataSource = datos;
-
+            tablabuscador.CellDoubleClick += tablabuscador_CellDoubleClick;
             tablabuscador.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             tablabuscador.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             tablabuscador.AutoResizeColumns();
             tablabuscador.AutoResizeRows();
         }
-    
+        private void tablabuscador_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegura que se hace clic en una fila válida
+            {
+                DataGridViewRow filaSeleccionada = tablabuscador.Rows[e.RowIndex];
+
+                // Obtiene los valores de nombre y apellido de la fila seleccionada
+                string nombre = filaSeleccionada.Cells["Nombres"].Value.ToString();
+                string apellido = filaSeleccionada.Cells["Apellidos"].Value.ToString();
+
+                // Muestra un mensaje con el nombre y apellido
+                MessageBox.Show($"Has seleccionado:\nNombre: {nombre}\nApellido: {apellido}", "Información");
+            }
+        }
 
         private void pruebas_Load(object sender, EventArgs e)
         {
