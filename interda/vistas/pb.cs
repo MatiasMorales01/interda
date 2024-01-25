@@ -53,6 +53,23 @@ namespace interda.vistas
             comboBox3_prevision.DataSource = datos6;
             comboBox3_prevision.DisplayMember = "Isapre";
             comboBox3_prevision.ValueMember = "Isapre";
+
+            DataTable data = miConector.leer("select * from buscador");
+            hospitales.Text = data.Rows[index]["Institucion o empresa"].ToString();
+            comboBox1_tipo_examen.Text = data.Rows[index]["Tipo de exámen"].ToString();
+            textBox1_CI.Text = data.Rows[index]["CI"].ToString();
+            textBox3_nombre.Text = data.Rows[index]["Nombres"].ToString();
+            textBox1_Apellido.Text = data.Rows[index]["Apellidos"].ToString();
+            textBox1_edad.Text = data.Rows[index]["Edad"].ToString();
+            comboBox1_codigo.Text = data.Rows[index]["Código de la prestación"].ToString();
+            textBox1_edad.Text = data.Rows[index]["Edad"].ToString();
+            comboBox2_procedencia.Text = data.Rows[index]["Tratante"].ToString();
+            comboBox3_prevision.Text = data.Rows[index]["Isapre"].ToString();
+            comboBox1_ecografista.Text = data.Rows[index]["Ecografista"].ToString();
+            comboBox1_ecografo.Text = data.Rows[index]["Ecógrafo"].ToString();
+            textBox1.Text = data.Rows[index]["FURpaciente"].ToString();
+            textBox1.Text = data.Rows[index]["FUR"].ToString();
+            comboBox1.Text = data.Rows[index]["Pied de pagina"].ToString();
         }
 
         private void pb_Load(object sender, EventArgs e)
