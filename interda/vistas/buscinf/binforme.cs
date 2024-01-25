@@ -69,5 +69,10 @@ namespace interda.vistas
         {
 
         }
+
+        private void tablabuscador_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

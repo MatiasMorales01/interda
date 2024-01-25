@@ -109,11 +109,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1_tipo_examen = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.tablabuscador = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablabuscador)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -666,7 +667,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(102, 336);
+            this.label17.Location = new System.Drawing.Point(67, 335);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(350, 20);
             this.label17.TabIndex = 54;
@@ -915,12 +916,17 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Tipo de exámen:";
             // 
-            // panel5
+            // tablabuscador
             // 
-            this.panel5.Location = new System.Drawing.Point(12, 620);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1247, 93);
-            this.panel5.TabIndex = 34;
+            this.tablabuscador.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tablabuscador.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tablabuscador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablabuscador.Location = new System.Drawing.Point(6, 624);
+            this.tablabuscador.Name = "tablabuscador";
+            this.tablabuscador.RowHeadersWidth = 51;
+            this.tablabuscador.RowTemplate.Height = 24;
+            this.tablabuscador.Size = new System.Drawing.Size(1253, 149);
+            this.tablabuscador.TabIndex = 35;
             // 
             // nuevo_informe
             // 
@@ -928,7 +934,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1271, 785);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.tablabuscador);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "nuevo_informe";
@@ -941,6 +947,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablabuscador)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1025,8 +1032,8 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView tablabuscador;
     }
 }
