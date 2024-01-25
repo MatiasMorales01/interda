@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "vejiga_anatomiaFetal";
             this.Text = "vejiga_anatomiaFetal";
+            this.Load += new System.EventHandler(this.vejiga_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vejiga)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

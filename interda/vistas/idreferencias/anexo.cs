@@ -20,6 +20,8 @@ namespace interda.vistas
             label1.Location = new Point(40, 30);
             DataTable datos = conector.leer("select * from anexos");
             anex.DataSource = datos;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             anex.Location = new Point(50, 60);
             anex.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             anex.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;

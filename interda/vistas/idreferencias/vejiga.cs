@@ -17,7 +17,8 @@ namespace interda.vistas
         public vejiga()
         {
             InitializeComponent();
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = conector.leer("select * from vejiga");
             vejig.DataSource = datos;
             label1.Location = new Point(40, 30);

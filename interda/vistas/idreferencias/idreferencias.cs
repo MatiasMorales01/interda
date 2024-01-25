@@ -16,6 +16,8 @@ namespace interda.vistas
         public idreferencias()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void idreferencias_Load(object sender, EventArgs e)

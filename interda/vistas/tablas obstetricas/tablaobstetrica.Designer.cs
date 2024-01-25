@@ -340,6 +340,7 @@
             this.Controls.Add(this.label1);
             this.Name = "tablaobstetrica";
             this.Text = "tablaobstetrica";
+            this.Load += new System.EventHandler(this.tablaobstetrica_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

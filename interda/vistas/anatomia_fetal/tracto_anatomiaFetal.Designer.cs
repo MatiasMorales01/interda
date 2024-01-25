@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "tracto_anatomiaFetal";
             this.Text = "tracto_anatomiaFetal";
+            this.Load += new System.EventHandler(this.tracto_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tracto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

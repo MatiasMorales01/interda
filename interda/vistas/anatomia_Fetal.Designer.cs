@@ -217,7 +217,7 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Estructura anatómica";
             // 
-            // anatomia_fetal
+            // anatomia_Fetal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,8 +239,9 @@
             this.Controls.Add(this.button_cabeza);
             this.Controls.Add(this.button_cerebro);
             this.Controls.Add(this.label1);
-            this.Name = "anatomia_fetal";
+            this.Name = "anatomia_Fetal";
             this.Text = "anatomia_fetal";
+            this.Load += new System.EventHandler(this.anatomia_Fetal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

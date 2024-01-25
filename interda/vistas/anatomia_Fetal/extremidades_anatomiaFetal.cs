@@ -19,6 +19,8 @@ namespace interda.vistas.anatomia_fetal
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_extremidades");
             ext.DataSource = datos;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             ext.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             ext.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             ext.AutoResizeColumns();
@@ -31,6 +33,11 @@ namespace interda.vistas.anatomia_fetal
         }
 
         private void ext_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void extremidades_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

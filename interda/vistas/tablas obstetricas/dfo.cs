@@ -17,6 +17,8 @@ namespace interda.vistas
         public dfo()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             label1.Text = "DFO";
             label1.Font = new Font(label1.Font.FontFamily, 15, label1.Font.Style);
             DataTable datos = conector.leer("select * from dfo");

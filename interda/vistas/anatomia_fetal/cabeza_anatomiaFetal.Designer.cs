@@ -66,6 +66,7 @@
             this.Controls.Add(this.label1);
             this.Name = "cabeza_anatomiaFetal";
             this.Text = "cabeza_anatomiaFetal";
+            this.Load += new System.EventHandler(this.cabeza_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cabeza)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

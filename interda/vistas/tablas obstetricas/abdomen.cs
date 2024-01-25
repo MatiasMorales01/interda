@@ -17,7 +17,8 @@ namespace interda.vistas
         public abdomen()
         {
             InitializeComponent();
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = conector.leer("select * from abdomen");
             abd.DataSource = datos;
             label1.Location = new Point(40, 30);

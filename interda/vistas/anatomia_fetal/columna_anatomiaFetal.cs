@@ -19,7 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_columna_vertebral");
             columna.DataSource = datos;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             columna.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             columna.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             columna.AutoResizeColumns();
@@ -27,6 +28,11 @@ namespace interda.vistas
         }
 
         private void cerebro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void columna_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

@@ -19,6 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_pared_abdominal");
             pared.DataSource = datos;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             pared.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             pared.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             pared.AutoResizeColumns();
@@ -26,6 +28,11 @@ namespace interda.vistas
         }
 
         private void pared_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pared_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

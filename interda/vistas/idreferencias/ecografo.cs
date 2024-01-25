@@ -21,7 +21,8 @@ namespace interda.vistas
             label1.Location = new Point(40, 30);
             DataTable datos = miConector.leer("select * from ecografo");
             eco.DataSource = datos;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             eco.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             eco.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             eco.ScrollBars = ScrollBars.Both;

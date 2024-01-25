@@ -17,6 +17,8 @@ namespace interda.vistas
         public endometrio()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void endometrio_Load(object sender, EventArgs e)

@@ -19,7 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from `Formato cerebro`");
             cerebro.DataSource = datos;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             cerebro.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             cerebro.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             cerebro.AutoResizeColumns();

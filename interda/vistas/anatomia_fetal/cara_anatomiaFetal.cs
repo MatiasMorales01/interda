@@ -19,7 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from `Formato cara`");
             cara.DataSource = datos;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             cara.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             cara.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             cara.AutoResizeColumns();
@@ -27,6 +28,11 @@ namespace interda.vistas
         }
 
         private void cara_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cara_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

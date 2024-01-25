@@ -15,6 +15,8 @@ namespace interda.vistas
         public informeobstetrico()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
         private void MostrarFormulario<T>() where T : Form, new()
         {
@@ -42,6 +44,11 @@ namespace interda.vistas
         private void btnpresentacion_Click(object sender, EventArgs e)
         {
             MostrarFormulario<presentacion>();
+        }
+
+        private void informeobstetrico_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

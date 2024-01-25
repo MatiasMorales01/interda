@@ -19,6 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from Formato_vejiga_fetal");
             vejiga.DataSource = datos;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             vejiga.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             vejiga.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             vejiga.AutoResizeColumns();
@@ -26,6 +28,11 @@ namespace interda.vistas
         }
 
         private void vejiga_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void vejiga_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }

@@ -17,7 +17,8 @@ namespace interda.vistas
         public secretarias()
         {
             InitializeComponent();
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = conector.leer("select * from secretarias");
             secre.DataSource = datos;
             label1.Location = new Point(40, 30);

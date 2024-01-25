@@ -65,6 +65,7 @@
             this.Controls.Add(this.label1);
             this.Name = "columna_anatomiaFetal";
             this.Text = "columna_anatomiaFetal";
+            this.Load += new System.EventHandler(this.columna_anatomiaFetal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.columna)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

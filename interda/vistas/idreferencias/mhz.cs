@@ -17,7 +17,8 @@ namespace interda.vistas
         public mhz()
         {
             InitializeComponent();
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             DataTable datos = miConector.leer("Select * from mhz");
             mh.DataSource = datos;
             label1.Location = new Point(40, 30);

@@ -22,7 +22,8 @@ namespace interda.vistas
         public nuevo_informe()
         {
             InitializeComponent();
-            this.FormClosing += nuevo_informe_close;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             comboBox2_procedencia.DropDownStyle= ComboBoxStyle.DropDownList;
             comboBox1_ecografista.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1_ecografo.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -31,6 +32,9 @@ namespace interda.vistas
             comboBox1_tipo_examen.DropDownStyle = ComboBoxStyle.DropDownList;
             cargarDatoscombobox();
         }
+
+     
+
         private void cargarDatoscombobox()
         {
             DataTable datos = conector.leer("select * from tratante");

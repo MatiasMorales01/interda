@@ -18,6 +18,8 @@ namespace interda.vistas
         public institucion()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             cargarDatos(index);
         }
         private void cargarDatos(int index)

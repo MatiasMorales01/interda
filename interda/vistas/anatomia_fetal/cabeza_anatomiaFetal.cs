@@ -19,7 +19,8 @@ namespace interda.vistas
             InitializeComponent();
             DataTable datos = miConector.leer("select * from `Formato cabeza`");
             cabeza.DataSource = datos;
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             cabeza.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             cabeza.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             cabeza.AutoResizeColumns();
@@ -32,6 +33,11 @@ namespace interda.vistas
         }
 
         private void cerebro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void cabeza_anatomiaFetal_Load(object sender, EventArgs e)
         {
 
         }
