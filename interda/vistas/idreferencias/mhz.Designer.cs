@@ -28,52 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.mh = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.mh)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(85, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "MHZ";
-            // 
-            // mh
-            // 
-            this.mh.BackgroundColor = System.Drawing.SystemColors.Menu;
-            this.mh.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.mh.Location = new System.Drawing.Point(90, 104);
-            this.mh.Name = "mh";
-            this.mh.RowHeadersWidth = 51;
-            this.mh.RowTemplate.Height = 24;
-            this.mh.Size = new System.Drawing.Size(240, 329);
-            this.mh.TabIndex = 2;
             // 
             // mhz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 535);
-            this.Controls.Add(this.mh);
-            this.Controls.Add(this.label1);
             this.Name = "mhz";
             this.Text = "mhz";
             this.Load += new System.EventHandler(this.mhz_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.mh)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView mh;
     }
 }

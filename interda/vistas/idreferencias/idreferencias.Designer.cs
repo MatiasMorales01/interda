@@ -74,7 +74,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(215, 36);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Ecografo";
+            this.button2.Text = "Ecógrafo";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -118,7 +118,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(215, 36);
             this.button6.TabIndex = 6;
-            this.button6.Text = "Codigo Examen";
+            this.button6.Text = "Código Examen";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -195,7 +195,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(215, 36);
             this.button13.TabIndex = 13;
-            this.button13.Text = "Utero";
+            this.button13.Text = "Útero";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
