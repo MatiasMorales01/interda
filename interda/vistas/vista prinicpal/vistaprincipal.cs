@@ -230,21 +230,18 @@ namespace interda.vistas
             textBox4.Text = string.Empty;
             textBox5.Text = string.Empty;
 
-            // Puedes agregar más limpieza según sea necesario
         }
 
         private void MostrarImagen(string nombreImagen)
         {
             //string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\MatiasMorales01\interda\interda\imagenes", nombreImagen);
             string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes", nombreImagen);
-            // Verifica si el archivo de imagen existe
             if (File.Exists(rutaImagen))
             {
                 pictureBox2.Image = Image.FromFile(rutaImagen);
             }
             else
             {
-                // Puedes manejar el caso en el que la imagen no existe
                 pictureBox2.Image = null;
             }
         }

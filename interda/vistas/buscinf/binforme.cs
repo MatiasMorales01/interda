@@ -40,16 +40,13 @@ namespace interda.vistas
 
                 DataGridViewRow filaSeleccionada = tablabuscador.Rows[rowIndex];
 
-                // Obtiene los valores de nombre y apellido de la fila seleccionada
                 string nombre = filaSeleccionada.Cells["Nombres"].Value.ToString();
                 string apellido = filaSeleccionada.Cells["Apellidos"].Value.ToString();
 
-                // Muestra un mensaje con el nombre y apellido
                 pb ventana = new pb(rowIndex);
+                ventana.StartPosition = FormStartPosition.Manual;
+                ventana.Location = new Point(520, 150);
                 ventana.Show();
-
-                // Puedes usar el índice (rowIndex) como desees
-               // MessageBox.Show($"Has seleccionado:\nNombre: {nombre}\nApellido: {apellido}\nÍndice: {rowIndex}", "Información");
             }
         }
 

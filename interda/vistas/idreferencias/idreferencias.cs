@@ -29,87 +29,90 @@ namespace interda.vistas
 
         }
 
-        private void MostrarFormulario<T>() where T : Form, new()
+        private void MostrarVentana(string tabla, string label)
         {
-            T ventana = new T();
+            ventanageneraldatagridview ventana = new ventanageneraldatagridview(tabla, label);
             ventana.StartPosition = FormStartPosition.Manual;
             ventana.Location = new Point(720, 205);
             ventana.Show();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<ecografistas>();
+            
+            MostrarVentana("Ecografista", "select * from ecografista");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<mhz>();
+           
+            MostrarVentana("MHZ", "select * from mhz");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<codigoexamen>();
+            MostrarVentana("Código Examen", "select * from codex");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<valor>();
+            MostrarVentana("Valor Examen", "select * from valormonetario");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<ecografo>();
+            MostrarVentana("Ecgrafo", "select * from ecografo");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<tratante>();
+            MostrarVentana("Tratante", "select * from tratante");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<isapre>();
+            MostrarVentana("Isapre ", "select * from isapre");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<anexo>();
+            MostrarVentana("Anexo ", "select * from anexos");
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<douglas>();
+            MostrarVentana("Douglas", "select * from douglas");
         }
 
         private void boton_conclusion_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<conclu>();
+            MostrarVentana("Conclusión ", "select * from conclusion");
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<endometrio>();
+            MostrarVentana("Endometrio", "select * from endometriotipo");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<ovarios>();
+            MostrarVentana(" Ovarios", "select * from ovarios");
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<utero>();
+            MostrarVentana("Útero", "select * from utero");
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<vejiga>();
+            MostrarVentana("Vejiga ", "select * from vejiga");
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<secretarias>();
+            MostrarVentana("Secretarias ", "select * from secretarias");
         }
     }
 }

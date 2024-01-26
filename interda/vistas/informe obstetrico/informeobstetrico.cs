@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Utilities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,9 +23,10 @@ namespace interda.vistas
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
         }
-        private void MostrarFormulario<T>() where T : Form, new()
+
+        private void MostrarVentana(string tabla, string label)
         {
-            T ventana = new T();
+            ventanageneraldatagridview ventana = new ventanageneraldatagridview(tabla, label);
             ventana.StartPosition = FormStartPosition.Manual;
             ventana.Location = new Point(720, 205);
             ventana.Show();
@@ -32,23 +34,24 @@ namespace interda.vistas
 
         private void btnconcldiaginfobst_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<conclusionobstetrica>();
+            MostrarVentana("Conclusión Obstétrica", "select * from conclusiónobstétrica");
         }
 
         private void btnliquamniotico_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<liquidoamniotico>();
+            MostrarVentana("Liquido Amniotico", "select * from liquidoamniotico");
         }
 
         private void btnplacenta_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<placenta>();
+            MostrarVentana("Placenta", "select * from placenta");
         }
 
         private void btnpresentacion_Click(object sender, EventArgs e)
         {
-            MostrarFormulario<presentacion>();
+            MostrarVentana("Presentacion", "select * from presentacion");
         }
+
 
         private void informeobstetrico_Load(object sender, EventArgs e)
         {
