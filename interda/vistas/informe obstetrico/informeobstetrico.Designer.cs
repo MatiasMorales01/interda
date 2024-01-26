@@ -47,7 +47,7 @@
             // 
             // btnconcldiaginfobst
             // 
-            this.btnconcldiaginfobst.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnconcldiaginfobst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnconcldiaginfobst.Location = new System.Drawing.Point(392, 131);
             this.btnconcldiaginfobst.Name = "btnconcldiaginfobst";
             this.btnconcldiaginfobst.Size = new System.Drawing.Size(270, 45);
@@ -58,7 +58,7 @@
             // 
             // btnliquamniotico
             // 
-            this.btnliquamniotico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnliquamniotico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnliquamniotico.Location = new System.Drawing.Point(392, 197);
             this.btnliquamniotico.Name = "btnliquamniotico";
             this.btnliquamniotico.Size = new System.Drawing.Size(270, 45);
@@ -69,7 +69,7 @@
             // 
             // btnplacenta
             // 
-            this.btnplacenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnplacenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnplacenta.Location = new System.Drawing.Point(392, 264);
             this.btnplacenta.Name = "btnplacenta";
             this.btnplacenta.Size = new System.Drawing.Size(270, 45);
@@ -80,7 +80,7 @@
             // 
             // btnpresentacion
             // 
-            this.btnpresentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnpresentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnpresentacion.Location = new System.Drawing.Point(392, 336);
             this.btnpresentacion.Name = "btnpresentacion";
             this.btnpresentacion.Size = new System.Drawing.Size(270, 45);

@@ -28,54 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.torax = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.torax)).BeginInit();
             this.SuspendLayout();
-            // 
-            // torax
-            // 
-            this.torax.BackgroundColor = System.Drawing.SystemColors.MenuBar;
-            this.torax.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.torax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.torax.Location = new System.Drawing.Point(12, 79);
-            this.torax.Name = "torax";
-            this.torax.RowHeadersWidth = 51;
-            this.torax.RowTemplate.Height = 24;
-            this.torax.Size = new System.Drawing.Size(776, 354);
-            this.torax.TabIndex = 7;
-            this.torax.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.columna_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(38, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Tórax";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // torax_anatomiaFetal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 542);
-            this.Controls.Add(this.torax);
-            this.Controls.Add(this.label1);
             this.Name = "torax_anatomiaFetal";
             this.Text = "torax_anatomiaFetal";
             this.Load += new System.EventHandler(this.torax_anatomiaFetal_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.torax)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView torax;
-        private System.Windows.Forms.Label label1;
     }
 }

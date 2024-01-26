@@ -302,10 +302,10 @@
     <Compile Include="vistas\tablas obstetricas\abdomen.Designer.cs">
       <DependentUpon>abdomen.cs</DependentUpon>
     </Compile>
-    <Compile Include="vistas\anatomia_Fetal.cs">
+    <Compile Include="vistas\anatomia_Fetal\anatomia_Fetal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vistas\anatomia_Fetal.Designer.cs">
+    <Compile Include="vistas\anatomia_Fetal\anatomia_Fetal.Designer.cs">
       <DependentUpon>anatomia_Fetal.cs</DependentUpon>
     </Compile>
     <Compile Include="vistas\idreferencias\anexo.cs">
@@ -590,7 +590,7 @@
     <EmbeddedResource Include="vistas\tablas obstetricas\abdomen.resx">
       <DependentUpon>abdomen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vistas\anatomia_Fetal.resx">
+    <EmbeddedResource Include="vistas\anatomia_Fetal\anatomia_Fetal.resx">
       <DependentUpon>anatomia_Fetal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vistas\idreferencias\anexo.resx">

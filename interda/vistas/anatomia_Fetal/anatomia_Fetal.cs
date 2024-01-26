@@ -24,96 +24,81 @@ namespace interda.vistas
             this.MaximizeBox = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             vistaprincipal atras = new vistaprincipal();
             atras.Show();
             this.Hide();
+        }*/
+
+        private void MostrarFormulario<T>() where T : Form, new()
+        {
+            T ventana = new T();
+            ventana.StartPosition = FormStartPosition.Manual;
+            ventana.Location = new Point(720, 205);
+            ventana.Show();
         }
 
         private void button_cerebro_Click(object sender, EventArgs e)
         {
-            cerebro_anatomiaFetal ventana = new cerebro_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<cerebro_anatomiaFetal>();
         }
 
         private void button_cabeza_Click(object sender, EventArgs e)
         {
-            cabeza_anatomiaFetal ventana = new cabeza_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<cabeza_anatomiaFetal>();
+     
 
         }
 
         private void button_cara_Click(object sender, EventArgs e)
         {
-            cara_anatomiaFetal ventana = new cara_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<cara_anatomiaFetal>();
         }
 
         private void button_columnaVertebral_Click(object sender, EventArgs e)
         {
-            columna_anatomiaFetal ventana = new columna_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<columna_anatomiaFetal>();
         }
 
         private void button_torax_Click(object sender, EventArgs e)
         {
-            torax_anatomiaFetal ventana = new torax_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<torax_anatomiaFetal>();
         }
 
         private void button_corazon_Click(object sender, EventArgs e)
         {
-            corazon_anatomiaFetal ventana = new corazon_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<corazon_anatomiaFetal>();
         }
 
         private void button_Tgastrointestinal_Click(object sender, EventArgs e)
         {
-            tracto_anatomiaFetal ventana = new tracto_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<tracto_anatomiaFetal>();
         }
 
         private void button_riñones_Click(object sender, EventArgs e)
         {
-            rinones_anatomiaFetal ventana = new rinones_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<rinones_anatomiaFetal>();
         }
 
         private void button_paredAbdominal_Click(object sender, EventArgs e)
         {
-            pared_anatomiaFetal ventana = new pared_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<pared_anatomiaFetal>();
         }
 
         private void button_vejigaFetal_Click(object sender, EventArgs e)
         {
-            vejiga_anatomiaFetal ventana = new vejiga_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<vejiga_anatomiaFetal>();
         }
 
         private void button_cordonUmbilical_Click(object sender, EventArgs e)
         {
-            cordon_anatomiaFetal ventana = new cordon_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<cordon_anatomiaFetal>();
         }
 
         private void button_extremidades_Click(object sender, EventArgs e)
         {
-            extremidades_anatomiaFetal ventana = new extremidades_anatomiaFetal();
-            ventana.Show();
-            //this.Hide();
+            MostrarFormulario<extremidades_anatomiaFetal>();
         }
 
         private void anatomia_Fetal_Load(object sender, EventArgs e)

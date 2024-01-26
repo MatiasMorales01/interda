@@ -64,8 +64,8 @@
             // 
             // ad
             // 
-            this.ad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ad.Location = new System.Drawing.Point(785, 316);
+            this.ad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ad.Location = new System.Drawing.Point(785, 342);
             this.ad.Name = "ad";
             this.ad.Size = new System.Drawing.Size(192, 44);
             this.ad.TabIndex = 6;
@@ -75,8 +75,8 @@
             // 
             // psacm
             // 
-            this.psacm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.psacm.Location = new System.Drawing.Point(571, 316);
+            this.psacm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.psacm.Location = new System.Drawing.Point(571, 342);
             this.psacm.Name = "psacm";
             this.psacm.Size = new System.Drawing.Size(192, 44);
             this.psacm.TabIndex = 5;
@@ -86,8 +86,8 @@
             // 
             // ductus
             // 
-            this.ductus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ductus.Location = new System.Drawing.Point(785, 249);
+            this.ductus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ductus.Location = new System.Drawing.Point(785, 275);
             this.ductus.Name = "ductus";
             this.ductus.Size = new System.Drawing.Size(192, 44);
             this.ductus.TabIndex = 4;
@@ -97,8 +97,8 @@
             // 
             // au
             // 
-            this.au.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.au.Location = new System.Drawing.Point(571, 249);
+            this.au.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.au.Location = new System.Drawing.Point(571, 275);
             this.au.Name = "au";
             this.au.Size = new System.Drawing.Size(192, 44);
             this.au.TabIndex = 3;
@@ -108,10 +108,10 @@
             // 
             // aum
             // 
-            this.aum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.aum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.aum.Location = new System.Drawing.Point(785, 186);
             this.aum.Name = "aum";
-            this.aum.Size = new System.Drawing.Size(192, 44);
+            this.aum.Size = new System.Drawing.Size(192, 70);
             this.aum.TabIndex = 2;
             this.aum.Text = "Arteria umbilical";
             this.aum.UseVisualStyleBackColor = true;
@@ -119,10 +119,10 @@
             // 
             // acm
             // 
-            this.acm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.acm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.acm.Location = new System.Drawing.Point(571, 186);
             this.acm.Name = "acm";
-            this.acm.Size = new System.Drawing.Size(192, 44);
+            this.acm.Size = new System.Drawing.Size(192, 70);
             this.acm.TabIndex = 1;
             this.acm.Text = "Arteria cerebral media";
             this.acm.UseVisualStyleBackColor = true;
@@ -131,16 +131,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(737, 121);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label3.Location = new System.Drawing.Point(728, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 25);
+            this.label3.Size = new System.Drawing.Size(88, 26);
             this.label3.TabIndex = 0;
             this.label3.Text = "Doppler";
             // 
             // abdomen
             // 
-            this.abdomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.abdomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.abdomen.Location = new System.Drawing.Point(66, 186);
             this.abdomen.Name = "abdomen";
             this.abdomen.Size = new System.Drawing.Size(136, 44);
@@ -151,7 +151,7 @@
             // 
             // cerebelo
             // 
-            this.cerebelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cerebelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cerebelo.Location = new System.Drawing.Point(66, 249);
             this.cerebelo.Name = "cerebelo";
             this.cerebelo.Size = new System.Drawing.Size(136, 44);
@@ -172,7 +172,7 @@
             // 
             // cubito
             // 
-            this.cubito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cubito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cubito.Location = new System.Drawing.Point(66, 316);
             this.cubito.Name = "cubito";
             this.cubito.Size = new System.Drawing.Size(136, 44);
@@ -183,7 +183,7 @@
             // 
             // bbp
             // 
-            this.bbp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bbp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.bbp.Location = new System.Drawing.Point(66, 387);
             this.bbp.Name = "bbp";
             this.bbp.Size = new System.Drawing.Size(136, 44);
@@ -194,7 +194,7 @@
             // 
             // dfo
             // 
-            this.dfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dfo.Location = new System.Drawing.Point(66, 461);
             this.dfo.Name = "dfo";
             this.dfo.Size = new System.Drawing.Size(136, 44);
@@ -205,7 +205,7 @@
             // 
             // femur
             // 
-            this.femur.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.femur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.femur.Location = new System.Drawing.Point(225, 186);
             this.femur.Name = "femur";
             this.femur.Size = new System.Drawing.Size(136, 44);
@@ -216,7 +216,7 @@
             // 
             // humero
             // 
-            this.humero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.humero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.humero.Location = new System.Drawing.Point(225, 249);
             this.humero.Name = "humero";
             this.humero.Size = new System.Drawing.Size(136, 44);
@@ -227,7 +227,7 @@
             // 
             // lcn
             // 
-            this.lcn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lcn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lcn.Location = new System.Drawing.Point(225, 316);
             this.lcn.Name = "lcn";
             this.lcn.Size = new System.Drawing.Size(136, 44);
@@ -238,7 +238,7 @@
             // 
             // perone
             // 
-            this.perone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.perone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.perone.Location = new System.Drawing.Point(225, 387);
             this.perone.Name = "perone";
             this.perone.Size = new System.Drawing.Size(136, 44);
@@ -249,7 +249,7 @@
             // 
             // radio
             // 
-            this.radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.radio.Location = new System.Drawing.Point(225, 461);
             this.radio.Name = "radio";
             this.radio.Size = new System.Drawing.Size(136, 44);
@@ -260,7 +260,7 @@
             // 
             // rnpg
             // 
-            this.rnpg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.rnpg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.rnpg.Location = new System.Drawing.Point(377, 186);
             this.rnpg.Name = "rnpg";
             this.rnpg.Size = new System.Drawing.Size(136, 107);
@@ -271,7 +271,7 @@
             // 
             // rnps
             // 
-            this.rnps.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.rnps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.rnps.Location = new System.Drawing.Point(377, 316);
             this.rnps.Name = "rnps";
             this.rnps.Size = new System.Drawing.Size(136, 115);
@@ -282,7 +282,7 @@
             // 
             // tibia
             // 
-            this.tibia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tibia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tibia.Location = new System.Drawing.Point(377, 461);
             this.tibia.Name = "tibia";
             this.tibia.Size = new System.Drawing.Size(136, 44);

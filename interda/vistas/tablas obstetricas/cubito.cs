@@ -53,7 +53,7 @@ namespace interda.vistas
             dataGridView1.Height = 350;
             label1.Location = new Point(40, 90);
             dataGridView1.Location = new Point(50, 130);
-            ;
+            
         }
 
         private void cubito_Load(object sender, EventArgs e)

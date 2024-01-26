@@ -28,53 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.corazon = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.corazon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // corazon
-            // 
-            this.corazon.BackgroundColor = System.Drawing.SystemColors.MenuBar;
-            this.corazon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.corazon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.corazon.Location = new System.Drawing.Point(12, 75);
-            this.corazon.Name = "corazon";
-            this.corazon.RowHeadersWidth = 51;
-            this.corazon.RowTemplate.Height = 24;
-            this.corazon.Size = new System.Drawing.Size(776, 358);
-            this.corazon.TabIndex = 9;
-            this.corazon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.corazon_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(38, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 29);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Corazón";
             // 
             // corazon_anatomiaFetal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 543);
-            this.Controls.Add(this.corazon);
-            this.Controls.Add(this.label1);
             this.Name = "corazon_anatomiaFetal";
             this.Text = "corazon_anatomiaFetal";
             this.Load += new System.EventHandler(this.corazon_anatomiaFetal_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.corazon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView corazon;
-        private System.Windows.Forms.Label label1;
     }
 }
