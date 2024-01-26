@@ -221,7 +221,7 @@
             this.humero.Name = "humero";
             this.humero.Size = new System.Drawing.Size(136, 44);
             this.humero.TabIndex = 7;
-            this.humero.Text = "Humero";
+            this.humero.Text = "Húmero";
             this.humero.UseVisualStyleBackColor = true;
             this.humero.Click += new System.EventHandler(this.humero_Click);
             // 
