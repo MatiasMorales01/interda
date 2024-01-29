@@ -6,27 +6,37 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+
 
 namespace interda.vistas
 {
     public partial class vistaprincipal : Form
     {
         conector miConector = new conector();
+        private SoundPlayer sonido;
+        private SoundPlayer sonido2;
         Dictionary<string, string> institucionImagenes = new Dictionary<string, string>
                 {
                     { "Hospital San Pablo de Coquimbo", "hc.png" },
                     { "CLINICA ELQUI", "rse.png" },
                     { "Unidad de Ecotomografía Obstétrica y Ginecológica","hls.png"}
                 };
+
+        
+        
         public vistaprincipal()
         {
             InitializeComponent();
             cargarDatoscombobox();
+            sonido = new SoundPlayer(@"C:\Users\clinica\source\repos\interda\interda\sonidos\sonido.wav");
+            sonido2= new SoundPlayer(@"C:\Users\clinica\source\repos\interda\interda\sonidos\sonido2.wav");
             //string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes\fondo.jpg");
             //this.BackgroundImage = Image.FromFile(rutaImagen);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -155,9 +165,18 @@ namespace interda.vistas
         {
             for(int i = 0; i < 10; i++)
             {
+                sonido.Play();
+                Thread.Sleep(500);
                 MessageBox.Show("Usted ha sido Hackeado por cocodrilo :(");
+               
+                if (i == 9)
+                {
+                    sonido2.Play();
+                }
+             
             }
-            
+          
+
         }
 
         private void btnconclusionanatomia_Click(object sender, EventArgs e)

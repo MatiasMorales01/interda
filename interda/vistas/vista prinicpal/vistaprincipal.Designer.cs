@@ -72,10 +72,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.Location = new System.Drawing.Point(101, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 20);
+            this.label1.Size = new System.Drawing.Size(473, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ecotomografia Ginecologica y Obstetrica";
             // 
@@ -83,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(12, 63);
+            this.label2.Location = new System.Drawing.Point(35, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(303, 20);
             this.label2.TabIndex = 1;
@@ -93,7 +93,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(359, 63);
+            this.label3.Location = new System.Drawing.Point(382, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 20);
             this.label3.TabIndex = 2;
@@ -102,7 +102,7 @@
             // comboBoxdoctor
             // 
             this.comboBoxdoctor.FormattingEnabled = true;
-            this.comboBoxdoctor.Location = new System.Drawing.Point(12, 86);
+            this.comboBoxdoctor.Location = new System.Drawing.Point(35, 101);
             this.comboBoxdoctor.Name = "comboBoxdoctor";
             this.comboBoxdoctor.Size = new System.Drawing.Size(328, 24);
             this.comboBoxdoctor.TabIndex = 3;
@@ -110,7 +110,7 @@
             // comboBoxasistente
             // 
             this.comboBoxasistente.FormattingEnabled = true;
-            this.comboBoxasistente.Location = new System.Drawing.Point(363, 86);
+            this.comboBoxasistente.Location = new System.Drawing.Point(386, 101);
             this.comboBoxasistente.Name = "comboBoxasistente";
             this.comboBoxasistente.Size = new System.Drawing.Size(192, 24);
             this.comboBoxasistente.TabIndex = 4;
@@ -119,7 +119,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(12, 147);
+            this.label4.Location = new System.Drawing.Point(35, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 20);
             this.label4.TabIndex = 5;
@@ -129,7 +129,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(359, 147);
+            this.label5.Location = new System.Drawing.Point(382, 162);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 20);
             this.label5.TabIndex = 6;
@@ -138,14 +138,14 @@
             // comboBoxecografo
             // 
             this.comboBoxecografo.FormattingEnabled = true;
-            this.comboBoxecografo.Location = new System.Drawing.Point(363, 170);
+            this.comboBoxecografo.Location = new System.Drawing.Point(386, 185);
             this.comboBoxecografo.Name = "comboBoxecografo";
             this.comboBoxecografo.Size = new System.Drawing.Size(192, 24);
             this.comboBoxecografo.TabIndex = 7;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(16, 171);
+            this.dateTimePicker1.Location = new System.Drawing.Point(39, 186);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(299, 22);
             this.dateTimePicker1.TabIndex = 8;
@@ -154,7 +154,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(12, 231);
+            this.label6.Location = new System.Drawing.Point(35, 246);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 20);
             this.label6.TabIndex = 9;
@@ -163,7 +163,7 @@
             // comboBoxpiepag
             // 
             this.comboBoxpiepag.FormattingEnabled = true;
-            this.comboBoxpiepag.Location = new System.Drawing.Point(16, 254);
+            this.comboBoxpiepag.Location = new System.Drawing.Point(39, 269);
             this.comboBoxpiepag.Name = "comboBoxpiepag";
             this.comboBoxpiepag.Size = new System.Drawing.Size(521, 24);
             this.comboBoxpiepag.TabIndex = 10;
@@ -171,7 +171,7 @@
             // btnactualizar
             // 
             this.btnactualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnactualizar.Location = new System.Drawing.Point(235, 475);
+            this.btnactualizar.Location = new System.Drawing.Point(258, 474);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(105, 30);
             this.btnactualizar.TabIndex = 11;
@@ -181,7 +181,7 @@
             // btnnuevoinf
             // 
             this.btnnuevoinf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnnuevoinf.Location = new System.Drawing.Point(616, 23);
+            this.btnnuevoinf.Location = new System.Drawing.Point(616, 75);
             this.btnnuevoinf.Name = "btnnuevoinf";
             this.btnnuevoinf.Size = new System.Drawing.Size(164, 32);
             this.btnnuevoinf.TabIndex = 12;
@@ -192,7 +192,7 @@
             // btnbuscarinf
             // 
             this.btnbuscarinf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnbuscarinf.Location = new System.Drawing.Point(616, 61);
+            this.btnbuscarinf.Location = new System.Drawing.Point(616, 113);
             this.btnbuscarinf.Name = "btnbuscarinf";
             this.btnbuscarinf.Size = new System.Drawing.Size(164, 32);
             this.btnbuscarinf.TabIndex = 13;
@@ -203,7 +203,7 @@
             // btninstitucionencabezado
             // 
             this.btninstitucionencabezado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btninstitucionencabezado.Location = new System.Drawing.Point(616, 100);
+            this.btninstitucionencabezado.Location = new System.Drawing.Point(616, 152);
             this.btninstitucionencabezado.Name = "btninstitucionencabezado";
             this.btninstitucionencabezado.Size = new System.Drawing.Size(164, 73);
             this.btninstitucionencabezado.TabIndex = 14;
@@ -214,7 +214,7 @@
             // btninfobstetrico
             // 
             this.btninfobstetrico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btninfobstetrico.Location = new System.Drawing.Point(616, 258);
+            this.btninfobstetrico.Location = new System.Drawing.Point(616, 310);
             this.btninfobstetrico.Name = "btninfobstetrico";
             this.btninfobstetrico.Size = new System.Drawing.Size(164, 59);
             this.btninfobstetrico.TabIndex = 15;
@@ -225,7 +225,7 @@
             // btntablaobstetrica
             // 
             this.btntablaobstetrica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btntablaobstetrica.Location = new System.Drawing.Point(616, 323);
+            this.btntablaobstetrica.Location = new System.Drawing.Point(616, 375);
             this.btntablaobstetrica.Name = "btntablaobstetrica";
             this.btntablaobstetrica.Size = new System.Drawing.Size(164, 59);
             this.btntablaobstetrica.TabIndex = 16;
@@ -236,7 +236,7 @@
             // btnanatomiafetal
             // 
             this.btnanatomiafetal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnanatomiafetal.Location = new System.Drawing.Point(616, 388);
+            this.btnanatomiafetal.Location = new System.Drawing.Point(616, 440);
             this.btnanatomiafetal.Name = "btnanatomiafetal";
             this.btnanatomiafetal.Size = new System.Drawing.Size(164, 32);
             this.btnanatomiafetal.TabIndex = 17;
@@ -247,7 +247,7 @@
             // btnpiedepagina
             // 
             this.btnpiedepagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnpiedepagina.Location = new System.Drawing.Point(616, 430);
+            this.btnpiedepagina.Location = new System.Drawing.Point(616, 482);
             this.btnpiedepagina.Name = "btnpiedepagina";
             this.btnpiedepagina.Size = new System.Drawing.Size(164, 32);
             this.btnpiedepagina.TabIndex = 18;
@@ -258,7 +258,7 @@
             // btnplanillautero
             // 
             this.btnplanillautero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnplanillautero.Location = new System.Drawing.Point(616, 468);
+            this.btnplanillautero.Location = new System.Drawing.Point(616, 520);
             this.btnplanillautero.Name = "btnplanillautero";
             this.btnplanillautero.Size = new System.Drawing.Size(164, 56);
             this.btnplanillautero.TabIndex = 19;
@@ -269,7 +269,7 @@
             // btnconclusionanatomia
             // 
             this.btnconclusionanatomia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnconclusionanatomia.Location = new System.Drawing.Point(616, 530);
+            this.btnconclusionanatomia.Location = new System.Drawing.Point(616, 582);
             this.btnconclusionanatomia.Name = "btnconclusionanatomia";
             this.btnconclusionanatomia.Size = new System.Drawing.Size(164, 56);
             this.btnconclusionanatomia.TabIndex = 20;
@@ -280,7 +280,7 @@
             // btnidreferencias
             // 
             this.btnidreferencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnidreferencias.Location = new System.Drawing.Point(616, 179);
+            this.btnidreferencias.Location = new System.Drawing.Point(616, 231);
             this.btnidreferencias.Name = "btnidreferencias";
             this.btnidreferencias.Size = new System.Drawing.Size(164, 73);
             this.btnidreferencias.TabIndex = 21;
@@ -291,7 +291,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(199, 511);
+            this.pictureBox1.Location = new System.Drawing.Point(222, 510);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(186, 182);
             this.pictureBox1.TabIndex = 22;
@@ -301,7 +301,7 @@
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(16, 324);
+            this.textBox1.Location = new System.Drawing.Point(39, 323);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(521, 123);
