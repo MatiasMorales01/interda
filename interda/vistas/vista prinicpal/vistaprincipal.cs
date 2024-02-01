@@ -29,14 +29,14 @@ namespace interda.vistas
                     { "Unidad de Ecotomografía Obstétrica y Ginecológica","hls.png"}
                 };
 
-        
-        
         public vistaprincipal()
         {
             InitializeComponent();
             cargarDatoscombobox();
-            sonido = new SoundPlayer(@"C:\Users\clinica\source\repos\interda\interda\sonidos\sonido.wav");
-            sonido2= new SoundPlayer(@"C:\Users\clinica\source\repos\interda\interda\sonidos\sonido2.wav");
+            //sonido = new SoundPlayer(@"C:\Users\clinica\source\repos\interda\interda\sonidos\sonido.wav");
+           // sonido2= new SoundPlayer(@"C:\Users\clinica\source\repos\interda\interda\sonidos\sonido2.wav");
+            SoundPlayer sonido = new SoundPlayer(Properties.Resources.sonido);
+            SoundPlayer sonido2=new SoundPlayer(Properties.Resources.sonido2);
             //string rutaImagen = Path.Combine(@"C:\Users\clinica\source\repos\interda\interda\imagenes\fondo.jpg");
             //this.BackgroundImage = Image.FromFile(rutaImagen);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
